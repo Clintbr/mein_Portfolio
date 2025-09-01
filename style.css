@@ -1,0 +1,145 @@
+/* Grunddesign */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Header & Navigation */
+header {
+    background: #0057b8; /* Blau */
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero-Bereich */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Inhalte */
+main {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.skills {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    background: #0057b8;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Projekte */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.projects article {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.projects a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0057b8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+.technologie {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.technologie li {
+    background: #0057b8;
+    color: white;
+    padding: 8px 8px;
+    border-radius: 5px;
+    display: inline-block; /* transform wirkt */
+    animation: floaty 4s ease-in-out infinite;
+}
+
+.technologie li:nth-child(1) {
+    animation-delay: 0s;
+}
+.technologie li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.technologie li:nth-child(3) {
+    animation-delay: 1s;
+}
+.technologie li:nth-child(4) {
+    animation-delay: 1.5s;
+}
+.technologie li:nth-child(5) {
+    animation-delay: 2s;
+}
+
+
+/* leichte Auf-und-Ab-Bewegung */
+@keyframes floaty {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0057b8;
+    color: white;
+    margin-top: 30px;
+}
