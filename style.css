@@ -68,6 +68,76 @@ main {
     border-radius: 5px;
 }
 
+/* Avatar Styling */
+.avatar-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.asvatar {
+    width: 30px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.Me {
+    width: 230px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.avatar-speech {
+    position: absolute;
+    bottom: 270px;
+    right: 170px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.avatar-container:hover .avatar-speech {
+    opacity: 10;
+}
+
 /*.....................*/
 .link-container {
     display: inline-block;
