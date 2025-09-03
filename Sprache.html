@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprachkenntnisse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 28px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h1:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            border-radius: 2px;
+        }
+
+        .language {
+            margin-bottom: 25px;
+        }
+
+        .language-name {
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .language-level {
+            height: 24px;
+            background-color: #ecf0f1;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .level-fill {
+            height: 100%;
+            border-radius: 12px;
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.4);
+            width: 0;
+            transition: width 1.5s ease-in-out;
+        }
+
+        .level-text {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            color: #0057b8;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .language-detail {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>SPRACHEN</h1>
+
+    <div class="language">
+        <div class="language-name">Französisch</div>
+        <div class="language-level">
+            <div class="level-fill" style="width: 100%" data-level="100%"></div>
+            <div class="level-text">Muttersprache</div>
+        </div>
+    </div>
+
+    <div class="language">
+        <div class="language-name">Deutsch</div>
+        <div class="language-level">
+            <div class="level-fill" style="width: 75%" data-level="75%"></div>
+            <div class="level-text">Fortgeschrittene Kenntnisse</div>
+        </div>
+    </div>
+
+    <div class="language">
+        <div class="language-name">Englisch</div>
+        <div class="language-level">
+            <div class="level-fill" style="width: 50%" data-level="50%"></div>
+            <div class="level-text">Mittlere Kenntnisse</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Einfache Animation, um die Balken nach dem Laden der Seite zu füllen
+    document.addEventListener('DOMContentLoaded', function() {
+        const levelFills = document.querySelectorAll('.level-fill');
+
+        // Setze zunächst die Breite auf 0
+        levelFills.forEach(fill => {
+            const width = fill.style.width;
+            fill.style.width = '0';
+
+            // Verzögerung für den Animationseffekt
+            setTimeout(() => {
+                fill.style.width = width;
+            }, 300);
+        });
+    });
+</script>
+</body>
+</html>
