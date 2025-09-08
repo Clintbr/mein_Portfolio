@@ -6,45 +6,24 @@
     <title>Kontakt – Mein Portfolio</title>
     <link rel="shortcut icon" href="bilder/logo.jpg" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-<style>
-    main {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        /*min-height: 100vh;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
 
-    section {
-        background-color: white;
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 500px;
-        padding: 30px;
-    }
+<!-- Hintergrundformen -->
+<div class="bg-shapes">
+    <div class="shape circle"></div>
+    <div class="shape circle small"></div>
+    <div class="shape square"></div>
+    <div class="shape square small"></div>
+    <div class="shape triangle"></div>
+    <div class="shape triangle small"></div>
+    <div class="shape diamond"></div>
+    <div class="shape diamond small"></div>
+    <div class="shape hexagon"></div>
+    <div class="shape hexagon small"></div>
+</div>
 
-    h2 {
-        color: #2c3e50;
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: 600;
-        font-size: 28px;
-        position: relative;
-        padding-bottom: 15px;
-    }
-
-    div {
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: 600;
-        position: relative;
-        padding-bottom: 15px;
-    }
-</style>
 <header>
     <nav>
         <h1>Kontakt</h1>
@@ -55,32 +34,65 @@
         </ul>
     </nav>
 </header>
-<main>
-    <section>
-        <h2>So erreichen Sie mich</h2>
-        <div>
-            <p>Adresse: Iheringstraße 9, 35392, Gießen</p>
-            <p>Nummer: +49 1782103854</p>
-            <p>Email: <a href="mailto:nguenaclintbryan@gmail.com">nguenaclintbryan@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/Clintbr" target="_blank">Mein GitHub</a></p>
-            <p>GitLab: <a href="https://gitlab.com/nguenaclintbryan" target="_blank">Mein GitLab</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/mynetwork/" target="_blank">Mein Linkedin</a></p>
-        </div>
-        </section>
 
-    <!-- Avatar Container -->
+<main class="kontakt-main">
+
+    <!-- Kontakt Infos -->
+    <section class="content-card">
+        <h2>So erreichen Sie mich</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Iheringstraße 9, 35392 Gießen</p>
+        <p><i class="fas fa-phone"></i> +49 1782103854</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:nguenaclintbryan@gmail.com">nguenaclintbryan@gmail.com</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/Clintbr" target="_blank">Mein GitHub</a></p>
+        <p><i class="fab fa-gitlab"></i> <a href="https://gitlab.com/nguenaclintbryan" target="_blank">Mein GitLab</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/mynetwork/" target="_blank">Mein LinkedIn</a></p>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section class="content-card">
+        <h2>📩 Kontaktformular</h2>
+        <form action="mailto:nguenaclintbryan@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-btn">Senden</button>
+        </form>
+    </section>
+
+    <!-- Google Map -->
+    <section class="content-card">
+        <h2>📍 Standort</h2>
+        <div class="map-container">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.8013509930737!2d8.685!3d50.587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd71e123456789%3A0x123456789abcdef!2sIheringstraße%209%2C%2035392%20Gießen!5e0!3m2!1sde!2sde!4v1678901234567"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Avatar -->
     <div class="avatar-container">
         <div class="avatar-speech">
-            Kontaktieren Sie mich gerne für ein Gesprächtermin. <br> Ich freue mich schon darauf, bei Ihnen, <br> meine Fähigkeiten als Entwickler noch umsetzen und immer mehr vertiefen zu können.
+            Kontaktieren Sie mich gerne für ein Gesprächtermin 😊
         </div>
         <div class="avatar">
-            <img class="Me" src="bilder/avatar.png" alt="">
+            <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
         </div>
     </div>
 </main>
 
 <footer>
     <p>© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
+    <div class="social-links">
+        <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/deinprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nguenaclintbryan@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
 </footer>
 </body>
 </html>

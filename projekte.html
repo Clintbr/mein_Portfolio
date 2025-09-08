@@ -6,8 +6,25 @@
   <title>Projekte – Mein Portfolio</title>
   <link rel="shortcut icon" href="bilder/logo.jpg" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+<!-- Background Shapes -->
+<div class="bg-shapes">
+  <div class="shape circle"></div>
+  <div class="shape circle small"></div>
+  <div class="shape square"></div>
+  <div class="shape square small"></div>
+  <div class="shape triangle"></div>
+  <div class="shape triangle small"></div>
+  <div class="shape diamond"></div>
+  <div class="shape diamond small"></div>
+  <div class="shape hexagon"></div>
+  <div class="shape hexagon small"></div>
+</div>
+
+<!-- Header -->
 <header>
   <nav>
     <h1>Meine Projekte</h1>
@@ -18,21 +35,44 @@
     </ul>
   </nav>
 </header>
+
+<!-- Hero Section -->
+<section class="hero projects-hero">
+  <h2>Meine Arbeiten</h2>
+  <p>Eine Auswahl meiner wichtigsten Projekte aus Studium und Praxis – mit Fokus auf <b>Softwareentwicklung</b>, <b>Web</b> und <b>Embedded Systems</b>.</p>
+  <a class="cta-btn" href="#main">Zum Profil 👇🏼</a>
+</section>
+
+<!-- Filter -->
+<br id="main">
+<br>
+<section class="filter-section">
+  <button class="filter-btn active" data-filter="all">Alle</button>
+  <button class="filter-btn" data-filter="web">Web</button>
+  <button class="filter-btn" data-filter="java">Java</button>
+  <button class="filter-btn" data-filter="embedded">Embedded</button>
+  <button class="filter-btn" data-filter="vm">Virtual Machine</button>
+</section>
+
+
+<!-- Projekte -->
 <main>
   <section class="projects">
-    <article>
+    <article data-category="web java">
       <h3>Projekt 1: Web-App</h3>
-      <p> <b>Webanwendung zur Verwaltung von Nutzern und Rezepten
-        namens X-Chef</b></p>
-      <ul class="infos">
-        <li>👉Server mit Vertx anlegen</li>
-        <li>👉Java JDBC mit Java HTTPCLient</li>
-        <li>👉Cybersecurity-Prevention mit "Java session" und "prepared queries"</li>
-        <li>👉Maven template Engine für dynamische Seiten</li>
-      </ul>
-      <br>
-      <div>
+      <img src="bilder/prjkt1.png" alt="">
+      <div class="detail-project">
+        <p><b>Webanwendung zur Verwaltung von Nutzern und Rezepten namens X-Chef</b></p>
+        <ul class="infos">
+          <li>👉 Server mit Vertx anlegen</li>
+          <li>👉 Java JDBC mit Java HTTPClient</li>
+          <li>👉 Cybersecurity-Prevention mit "Java session" und "prepared queries"</li>
+          <li>👉 Maven template Engine für dynamische Seiten</li>
+        </ul>
+      </div>
+      <div class="tech">
         <p><i>Technologiestacks</i></p>
+        <br>
         <ul class="technologie">
           <li>GitLab</li>
           <li>MariaDB</li>
@@ -41,23 +81,24 @@
           <li>HTML, CSS & JavaScript</li>
         </ul>
       </div>
-
-      <br>
-      <br>
       <a class="right" href="https://github.com/Clintbr/X-Chef-Webseite" target="_blank">Zum Code</a>
-      <a class="left" href="bilder/projekt1.png" target="_blank">Zur Vorschau</a>
+      <a class="left" href="bilder/vorschau1.png" target="_blank">Zur Vorschau</a>
     </article>
-    <article>
+
+    <article data-category="web java">
       <h3>Projekt 2: Lvp-Spiel</h3>
-      <p> <b>Vereinfachtes Minecraft mit LiveViewProgramming:</b></p>
-      <ul class="infos">
-        <li>👉"Clerk.java" als GUI-Tools mit allen Servereinrichtungen</li>
-        <li>👉Konzeption eines Frontend-Moduls mit Canva Api und JavaScript</li>
-        <li>👉modernes Java mit Stream Programming und Schnittstellen</li>
-      </ul>
-      <br>
-      <div>
+      <img src="bilder/prjkt2.jpg" alt="">
+      <div class="detail-project">
+        <p><b>Vereinfachtes Minecraft mit LiveViewProgramming</b></p>
+        <ul class="infos">
+          <li>👉 Clerk.java als GUI-Tools mit allen Servereinrichtungen</li>
+          <li>👉 Konzeption eines Frontend-Moduls mit Canva Api und JavaScript</li>
+          <li>👉 Modernes Java mit Stream Programming und Schnittstellen</li>
+        </ul>
+      </div>
+      <div class="tech">
         <p><i>Technologiestacks</i></p>
+        <br>
         <ul class="technologie">
           <li>Java</li>
           <li>HTML, CSS & JavaScript</li>
@@ -65,93 +106,174 @@
           <li>Clerk</li>
         </ul>
       </div>
-      <br>
-      <br>
+
       <a class="right" href="https://github.com/Clintbr/LVP-Vereinfachtes-Minecraft" target="_blank">Zum Code</a>
-      <a class="left" href="bilder/projekt2.png" target="_blank">Zur Vorschau</a>
+      <a class="left" href="bilder/vorschau2.png" target="_blank">Zur Vorschau</a>
     </article>
-    <article>
-      <h3>Projekt 3: Eingebettetes System </h3>
-      <p> <b>Umsetzung von Kreuzung Ampeln:</b></p>
-      <ul class="infos">
-        <li>👉Hardwareorientiert</li>
-        <li>👉Konzeption und Implementierung eines Leitungsmoduls</li>
-      </ul>
-      <br>
-      <div>
+
+    <article data-category="embedded">
+      <h3>Projekt 3: Eingebettetes System</h3>
+      <img src="bilder/prjkt3.jpg" alt="">
+      <div class="detail-project">
+        <p><b>Umsetzung von Kreuzung Ampeln</b></p>
+        <ul class="infos">
+          <li>👉 Hardwareorientiert</li>
+          <li>👉 Konzeption und Implementierung eines Leitungsmoduls</li>
+        </ul>
+      </div>
+      <div class="tech">
         <p><i>Technologiestacks</i></p>
+        <br>
         <ul class="technologie">
-          <li>#C</li>
-          <li>Arduino (c++ zum Einsatz)</li>
+          <li>C</li>
+          <li>Arduino (C++)</li>
           <li>NodeMCU ESP32</li>
           <li>PlatformIO</li>
         </ul>
       </div>
 
-      <br>
-      <br>
       <a class="right" href="https://github.com/Clintbr/-Kreuzung-Ampeln" target="_blank">Zum Code</a>
-      <a class="left" href="bilder/projekt3.png" target="_blank">Zur Vorschau</a>
+      <a class="left" href="bilder/vorschau3.jpg" target="_blank">Zur Vorschau</a>
     </article>
-    <article>
+
+    <article data-category="vm">
       <h3>Projekt 4: Virtual Machine</h3>
-      <p><b>Entwicklung einer NINJA Virtual Machine (Stack Verarbeitung: LIFO)</b></p>
-      <ul class="infos">
-        <li>👉Speicherverwaltung mit Garbage Collection</li>
-        <li>👉Konzeption und Implementierung eines Debuggers</li>
-        <li>👉Rechenobjekte auf dem Heap</li>
-      </ul>
-      <br>
-      <div>
+      <img src="bilder/prjkt4.jpg" alt="">
+      <div class="detail-project">
+        <p><b>Entwicklung einer NINJA Virtual Machine (Stack Verarbeitung: LIFO)</b></p>
+        <ul class="infos">
+          <li>👉 Speicherverwaltung mit Garbage Collection</li>
+          <li>👉 Konzeption und Implementierung eines Debuggers</li>
+          <li>👉 Rechenobjekte auf dem Heap</li>
+        </ul>
+      </div>
+      <div class="tech">
         <p><i>Technologiestacks</i></p>
+        <br>
         <ul class="technologie">
-          <li>#C</li>
+          <li>C</li>
           <li>Oracle Virtual Box</li>
         </ul>
       </div>
 
-      <br>
-      <br>
       <a class="right" href="https://github.com/Clintbr/Virtual-Machine" target="_blank">Zum Code</a>
-      <a class="left" onclick="alert('🖲️Keine Vorschau, weil nur im Terminal ausführbar und anwendbar')" target="_blank">Zur Vorschau</a>
+      <a class="left" onclick="alert('🖲️Keine Vorschau, nur im Terminal ausführbar')" target="_blank">Zur Vorschau</a>
     </article>
-    <article>
-      <h3>Projekt 5: Online Homepage der Klinik "Sisterschola"</h3>
-      <p><b>Entwicklung einer ganzen Webseite, als Online Schnittstelle einer Klinic.</b></p>
-      <ul class="infos">
-        <li>👉Emailing-system</li>
-        <li>👉Integration von Übersetzer-Modul für nicht deutschsprachige Nutzer</li>
-        <li>👉Hosting </li>
-      </ul>
-      <br>
-      <div>
+
+    <article data-category="web">
+      <h3>Projekt 5: Online Homepage einer Klinik</h3>
+      <img src="bilder/prjkt5.png" alt="">
+      <div class="detail-project">
+        <p><b>Entwicklung einer ganzen Webseite, als Online-Schnittstelle einer Klinik</b></p>
+        <ul class="infos">
+          <li>👉 Emailing-System</li>
+          <li>👉 Integration von Übersetzer-Modul</li>
+          <li>👉 Hosting</li>
+        </ul>
+      </div>
+      <div class="tech">
         <p><i>Technologiestacks</i></p>
+        <br>
         <ul class="technologie">
           <li>HTML, CSS & JavaScript</li>
           <li>WordPress</li>
         </ul>
       </div>
+      <a class="right" onclick="alert('🖲️Code aus vertraulichen Gründen verborgen🥲')" target="_blank">Zum Code</a>
+      <a class="left" href="https://www.sisterschola.org/" target="_blank">Zur Webseite</a>
+    </article>
 
-      <br>
-      <br>
-      <a class="right" target="_blank" onclick="alert('🖲️Code aus verträglichen Gründen verborgen🥲')">Zum Code</a>
+    <article data-category="web">
+      <h3>Projekt 6: Mein Portfolio</h3>
+      <img src="bilder/prjkt6.png" alt="">
+      <div class="detail-project">
+        <p><b>Entwicklung von einem professionellen minimalistischen Portfolio, als Online-Präsentation meines Werdegangs</b></p>
+        <ul class="infos">
+          <li>👉 Emailing-System</li>
+          <li>👉 GitHub als CLoud und Hosting Tool</li>
+          <li>👉 Git für Version control</li>
+        </ul>
+      </div>
+      <div class="tech">
+        <p><i>Technologiestacks</i></p>
+        <br>
+        <ul class="technologie">
+          <li>HTML, CSS & JavaScript</li>
+          <li>Fontawesome</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+      <a class="right" onclick="alert('🖲️Code aus vertraulichen Gründen verborgen🥲')" target="_blank">Zum Code</a>
       <a class="left" href="https://www.sisterschola.org/" target="_blank">Zur Webseite</a>
     </article>
   </section>
 
-  <!-- Avatar Container -->
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stat-card">
+      <h3>5+</h3>
+      <p>Abgeschlossene Projekte</p>
+    </div>
+    <div class="stat-card">
+      <h3>3</h3>
+      <p>Programmiersprachen im Einsatz</p>
+    </div>
+    <div class="stat-card">
+      <h3>1+</h3>
+      <p>Theoretische und praktische Erfahrung</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Wollen Sie mehr über meine Projekte erfahren?</h2>
+    <a href="kontakt.html" class="cta-btn">Kontaktieren Sie mich</a>
+  </section>
+
+  <!-- Avatar -->
   <div class="avatar-container">
     <div class="avatar-speech">
-      Hier sehen Sie die wichtigsten Projekte, mit denen ich mich befasst habe <br>
-      Lass uns das alles durchgehen 😁
+      Diese Projekte zeigen meinen Werdegang in der Softwareentwicklung 🚀
     </div>
     <div class="avatar">
-      <img class="Me" src="bilder/avatar.png" alt="">
+      <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
     </div>
   </div>
 </main>
+
 <footer>
   <p>© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
+  <div class="social-links">
+    <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/deinprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:dein.email@domain.com"><i class="fas fa-envelope"></i></a>
+  </div>
 </footer>
+
+<script>
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.projects article');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // aktive Klasse aktualisieren
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      projects.forEach(project => {
+        const category = project.getAttribute('data-category');
+
+        if (filter === "all" || category.includes(filter)) {
+          project.style.display = "block";
+        } else {
+          project.style.display = "none";
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>

@@ -6,8 +6,27 @@
     <title>Mein Portfolio</title>
     <link rel="shortcut icon" href="bilder/logo.jpg" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
+<!-- Hintergrundformen -->
+<div class="bg-shapes">
+    <div class="shape circle"></div>
+    <div class="shape circle small"></div>
+    <div class="shape square"></div>
+    <div class="shape square small"></div>
+    <div class="shape triangle"></div>
+    <div class="shape triangle small"></div>
+    <div class="shape diamond"></div>
+    <div class="shape diamond small"></div>
+    <div class="shape hexagon"></div>
+    <div class="shape hexagon small"></div>
+</div>
+
 <header>
     <nav>
         <h1>Mein Portfolio</h1>
@@ -17,19 +36,44 @@
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
-    <div class="hero">
-        <h2>Hallo, ich bin Clint Bryan Nguena</h2>
-        <p>Informatikstudent (4. Semester) – spezialisiert auf Softwareentwicklung</p>
-        <p>eingeschrieben an der THM (Technische Hochschule Mittelhessen)</p>
-    </div>
 </header>
-<main>
-    <section>
+
+<!-- Hero mit Portrait -->
+<div class="hero">
+    <img src="bilder/portrait.jpeg" alt="Porträtfoto von Clint" class="portrait">
+    <h2>Hallo, ich bin <span>Clint Bryan Nguena</span></h2>
+    <p>Informatikstudent (4. Semester) – <span>spezialisiert auf Softwareentwicklung</span></p>
+    <p>eingeschrieben an der THM (Technische Hochschule Mittelhessen)</p>
+    <p class="tagline">Ich entwickle moderne Softwarelösungen, die Menschen helfen, ihre Ziele effizienter zu erreichen.</p>
+    <a class="cta-btn" href="#main">Zum Profil 👇🏼</a>
+</div>
+
+<main id="main">
+    <br>
+    <!-- Featured Work -->
+    <section class="content-card featured">
+        <h2>🌟 Featured Work</h2>
+        <img src="bilder/vorschau1.png" alt="Screenshot X-Chef Projekt">
+        <p><b>X-Chef:</b><span> Eine moderne Web-App zur Verwaltung von Nutzern und Rezepten.</span></p>
+        <br>
+        <hr>
+        <p>Mein Ansatz als Informatikstudent ist es, komplexe Probleme in handhabbare
+            Teilschritte zu zerlegen. Diese strukturierte und lösungsorientierte
+            Denkweise ist für mich der Schlüssel zu erfolgreicher Softwareentwicklung.
+            Hier sehen Sie, wie ich diese Philosophie bei der Entwicklung von X-Chef
+            angewendet habe – einem Projekt, das meine technischen Fähigkeiten von
+            Frontend bis Backend eindrucksvoll unter Beweis stellt.</p>
+        <br>
+        <br>
+        <a href="projekte.html" class="cta-btn">Alle Projekte ansehen</a>
+    </section>
+
+    <section class="content-card">
         <h2>🧾 Fachliche Fähigkeiten</h2>
         <ul class="skills">
             <li>Java</li>
             <li>Maven, Vertx, Springboot, Canva Api</li>
-            <li>#C</li>
+            <li>C#</li>
             <li>Webentwicklung (HTML, CSS, JS)</li>
             <li>Datenbanken (MySQL, PostgreSQL, Mariadb)</li>
             <li>Git & GitHub</li>
@@ -37,7 +81,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="content-card">
         <h2>🛠️ Kern-Kompetenzen</h2>
         <ul class="skills">
             <li>Kreatives Problemlösen</li>
@@ -46,7 +90,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="content-card">
         <h2>🎮 Interessen</h2>
         <ul class="skills">
             <li>Fußball spielen</li>
@@ -55,28 +99,39 @@
         </ul>
     </section>
 
-    <section>
+    <section class="content-card">
         <h2>💬 Sprachen</h2>
         <div class="link-container">
-            <a class="sprach" href="Sprache.html"> Meine beherrschten Sprachen</a>
+            <a class="sprach" href="Sprache.html">Meine beherrschten Sprachen</a>
         </div>
     </section>
 
-    <!-- Avatar Container -->
-    <div class="avatar-container">
-        <div class="avatar-speech">
-            Hallo! Willkommen auf meinem Portfolio!
-            Lass uns das alles durchgehen 😁
-        </div>
-        <div class="avatar">
-            <img class="Me" src="bilder/avatar.png" alt="">
-        </div>
-    </div>
-
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Wollen Sie mehr über meine Projekte erfahren?</h2>
+        <a href="kontakt.html" class="cta-btn">Kontaktieren Sie mich</a>
+    </section>
 </main>
+
+<!-- Avatar -->
+<div class="avatar-container">
+    <div class="avatar-speech">
+        Hallo! Willkommen auf meinem Portfolio!<br>
+        Lass uns das alles durchgehen 😁
+    </div>
+    <div class="avatar">
+        <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
+    </div>
+</div>
 
 <footer>
     <p>© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
+    <div class="social-links">
+        <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/deinprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:dein.email@domain.com"><i class="fas fa-envelope"></i></a>
+    </div>
 </footer>
+
 </body>
 </html>
