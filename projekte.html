@@ -24,11 +24,13 @@
   <div class="shape hexagon small"></div>
 </div>
 
-<!-- Header -->
 <header>
-  <nav>
+  <nav class="navbar">
     <h1>Meine Projekte</h1>
-    <ul>
+    <button class="menu-toggle" aria-label="Menü öffnen">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-links">
       <li><a href="index.html">Start</a></li>
       <li><a href="ueber-mich.html">Über mich</a></li>
       <li><a href="projekte.html" class="active">Projekte</a></li>
@@ -36,6 +38,7 @@
     </ul>
   </nav>
 </header>
+
 
 <!-- Hero Section -->
 <section class="hero projects-hero">
@@ -335,31 +338,6 @@
     <a href="mailto:dein.email@domain.com"><i class="fas fa-envelope"></i></a>
   </div>
 </footer>
-
-<script>
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const projects = document.querySelectorAll('.projects article');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // aktive Klasse aktualisieren
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      projects.forEach(project => {
-        const category = project.getAttribute('data-category');
-
-        if (filter === "all" || category.includes(filter)) {
-          project.style.display = "block";
-        } else {
-          project.style.display = "none";
-        }
-      });
-    });
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
