@@ -1022,13 +1022,11 @@ nav a:hover { color: var(--orange-yellow); }
     }
 
     .avatar-container {
-        position: static;
         margin: 30px auto;
+        right: 1rem;
     }
     .avatar-speech {
-        position: static;
         opacity: 1;
-        margin-bottom: 15px;
         text-align: center;
     }
 }
