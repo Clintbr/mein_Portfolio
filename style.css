@@ -1020,14 +1020,6 @@ nav a:hover { color: var(--orange-yellow); }
     .cta h2 {
         font-size: 1.5rem;
     }
-
-    .avatar-container {
-        right: 1rem;
-    }
-    .avatar-speech {
-        opacity: 1;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 480px) {
