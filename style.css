@@ -1017,7 +1017,7 @@ nav a:hover { color: var(--orange-yellow); }
 }
 
 /* ------------------- */
-/* Responsive Design für Projekt.html  */
+/* Responsive Design für Projekt.html und Avatar  */
 /* ------------------- */
 @media screen and (max-width: 1024px) {
     .projects {
@@ -1066,6 +1066,28 @@ nav a:hover { color: var(--orange-yellow); }
     .cta h2 {
         font-size: 1.5rem;
     }
+    /* Avatar */
+    .avatar-container {
+        position: fixed;
+        bottom: 25px;
+        right: 1rem;
+        text-align: center;
+        z-index: 100;
+    }
+    .Me {
+        width: 50%;
+        height: 50%;
+        animation: floaty 4s infinite ease-in-out;
+    }
+    .avatar-speech {
+        width: auto;
+        background: var(--white);
+        color: var(--smoky-black);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1075,7 +1097,32 @@ nav a:hover { color: var(--orange-yellow); }
     .filter-btn { font-size: 0.8rem; padding: 6px 10px; }
     .cta h2 { font-size: 1.2rem; }
     .stat-card h3 { font-size: 1.5rem; }
+
+    /* Avatar */
+    .avatar-container {
+        position: fixed;
+        bottom: 50px;
+        right: 1rem;
+        text-align: right;
+        justify-content: left;
+        z-index: 100;
+    }
+    .Me {
+        width: 50%;
+        height: 60%;
+        animation: floaty 4s infinite ease-in-out;
+    }
+    .avatar-speech {
+        width: auto;
+        background: var(--white);
+        color: var(--smoky-black);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
 }
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
