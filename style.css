@@ -1022,7 +1022,6 @@ nav a:hover { color: var(--orange-yellow); }
     }
 
     .avatar-container {
-        margin: 30px auto;
         right: 1rem;
     }
     .avatar-speech {
