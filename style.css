@@ -216,7 +216,7 @@ nav a.active, nav a:hover {
 /* Hero-Bereich */
 .hero {
     text-align: center;
-    height: max(800px);
+    height: max(1000px);
     padding: 50px 20px;
     background: linear-gradient(180deg, #0057b8 0%, white 100%);
 }
@@ -772,6 +772,10 @@ nav a:hover { color: var(--orange-yellow); }
 .cta-btn:hover {
     background: var(--white);
     transform: translateY(-3px);
+}
+
+.mich, .pro {
+    width: 250px;
 }
 
 #start {
