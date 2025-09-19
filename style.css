@@ -1104,7 +1104,7 @@ nav a:hover { color: var(--orange-yellow); }
     .cta h2 { font-size: 1.2rem; }
     .stat-card h3 { font-size: 1.5rem; }
 
-    /* Avatar */
+    /* Avatar **/
     .avatar-container {
         display: none;
     }
