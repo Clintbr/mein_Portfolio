@@ -802,7 +802,7 @@ nav a:hover { color: var(--orange-yellow); }
 
 /* Karten */
 .content-card {
-    max-width: 800px;
+    max-width: 1500px;
     margin: 50px auto;
     padding: 30px;
     background: rgba(255, 255, 255, 0.05);
@@ -1023,11 +1023,17 @@ nav a:hover { color: var(--orange-yellow); }
     .projects {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
+    .content-card {
+        max-width: 800px;
+    }
     .hero h2 { font-size: 2rem; }
     .hero p { font-size: 1rem; }
 }
 
 @media screen and (max-width: 768px) {
+    .content-card {
+        max-width: 600px;
+    }
     nav ul {
         flex-direction: column;
         gap: 10px;
@@ -1100,26 +1106,7 @@ nav a:hover { color: var(--orange-yellow); }
 
     /* Avatar */
     .avatar-container {
-        position: fixed;
-        bottom: 50px;
-        right: 1rem;
-        text-align: right;
-        justify-content: left;
-        z-index: 100;
-    }
-    .Me {
-        width: 50%;
-        height: 60%;
-        animation: floaty 4s infinite ease-in-out;
-    }
-    .avatar-speech {
-        width: auto;
-        background: var(--white);
-        color: var(--smoky-black);
-        border-radius: 10px;
-        margin-bottom: 10px;
-        opacity: 0;
-        transition: opacity 0.3s;
+        display: none;
     }
 }
 
@@ -1183,7 +1170,8 @@ form input:focus, form textarea:focus {
     z-index: 100;
 }
 .Me {
-    width: 200px;
+    width: 300px;
+    height: 500px;
     animation: floaty 4s infinite ease-in-out;
 }
 .avatar-speech {
@@ -1192,6 +1180,7 @@ form input:focus, form textarea:focus {
     color: var(--smoky-black);
     border-radius: 10px;
     margin-bottom: 10px;
+    margin-right: 40px;
     opacity: 0;
     transition: opacity 0.3s;
 }
