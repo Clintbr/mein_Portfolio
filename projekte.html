@@ -54,15 +54,14 @@
   <button class="filter-btn active" data-filter="all">Alle</button>
   <button class="filter-btn" data-filter="web">Web</button>
   <button class="filter-btn" data-filter="java">Java</button>
-  <button class="filter-btn" data-filter="embedded">Embedded</button>
-  <button class="filter-btn" data-filter="vm"> VM</button>
+  <button class="filter-btn" data-filter="embed/vm">Embedded/VM</button>
 </section>
 
 
 <!-- Projekte -->
 <main>
   <section class="projects">
-    <article data-category="embedded">
+    <article data-category="embed/vm">
       <h3>Projekt 0: Geräte Integration</h3>
       <img src="bilder/prjkt0.png" alt="">
       <div class="detail-project">
@@ -148,7 +147,7 @@
       <a class="left" href="bilder/vorschau2.png" target="_blank">Zum Vorschau</a>
     </article>
 
-    <article data-category="embedded">
+    <article data-category="embed/vm">
       <h3>Projekt 3: Eingebettetes System</h3>
       <img src="bilder/prjkt3.jpg" alt="">
       <div class="detail-project">
@@ -176,7 +175,7 @@
       <a class="left" href="bilder/vorschau3.jpg" target="_blank">Zum Vorschau</a>
     </article>
 
-    <article data-category="vm">
+    <article data-category="embed/vm">
       <h3>Projekt 4: Virtual Machine</h3>
       <img src="bilder/prjkt4.jpg" alt="">
       <div class="detail-project">
@@ -328,12 +327,39 @@
       <a class="right" href="https://github.com/Clintbr/ClintChat" target="_blank">Zum Code</a>
       <a class="left" target="_blank">Zum Vorschau</a>
     </article>
+
+    <article data-category="java">
+      <h3>Projekt 10: Secures Notes</h3>
+      <img src="bilder/prjkt10.png" alt="">
+      <div class="detail-project">
+        <p><b>Moderne, webbasierte Plattform zur sicheren Verwaltung persönlicher und geteilter Notizen. Fokus auf Cybersecurity, Containerisierung und Clean Code</b></p>
+        <br>
+        <ul class="infos">
+          <li>👉 Containerisierung und Deployment mit Docker</li>
+          <li>👉 Implementierung von Sicherheitsmechanismen: 2FA via E-Mail, JWT Tokens, RLS Policies, DOMPurify & Regex-Validierung</li>
+          <li>👉 Markdown Parsing durch Marked.js für flexible Inhaltsdarstellung</li>
+        </ul>
+      </div>
+      <div class="tech">
+        <p><i>Technologiestacks</i></p>
+        <br>
+        <ul class="technologie">
+          <li>Vue.js 3</li>
+          <li>Spring Boot, Maven & Java</li>
+          <li>Supabase (PostgreSQL)</li>
+          <li>Docker</li>
+          <li>Marked.js</li>
+        </ul>
+      </div>
+      <a class="right" href="https://github.com/SSE-Projekt/SSE_Repo/tree/main?tab=readme-ov-file" target="_blank">Zum Code</a>
+      <a class="left" href="bilder/prjkt10.png" target="_blank">Zum Vorschau</a>
+    </article>
   </section>
 
   <!-- Stats Section -->
   <section class="stats">
     <div class="stat-card">
-      <h3>5+</h3>
+      <h3>10+</h3>
       <p>Abgeschlossene Projekte</p>
     </div>
     <div class="stat-card">
