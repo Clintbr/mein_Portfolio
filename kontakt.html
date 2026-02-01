@@ -7,7 +7,13 @@
     <link rel="shortcut icon" href="bilder/logo.jpg" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
+<script>
+    (function(){
+        emailjs.init("16cJaJTWFBDX3ISga");
+    })();
+</script>
 <body>
 
 <!-- Hintergrundformen -->
@@ -56,15 +62,15 @@
     <!-- Kontaktformular -->
     <section class="content-card">
         <h2>📩 Kontaktformular</h2>
-        <form action="mailto:nguenaclintbryan@gmail.com" method="post" enctype="text/plain">
+        <form id="contactForm">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" required>
 
             <label for="email">E-Mail</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" required>
 
             <label for="message">Nachricht</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" rows="5" required></textarea>
 
             <button type="submit" class="cta-btn">Senden</button>
         </form>
@@ -83,7 +89,7 @@
     <!-- Avatar -->
     <div class="avatar-container">
         <div class="avatar-speech">
-            Kontaktieren Sie mich gerne für ein Gesprächtermin 😊
+            Kontaktieren Sie mich gerne für einen Gesprächstermin 😊
         </div>
         <div class="avatar">
             <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
@@ -99,6 +105,6 @@
         <a href="mailto:nguenaclintbryan@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
 </footer>
-<script src="script.js"></script>
+<script src="mail.js"></script>
 </body>
 </html>
