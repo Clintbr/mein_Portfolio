@@ -9,7 +9,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-
+<!-- Video Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <video id="modalVideo" controls>
+      <source src="" type="video/mp4">
+      Dein Browser unterstützt dieses Video nicht.
+    </video>
+  </div>
+</div>
 <!-- Background Shapes -->
 <div class="bg-shapes">
   <div class="shape circle"></div>
@@ -89,8 +98,8 @@
           <li>python</li>
         </ul>
       </div>
-      <a class="right" href="" target="_blank">Zum Code</a>
-      <a class="left" href="" target="_blank">Zum Vorschau</a>
+      <a class="right" href="https://gitlab.com/ag-czekansky/external/swtp-wise-2025-2026" target="_blank">Zum Code</a>
+      <a class="left" data-video="demos/demo0.mp4" href="#">Zum Vorschau</a>
     </article>
 
     <article data-category="web java">
@@ -173,7 +182,7 @@
       </div>
 
       <a class="right" href="https://github.com/Clintbr/-Kreuzung-Ampeln" target="_blank">Zum Code</a>
-      <a class="left" href="bilder/vorschau3.jpg" target="_blank">Zum Vorschau</a>
+      <a class="left" data-video="demos/demo3.mp4" href="#">Zum Vorschau</a>
     </article>
 
     <article data-category="embed/vm">
@@ -425,5 +434,6 @@
   </div>
 </footer>
 <script src="script.js"></script>
+<script src="video.js"></script>
 </body>
 </html>
