@@ -1,3 +1,5 @@
+import {showSnackbar} from "./help.js";
+
 document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -14,21 +16,25 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 
     emailjs.send("service_a8bfrqi", "template_cl2nlwa", params)
         .then(() => {
-            alert("Nachricht erfolgreich gesendet");
+            showSnackbar("Nachricht erfolgreich gesendet", "success");
+            //alert("Danke fürs Schreiben");
             this.reset();
         })
         .catch(error => {
-            alert("Fehler beim Senden ❌");
+            showSnackbar("Fehler beim Senden", "error");
+            //alert("Error");
             console.error(error);
         });
 
     emailjs.send("service_a8bfrqi", "template_zxkcrq2", replyParams)
         .then(() => {
-            alert("Danke fürs Schreiben");
+            showSnackbar("Danke fürs Schreiben", "success");
+            //alert("Danke fürs Schreiben");
             this.reset();
         })
         .catch(error => {
-            alert("Fehler beim Reply ❌");
+            showSnackbar("Fehler beim Reply", "error");
+            //alert("Error");
             console.error(error);
         });
 });
