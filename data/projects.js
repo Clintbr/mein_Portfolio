@@ -332,37 +332,37 @@ const projectsData = [
     },
     {
         id: 13,
-        title: { 
-            de: "Projekt 13: CV Builder", 
-            en: "Project 13: CV Builder", 
-            fr: "Projet 13 : Générateur de CV" 
+        title: {
+            de: "Projekt 13: CV Builder",
+            en: "Project 13: CV Builder",
+            fr: "Projet 13 : Générateur de CV"
         },
-        image: "bilder/prjkt11.png",
+        image: "bilder/prjkt13.png",
         description: {
             de: "Eine moderne, performante Webanwendung zur Erstellung professioneller Lebensläufe mit Echtzeit-Vorschau und PDF-Export.",
             en: "A modern and high-performance web application for creating professional resumes with real-time preview and PDF export.",
             fr: "Une application web moderne et performante permettant de créer des CV professionnels avec aperçu en temps réel et export PDF."
         },
         bullets: [
-            { 
-                de: "Echtzeit-Editor: Bearbeitung von persönlichen Daten, Erfahrung, Ausbildung und Fähigkeiten mit sofortiger Vorschau", 
-                en: "Real-time editor: Edit personal information, experience, education, and skills with instant preview", 
-                fr: "Éditeur en temps réel : modification des informations personnelles, expériences, formations et compétences avec aperçu instantané" 
+            {
+                de: "Echtzeit-Editor: Bearbeitung von persönlichen Daten, Erfahrung, Ausbildung und Fähigkeiten mit sofortiger Vorschau",
+                en: "Real-time editor: Edit personal information, experience, education, and skills with instant preview",
+                fr: "Éditeur en temps réel : modification des informations personnelles, expériences, formations et compétences avec aperçu instantané"
             },
-            { 
-                de: "Modernes Design: Futuristisches Dark-Theme mit Animationen, Glow-Effekten und professionellem Layout", 
-                en: "Modern design: Futuristic dark theme with animations, glow effects, and a clean professional layout", 
-                fr: "Design moderne : thème sombre futuriste avec animations et mise en page professionnelle" 
+            {
+                de: "Modernes Design: Futuristisches Dark-Theme mit Animationen, Glow-Effekten und professionellem Layout",
+                en: "Modern design: Futuristic dark theme with animations, glow effects, and a clean professional layout",
+                fr: "Design moderne : thème sombre futuriste avec animations et mise en page professionnelle"
             },
-            { 
-                de: "PDF-Export: Präziser Export von Lebensläufen im A4-Format mit optimiertem Layout", 
-                en: "PDF export: High-quality resume export in A4 format with optimized layout", 
-                fr: "Export PDF : export précis des CV au format A4 avec mise en page optimisée" 
+            {
+                de: "PDF-Export: Präziser Export von Lebensläufen im A4-Format mit optimiertem Layout",
+                en: "PDF export: High-quality resume export in A4 format with optimized layout",
+                fr: "Export PDF : export précis des CV au format A4 avec mise en page optimisée"
             },
-            { 
-                de: "Anpassbare Oberfläche: Dynamische Farbthemen und resizable Editor-Sidebar", 
-                en: "Custom interface: Dynamic color themes and resizable editor sidebar", 
-                fr: "Interface personnalisable : thèmes de couleurs dynamiques et panneau d'édition redimensionnable" 
+            {
+                de: "Anpassbare Oberfläche: Dynamische Farbthemen und resizable Editor-Sidebar",
+                en: "Custom interface: Dynamic color themes and resizable editor sidebar",
+                fr: "Interface personnalisable : thèmes de couleurs dynamiques et panneau d'édition redimensionnable"
             }
         ],
         tech: [
