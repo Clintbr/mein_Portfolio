@@ -327,7 +327,7 @@ const projectsData = [
         category: "fullstack java",
         links: {
             code: "https://github.com/Clintbr/I-Tickets-Management", codeType: "link",
-            preview: "https://ticketsystem-frontend-p9y9.onrender.com/", previewType: "link"
+            preview: "https://ticketsyst.netlify.app/", previewType: "link"
         }
     },
     {
