@@ -6,8 +6,16 @@
     <title>Kontakt – Mein Portfolio</title>
     <link rel="shortcut icon" href="bilder/logo.jpg" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        if (localStorage.getItem('portfolio_theme') === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
 </head>
 <script>
     (function(){
@@ -31,64 +39,79 @@
 </div>
 
 <header>
-    <nav class="navbar">
-        <h1>Kontakt</h1>
+    <nav class="navbar glass-panel">
+        <h1>Clint.</h1>
         <button class="menu-toggle" aria-label="Menü öffnen">
             <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links">
-            <li><a href="index.html">Start</a></li>
-            <li><a href="ueber-mich.html">Über mich</a></li>
-            <li><a href="projekte.html" >Projekte</a></li>
-            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="index.html" data-i18n="nav.home">Start</a></li>
+            <li><a href="ueber-mich.html" data-i18n="nav.about">Über mich</a></li>
+            <li><a href="projekte.html" data-i18n="nav.projects">Projekte</a></li>
+            <li><a href="kontakt.html" class="active" data-i18n="nav.contact">Kontakt</a></li>
         </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="de">DE</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+            <i class="fas fa-sun"></i>
+        </button>
     </nav>
 </header>
 
 
-<main class="kontakt-main">
+<main class="container kontakt-main">
 
-    <!-- Kontakt Infos -->
-    <section class="content-card">
-        <h2>So erreichen Sie mich</h2>
-        <p><i class="fas fa-map-marker-alt"></i> Iheringstraße 9, 35392 Gießen</p>
-        <p><i class="fas fa-phone"></i> +49 1782103854</p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:nguenaclintbryan@gmail.com">nguenaclintbryan@gmail.com</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/Clintbr" target="_blank">Mein GitHub</a></p>
-        <p><i class="fab fa-gitlab"></i> <a href="https://gitlab.com/nguenaclintbryan" target="_blank">Mein GitLab</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank">Mein LinkedIn</a></p>
-    </section>
+    <div class="grid-2-cols">
+        <!-- Kontakt Infos -->
+        <section class="content-card glass-panel slide-up">
+            <h2 data-i18n="contact.title.reach">So erreichen Sie mich</h2>
+            <ul class="contact-list">
+                <li><i class="fas fa-map-marker-alt text-highlight"></i> Iheringstraße 9, 35392 Gießen</li>
+                <li><i class="fas fa-phone text-highlight"></i> +49 1782103854</li>
+                <li><i class="fas fa-envelope text-highlight"></i> <a href="mailto:nguenaclintbryan@gmail.com">nguenaclintbryan@gmail.com</a></li>
+                <li><i class="fab fa-github text-highlight"></i> <a href="https://github.com/Clintbr" target="_blank" data-i18n="contact.github">Mein GitHub</a></li>
+                <li><i class="fab fa-gitlab text-highlight"></i> <a href="https://gitlab.com/nguenaclintbryan" target="_blank" data-i18n="contact.gitlab">Mein GitLab</a></li>
+                <li><i class="fab fa-linkedin text-highlight"></i> <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank" data-i18n="contact.linkedin">Mein LinkedIn</a></li>
+            </ul>
+        </section>
 
-    <!-- Kontaktformular -->
-    <section class="content-card">
-        <h2><i class="fas fa-message"></i> Kontaktformular</h2>
-        <form id="contactForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" required>
-
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" required>
-
-            <label for="message">Nachricht</label>
-            <textarea id="message" rows="5" required></textarea>
-
-            <button type="submit" class="cta-btn">Senden</button>
-        </form>
-    </section>
+        <!-- Kontaktformular -->
+        <section class="content-card glass-panel slide-up">
+            <h2 data-i18n="contact.title.form"><i class="fas fa-message"></i> Kontaktformular</h2>
+            <form id="contactForm" class="modern-form">
+                <div class="form-group">
+                    <label for="name" data-i18n="contact.form.name">Name</label>
+                    <input type="text" id="name" required class="input-glass">
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="contact.form.email">E-Mail</label>
+                    <input type="email" id="email" required class="input-glass">
+                </div>
+                <div class="form-group">
+                    <label for="message" data-i18n="contact.form.message">Nachricht</label>
+                    <textarea id="message" rows="5" required class="input-glass"></textarea>
+                </div>
+                <button type="submit" class="cta-btn btn-primary" data-i18n="contact.form.submit">Senden</button>
+            </form>
+        </section>
+    </div>
 
     <!-- Google Map -->
-    <section class="content-card">
-        <h2><i class="fas fa-map-marker-alt"></i> Standort</h2>
-        <div class="map-container">
+    <section class="content-card glass-panel slide-up w-full">
+        <h2 data-i18n="contact.title.map"><i class="fas fa-map-marker-alt"></i> Standort</h2>
+        <div class="map-container glass-panel">
             <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.8013509930737!2d8.685!3d50.587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd71e123456789%3A0x123456789abcdef!2sIheringstraße%209%2C%2035392%20Gießen!5e0!3m2!1sde!2sde!4v1678901234567"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.8013509930737!2d8.685!3d50.587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd71e123456789%3A0x123456789abcdef!2sIheringstraße%209%2C%2035392%20Gießen!5e0!3m2!1sde!2sde!4v1678901234567"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
     <!-- Avatar -->
-    <div class="avatar-container">
-        <div class="avatar-speech">
+    <div class="avatar-container float-anim">
+        <div class="avatar-speech glass-panel text-sm" data-i18n="avatar.contact">
             Kontaktieren Sie mich gerne für einen Gesprächstermin <i class="fas fa-smile"></i>
         </div>
         <div class="avatar">
@@ -97,14 +120,18 @@
     </div>
 </main>
 <div id="snackbar"></div>
-<footer>
-    <p>© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
+
+<footer class="glass-panel">
+    <p data-i18n="footer.rights">© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
     <div class="social-links">
         <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/deinprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="mailto:nguenaclintbryan@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
 </footer>
+
+<script src="js/i18n.js"></script>
 <script type="module" src="mail.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
