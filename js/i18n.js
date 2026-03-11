@@ -2,6 +2,7 @@
  * Simple i18n engine using Vanilla JS.
  * Manages language switching between DE, EN, and FR.
  */
+const thisYear = new Date().getFullYear();
 
 const translations = {
     de: {
@@ -41,7 +42,7 @@ const translations = {
         
         "cta.title": "Wollen Sie mehr über meine Projekte erfahren?",
         "cta.btn": "Kontaktieren Sie mich",
-        "footer.rights": "© 2025 Clint B. Nguena | Alle Rechte vorbehalten",
+        "footer.rights": "©" + thisYear + " Clint B. Nguena | Alle Rechte vorbehalten",
         
         "projects.title": "Meine Arbeiten",
         "projects.desc": "Eine Auswahl meiner wichtigsten Projekte aus Studium und Praxis – mit Fokus auf Softwareentwicklung, Web und Embedded Systems.",
@@ -131,7 +132,7 @@ const translations = {
         
         "cta.title": "Do you want to know more about my projects?",
         "cta.btn": "Contact me",
-        "footer.rights": "© 2025 Clint B. Nguena | All rights reserved",
+        "footer.rights": "©" + thisYear + " Clint B. Nguena | All rights reserved",
         
         "projects.title": "My Work",
         "projects.desc": "A selection of my most important projects from my studies and practical experience – focusing on software development, web, and embedded systems.",
@@ -221,7 +222,7 @@ const translations = {
         
         "cta.title": "Voulez-vous en savoir plus sur mes projets ?",
         "cta.btn": "Contactez-moi",
-        "footer.rights": "© 2025 Clint B. Nguena | Tous droits réservés",
+        "footer.rights": "©" + thisYear + " Clint B. Nguena | Tous droits réservés",
         
         "projects.title": "Mes Travaux",
         "projects.desc": "Une sélection de mes projets les plus importants issus de mes études et de ma pratique – axés sur le développement logiciel, le web et les systèmes embarqués.",
