@@ -8,6 +8,7 @@
 /**
  * @typedef {Object} Project
  * @property {number} id - Unique project identifier
+ * @property {string} date - Project duration interval
  * @property {LocalizedString} title - Title of the project
  * @property {string} image - Path to preview image
  * @property {LocalizedString} description - Short bold description
@@ -28,6 +29,7 @@
 const projectsData = [
     {
         id: 0,
+        date: "10/2025 - 01/2026",
         title: { de: "Projekt 0: Geräte Integration", en: "Project 0: Device Integration", fr: "Projet 0 : Intégration de Périphériques" },
         image: "bilder/prjkt0.png",
         description: {
@@ -51,6 +53,7 @@ const projectsData = [
     },
     {
         id: 1,
+        date: "03/2025 - 03/2025",
         title: { de: "Projekt 1: Web-App X-Chef", en: "Project 1: Web-App X-Chef", fr: "Projet 1 : App Web X-Chef" },
         image: "bilder/prjkt1.png",
         description: {
@@ -73,6 +76,7 @@ const projectsData = [
     },
     {
         id: 2,
+        date: "12/2024 - 01/2025",
         title: { de: "Projekt 2: Lvp-Spiel", en: "Project 2: Lvp-Game", fr: "Projet 2 : Jeu Lvp" },
         image: "bilder/prjkt2.jpg",
         description: {
@@ -94,6 +98,7 @@ const projectsData = [
     },
     {
         id: 3,
+        date: "11/2024 - 12/2024",
         title: { de: "Projekt 3: Eingebettetes System", en: "Project 3: Embedded System", fr: "Projet 3 : Système Embarqué" },
         image: "bilder/prjkt3.jpg",
         description: {
@@ -114,6 +119,7 @@ const projectsData = [
     },
     {
         id: 4,
+        date: "05/2025 - 08/2025",
         title: { de: "Projekt 4: Virtual Machine", en: "Project 4: Virtual Machine", fr: "Projet 4 : Machine Virtuelle" },
         image: "bilder/prjkt4.jpg",
         description: {
@@ -135,6 +141,7 @@ const projectsData = [
     },
     {
         id: 5,
+        date: "05/2025 - 09/2025",
         title: { de: "Projekt 5: Online Homepage einer Klinik", en: "Project 5: Online Homepage of a Clinic", fr: "Projet 5 : Page d'accueil en ligne d'une clinique" },
         image: "bilder/prjkt5.png",
         description: {
@@ -156,6 +163,7 @@ const projectsData = [
     },
     {
         id: 6,
+        date: "10/2025 - heute",
         title: { de: "Projekt 6: Mein Portfolio", en: "Project 6: My Portfolio", fr: "Projet 6 : Mon Portfolio" },
         image: "bilder/prjkt6.png",
         description: {
@@ -177,6 +185,7 @@ const projectsData = [
     },
     {
         id: 7, // Adjusting ID to match original order
+        date: "09/2025 - 09/2025",
         title: { de: "Projekt 7: 3D-Snake Game", en: "Project 7: 3D Snake Game", fr: "Projet 7 : Jeu Snake 3D" },
         image: "bilder/prjkt7.png",
         description: {
@@ -198,6 +207,7 @@ const projectsData = [
     },
     {
         id: 8,
+        date: "07/2025 - 09/2025",
         title: { de: "Projekt 8: ClintChat", en: "Project 8: ClintChat", fr: "Projet 8 : ClintChat" },
         image: "bilder/prjkt8.png",
         description: {
@@ -219,6 +229,7 @@ const projectsData = [
     },
     {
         id: 9,
+        date: "09/2025 - 09/2025",
         title: { de: "Projekt 9: WG TaskManager", en: "Project 9: Flatshare TaskManager", fr: "Projet 9 : Gestionnaire de Tâches pour Colocation" },
         image: "bilder/prjkt9.png",
         description: {
@@ -240,6 +251,7 @@ const projectsData = [
     },
     {
         id: 10,
+        date: "11/2025 - 01/2026",
         title: { de: "Projekt 10: Secures Notes", en: "Project 10: Secure Notes", fr: "Projet 10 : Notes Sécurisées" },
         image: "bilder/prjkt10.png",
         description: {
@@ -261,6 +273,7 @@ const projectsData = [
     },
     {
         id: 11,
+        date: "11/2025 - 02/2026",
         title: { de: "Projekt 11: MC-Trainer", en: "Project 11: MC-Trainer", fr: "Projet 11 : MC-Trainer" },
         image: "bilder/prjkt11.png",
         description: {
@@ -282,6 +295,7 @@ const projectsData = [
     },
     {
         id: 12,
+        date: "02/2026 - 03/2026",
         title: {
             de: "Projekt 12: Enterprise Ticket Management System",
             en: "Project 12: Enterprise Ticket Management System",
@@ -332,6 +346,7 @@ const projectsData = [
     },
     {
         id: 13,
+        date: "02/2026 - 02/2026",
         title: {
             de: "Projekt 13: CV Builder",
             en: "Project 13: CV Builder",
@@ -442,6 +457,7 @@ function renderProjects() {
             </div>
             <div class="project-content">
                 <h3>${title}</h3>
+                <p class="project-date"><i class="far fa-calendar-alt"></i> ${project.date}</p>
                 <div class="detail-project">
                     <p><b>${description}</b></p>
                     <ul class="infos">${bulletsHTML}</ul>

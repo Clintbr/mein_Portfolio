@@ -16,12 +16,12 @@ const translations = {
         "hero.school": "Eingeschrieben an der THM (Technische Hochschule Mittelhessen)",
         "hero.tagline": "Ich entwickle moderne Softwarelösungen, die Menschen helfen, ihre Ziele effizienter zu erreichen.",
         "hero.cta": "Zum Profil ⬇",
-        
+
         "section.featured.title": "🌟 Featured Work",
         "section.featured.subtitle": "Ein leistungsfähiges Full-Stack-Ticket-Management-System.",
         "section.featured.desc": "Mein Ansatz als Informatikstudent ist es, komplexe Probleme in handhabbare Teilschritte zu zerlegen. Diese strukturierte und lösungsorientierte Denkweise ist für mich der Schlüssel zu erfolgreicher Softwareentwicklung. Hier sehen Sie, wie ich diese Philosophie bei der Entwicklung des Enterprise Ticket Management Systems angewendet habe – einem Projekt, das meine technischen Fähigkeiten im Fullstack-Bereich eindrucksvoll unter Beweis stellt.",
         "section.featured.cta": "Alle Projekte ansehen",
-        
+
         "section.skills.title": "Fachliche Fähigkeiten",
         "section.core.title": "Kern-Kompetenzen",
         "section.core.1": "Kreatives Problemlösen",
@@ -39,11 +39,11 @@ const translations = {
         "lang.level.native": "Muttersprache",
         "lang.level.advanced": "Fortgeschrittene Kenntnisse",
         "lang.level.intermediate": "Mittlere Kenntnisse",
-        
+
         "cta.title": "Wollen Sie mehr über meine Projekte erfahren?",
         "cta.btn": "Kontaktieren Sie mich",
         "footer.rights": "©" + thisYear + " Clint B. Nguena | Alle Rechte vorbehalten",
-        
+
         "projects.title": "Meine Arbeiten",
         "projects.desc": "Eine Auswahl meiner wichtigsten Projekte aus Studium und Praxis – mit Fokus auf Softwareentwicklung, Web und Embedded Systems.",
         "projects.btn": "Zu Projekten ⬇",
@@ -51,7 +51,7 @@ const translations = {
         "projects.code": "Zum Code",
         "projects.preview": "Zur Vorschau",
         "projects.website": "Zur Webseite",
-        
+
         "avatar.home": "Hallo! Willkommen auf meinem Portfolio! Lass uns das alles durchgehen 😊",
         "avatar.projects": "Diese Projekte zeigen meinen Werdegang in der Softwareentwicklung 🚀",
         "avatar.about": "„Softwareentwicklung ist nicht nur mein Studium – es ist meine Leidenschaft.“",
@@ -106,12 +106,12 @@ const translations = {
         "hero.school": "Enrolled at THM (University of Applied Sciences)",
         "hero.tagline": "I develop modern software solutions that help people achieve their goals more efficiently.",
         "hero.cta": "To Profile ⬇",
-        
+
         "section.featured.title": "🌟 Featured Work",
         "section.featured.subtitle": "A high-performance full-stack ticket management system.",
         "section.featured.desc": "My approach as a computer science student is to break complex problems down into manageable components. This structured and solution-oriented mindset is key to successful software development. Here you can see how I applied this philosophy developing the Enterprise Ticket Management System – a project that impressively showcases my full-stack technical skills.",
         "section.featured.cta": "View All Projects",
-        
+
         "section.skills.title": "Technical Skills",
         "section.core.title": "Core Competencies",
         "section.core.1": "Creative Problem Solving",
@@ -129,11 +129,11 @@ const translations = {
         "lang.level.native": "Native Language",
         "lang.level.advanced": "Advanced Proficiency",
         "lang.level.intermediate": "Intermediate Proficiency",
-        
+
         "cta.title": "Do you want to know more about my projects?",
         "cta.btn": "Contact me",
         "footer.rights": "©" + thisYear + " Clint B. Nguena | All rights reserved",
-        
+
         "projects.title": "My Work",
         "projects.desc": "A selection of my most important projects from my studies and practical experience – focusing on software development, web, and embedded systems.",
         "projects.btn": "To Projects ⬇",
@@ -141,7 +141,7 @@ const translations = {
         "projects.code": "Source Code",
         "projects.preview": "Live Preview",
         "projects.website": "To Website",
-        
+
         "avatar.home": "Hello! Welcome to my portfolio! Let's walk through it together 😊",
         "avatar.projects": "These projects showcase my journey in software development 🚀",
         "avatar.about": "\"Software development is not just my major—it's my passion.\"",
@@ -196,12 +196,12 @@ const translations = {
         "hero.school": "Inscrit à la THM (Université des Sciences Appliquées)",
         "hero.tagline": "Je développe des solutions logicielles modernes qui aident les gens à atteindre leurs objectifs plus efficacement.",
         "hero.cta": "Voir Profil ⬇",
-        
+
         "section.featured.title": "🌟 Projet en vedette",
         "section.featured.subtitle": "Un système complet de gestion de tickets à haute performance.",
         "section.featured.desc": "Mon approche en tant qu'étudiant en informatique consiste à décomposer les problèmes complexes en étapes gérables. Cet état d'esprit structuré et axé sur les solutions est la clé d'un développement logiciel réussi. Vous pouvez voir ici comment j'ai appliqué cette philosophie en développant le Système de Gestion de Tickets Enterprise – un projet qui démontre de manière impressionnante mes compétences techniques full-stack.",
         "section.featured.cta": "Voir tous les projets",
-        
+
         "section.skills.title": "Compétences Techniques",
         "section.core.title": "Compétences Clés",
         "section.core.1": "Résolution créative de problèmes",
@@ -219,11 +219,11 @@ const translations = {
         "lang.level.native": "Langue Maternelle",
         "lang.level.advanced": "Niveau Avancé",
         "lang.level.intermediate": "Niveau Intermédiaire",
-        
+
         "cta.title": "Voulez-vous en savoir plus sur mes projets ?",
         "cta.btn": "Contactez-moi",
         "footer.rights": "©" + thisYear + " Clint B. Nguena | Tous droits réservés",
-        
+
         "projects.title": "Mes Travaux",
         "projects.desc": "Une sélection de mes projets les plus importants issus de mes études et de ma pratique – axés sur le développement logiciel, le web et les systèmes embarqués.",
         "projects.btn": "Vers les projets ⬇",
@@ -231,7 +231,7 @@ const translations = {
         "projects.code": "Voir le Code",
         "projects.preview": "Aperçu en direct",
         "projects.website": "Visiter le site",
-        
+
         "avatar.home": "Bonjour ! Bienvenue sur mon portfolio ! Parcourons-le ensemble 😊",
         "avatar.projects": "Ces projets illustrent mon parcours dans le développement de logiciels 🚀",
         "avatar.about": "\"Le développement de logiciels n'est pas seulement mes études, c'est ma passion.\"",
@@ -285,7 +285,7 @@ function setLanguage(lang) {
     localStorage.setItem('portfolio_lang', lang);
     updateDOM();
     updateActiveLangButton();
-    
+
     // Dispatch custom event for dynamic content (like projects) to re-render
     document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
 }
@@ -327,7 +327,7 @@ function t(key) {
 document.addEventListener('DOMContentLoaded', () => {
     updateDOM();
     updateActiveLangButton();
-    
+
     // Attach event listeners to language switcher buttons
     const langBtns = document.querySelectorAll('.lang-btn');
     langBtns.forEach(btn => {

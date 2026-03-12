@@ -68,6 +68,20 @@ if (themeBtn) {
             themeIcon.classList.replace('fa-moon', 'fa-sun');
         }
     });
+
+    // Listen for theme changes from other tabs
+    window.addEventListener('storage', (e) => {
+        if (e.key === 'portfolio_theme') {
+            const newTheme = e.newValue || 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            
+            if (newTheme === 'light') {
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        }
+    });
 }
 
 // Language Bars Animation

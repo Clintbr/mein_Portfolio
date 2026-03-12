@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,164 +17,185 @@
         }
     </script>
 </head>
+
 <body>
 
-<!-- Hintergrundformen -->
-<div class="bg-shapes">
-    <div class="shape circle"></div>
-    <div class="shape circle small"></div>
-    <div class="shape square"></div>
-    <div class="shape square small"></div>
-    <div class="shape triangle"></div>
-    <div class="shape triangle small"></div>
-    <div class="shape diamond"></div>
-    <div class="shape diamond small"></div>
-    <div class="shape hexagon"></div>
-    <div class="shape hexagon small"></div>
-</div>
-
-<header>
-    <nav class="navbar glass-panel">
-        <h1>Clint.</h1>
-        <button class="menu-toggle" aria-label="Menü öffnen">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active" data-i18n="nav.home">Start</a></li>
-            <li><a href="ueber-mich.html" data-i18n="nav.about">Über mich</a></li>
-            <li><a href="projekte.html" data-i18n="nav.projects">Projekte</a></li>
-            <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
-        </ul>
-        <div class="lang-switcher">
-            <button class="lang-btn active" data-lang="de">DE</button>
-            <button class="lang-btn" data-lang="en">EN</button>
-            <button class="lang-btn" data-lang="fr">FR</button>
-        </div>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
-            <i class="fas fa-sun"></i>
-        </button>
-    </nav>
-</header>
-
-<!-- Hero mit Portrait -->
-<div class="hero fade-in">
-    <div class="hero-content">
-        <img src="bilder/portrait.jpeg" alt="Porträtfoto von Clint" class="portrait glass-panel">
-        <h2><span data-i18n="hero.greeting">Hallo, ich bin </span><span class="highlight" data-i18n="hero.name">Clint Bryan Nguena</span></h2>
-        <p data-i18n="hero.role">Informatikstudent (5. Semester) – <span class="highlight">spezialisiert auf Softwareentwicklung</span></p>
-        <p data-i18n="hero.school">eingeschrieben an der THM (Technische Hochschule Mittelhessen)</p>
-        <p class="tagline" data-i18n="hero.tagline">Ich entwickle moderne Softwarelösungen, die Menschen helfen, ihre Ziele effizienter zu erreichen.</p>
-        <a class="cta-btn btn-primary" href="#main" data-i18n="hero.cta">Zum Profil ⬇</a>
+    <!-- Hintergrundformen -->
+    <div class="bg-shapes">
+        <div class="shape circle"></div>
+        <div class="shape circle small"></div>
+        <div class="shape square"></div>
+        <div class="shape square small"></div>
+        <div class="shape triangle"></div>
+        <div class="shape triangle small"></div>
+        <div class="shape diamond"></div>
+        <div class="shape diamond small"></div>
+        <div class="shape hexagon"></div>
+        <div class="shape hexagon small"></div>
     </div>
-</div>
 
-<main id="main" class="container">
-    
-    <!-- Featured Work -->
-    <section class="content-card featured glass-panel slide-up">
-        <h2 data-i18n="section.featured.title">🌟 Featured Work</h2>
-        <div class="featured-grid">
-            <img src="bilder/prjkt12.png" alt="Screenshot Enterprise Ticket Management System" class="img-responsive">
-            <div class="featured-text">
-                <p><b class="highlight">Enterprise Ticket System:</b> <span data-i18n="section.featured.subtitle">Ein leistungsfähiges Full-Stack-Ticket-Management-System.</span></p>
-                <hr>
-                <p data-i18n="section.featured.desc">Mein Ansatz als Informatikstudent ist es, komplexe Probleme in handhabbare Teilschritte zu zerlegen. Diese strukturierte und lösungsorientierte Denkweise ist für mich der Schlüssel zu erfolgreicher Softwareentwicklung. Hier sehen Sie, wie ich diese Philosophie bei der Entwicklung des Enterprise Ticket Management Systems angewendet habe – einem Projekt, das meine technischen Fähigkeiten im Fullstack-Bereich eindrucksvoll unter Beweis stellt.</p>
-                <br>
-                <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">Alle Projekte ansehen</a>
+    <header>
+        <nav class="navbar glass-panel">
+            <h1>Clint.</h1>
+            <button class="menu-toggle" aria-label="Menü öffnen">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" data-i18n="nav.home">Start</a></li>
+                <li><a href="ueber-mich.html" data-i18n="nav.about">Über mich</a></li>
+                <li><a href="projekte.html" data-i18n="nav.projects">Projekte</a></li>
+                <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
             </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero mit Portrait -->
+    <div class="hero fade-in">
+        <div class="hero-content">
+            <img src="bilder/portrait.jpeg" alt="Porträtfoto von Clint" class="portrait glass-panel">
+            <h2><span data-i18n="hero.greeting">Hallo, ich bin </span><span class="highlight"
+                    data-i18n="hero.name">Clint Bryan Nguena</span></h2>
+            <p data-i18n="hero.role">Informatikstudent (5. Semester), <span class="highlight">spezialisiert auf
+                    Softwareentwicklung</span></p>
+            <p data-i18n="hero.school">eingeschrieben an der THM (Technische Hochschule Mittelhessen)</p>
+            <p class="tagline" data-i18n="hero.tagline">Ich entwickle moderne Softwarelösungen, die Menschen helfen,
+                ihre Ziele effizienter zu erreichen.</p>
+            <a class="cta-btn btn-primary" href="#main" data-i18n="hero.cta">Zum Profil ⬇</a>
         </div>
-    </section>
+    </div>
 
-    <div class="grid-2-cols">
-        <section class="content-card glass-panel slide-up">
-            <h2 data-i18n="section.skills.title"><i class="fas fa-book"></i> Fachliche Fähigkeiten</h2>
-            <ul class="skills-badges">
-                <li>Java</li>
-                <li>Maven, Vertx, Springboot</li>
-                <li>C#</li>
-                <li>MQTT, REST, HTTP, SMTP</li>
-                <li>HTML, CSS, JS</li>
-                <li>MySQL, PostgreSQL, Mariadb, Supabase</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
+    <main id="main" class="container">
 
-        <section class="content-card glass-panel slide-up">
-            <h2 data-i18n="section.core.title"><i class="fas fa-tools"></i> Kern-Kompetenzen</h2>
-            <ul class="skills-list">
-                <li><i class="fas fa-check text-highlight"></i> <span data-i18n="section.core.1">Kreatives Problemlösen</span></li>
-                <li><i class="fas fa-check text-highlight"></i> <span data-i18n="section.core.2">Organisationstalent</span></li>
-                <li><i class="fas fa-check text-highlight"></i> <span data-i18n="section.core.3">Didaktische Fähigkeit</span></li>
-            </ul>
-        </section>
-
-        <section class="content-card glass-panel slide-up">
-            <h2 data-i18n="section.hobbies.title"><i class="fas fa-gamepad"></i> Interessen </h2>
-            <ul class="skills-list">
-                <li><i class="fas fa-futbol text-highlight"></i> <span data-i18n="section.hobbies.1">Fußball spielen</span></li>
-                <li><i class="fas fa-book-open text-highlight"></i> <span data-i18n="section.hobbies.2">Bücher lesen</span></li>
-                <li><i class="fas fa-laptop-code text-highlight"></i> <span data-i18n="section.hobbies.3">Webseiten entwickeln</span></li>
-            </ul>
-        </section>
-
-        <section class="content-card glass-panel slide-up">
-            <h2 data-i18n="section.langs.title"><i class="fas fa-message"></i> Sprachen</h2>
-            <div class="languages-container">
-                <div class="language">
-                    <div class="language-name" data-i18n="lang.fr">Französisch</div>
-                    <div class="language-level">
-                        <div class="level-fill" style="width: 100%"></div>
-                        <div class="level-text" data-i18n="lang.level.native">Muttersprache</div>
-                    </div>
-                </div>
-                <div class="language">
-                    <div class="language-name" data-i18n="lang.de">Deutsch</div>
-                    <div class="language-level">
-                        <div class="level-fill" style="width: 75%"></div>
-                        <div class="level-text" data-i18n="lang.level.advanced">Fortgeschrittene Kenntnisse</div>
-                    </div>
-                </div>
-                <div class="language">
-                    <div class="language-name" data-i18n="lang.en">Englisch</div>
-                    <div class="language-level">
-                        <div class="level-fill" style="width: 55%"></div>
-                        <div class="level-text" data-i18n="lang.level.intermediate">Mittlere Kenntnisse</div>
-                    </div>
+        <!-- Featured Work -->
+        <section class="content-card featured glass-panel slide-up">
+            <h2 data-i18n="section.featured.title">🌟 Featured Work</h2>
+            <div class="featured-grid">
+                <img src="bilder/prjkt12.png" alt="Screenshot Enterprise Ticket Management System"
+                    class="img-responsive">
+                <div class="featured-text">
+                    <p><b class="highlight">Enterprise Ticket System:</b> <span
+                            data-i18n="section.featured.subtitle">Ein leistungsfähiges
+                            Full-Stack-Ticket-Management-System.</span></p>
+                    <hr>
+                    <p data-i18n="section.featured.desc">Mein Ansatz als Informatikstudent ist es, komplexe Probleme in
+                        handhabbare Teilschritte zu zerlegen. Diese strukturierte und lösungsorientierte Denkweise ist
+                        für mich der Schlüssel zu erfolgreicher Softwareentwicklung. Hier sehen Sie, wie ich diese
+                        Philosophie bei der Entwicklung des Enterprise Ticket Management Systems angewendet habe, einem
+                        Projekt, das meine technischen Fähigkeiten im Fullstack-Bereich eindrucksvoll unter Beweis
+                        stellt.</p>
+                    <br>
+                    <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">Alle Projekte
+                        ansehen</a>
                 </div>
             </div>
         </section>
+
+        <div class="grid-2-cols">
+            <section class="content-card glass-panel slide-up">
+                <h2 data-i18n="section.skills.title"><i class="fas fa-book"></i> Fachliche Fähigkeiten</h2>
+                <ul class="skills-badges">
+                    <li>Java</li>
+                    <li>Maven, Vertx, Springboot</li>
+                    <li>C#</li>
+                    <li>MQTT, REST, HTTP, SMTP</li>
+                    <li>HTML, CSS, JS</li>
+                    <li>MySQL, PostgreSQL, Mariadb, Supabase</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </section>
+
+            <section class="content-card glass-panel slide-up">
+                <h2 data-i18n="section.core.title"><i class="fas fa-tools"></i> Kern-Kompetenzen</h2>
+                <ul class="skills-list">
+                    <li><i class="fas fa-check text-highlight"></i> <span data-i18n="section.core.1">Kreatives
+                            Problemlösen</span></li>
+                    <li><i class="fas fa-check text-highlight"></i> <span
+                            data-i18n="section.core.2">Organisationstalent</span></li>
+                    <li><i class="fas fa-check text-highlight"></i> <span data-i18n="section.core.3">Didaktische
+                            Fähigkeit</span></li>
+                </ul>
+            </section>
+
+            <section class="content-card glass-panel slide-up">
+                <h2 data-i18n="section.hobbies.title"><i class="fas fa-gamepad"></i> Interessen </h2>
+                <ul class="skills-list">
+                    <li><i class="fas fa-futbol text-highlight"></i> <span data-i18n="section.hobbies.1">Fußball
+                            spielen</span></li>
+                    <li><i class="fas fa-book-open text-highlight"></i> <span data-i18n="section.hobbies.2">Bücher
+                            lesen</span></li>
+                    <li><i class="fas fa-laptop-code text-highlight"></i> <span data-i18n="section.hobbies.3">Webseiten
+                            entwickeln</span></li>
+                </ul>
+            </section>
+
+            <section class="content-card glass-panel slide-up">
+                <h2 data-i18n="section.langs.title"><i class="fas fa-message"></i> Sprachen</h2>
+                <div class="languages-container">
+                    <div class="language">
+                        <div class="language-name" data-i18n="lang.fr">Französisch</div>
+                        <div class="language-level">
+                            <div class="level-fill" style="width: 100%"></div>
+                            <div class="level-text" data-i18n="lang.level.native">Muttersprache</div>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <div class="language-name" data-i18n="lang.de">Deutsch</div>
+                        <div class="language-level">
+                            <div class="level-fill" style="width: 75%"></div>
+                            <div class="level-text" data-i18n="lang.level.advanced">Fortgeschrittene Kenntnisse</div>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <div class="language-name" data-i18n="lang.en">Englisch</div>
+                        <div class="language-level">
+                            <div class="level-fill" style="width: 55%"></div>
+                            <div class="level-text" data-i18n="lang.level.intermediate">Mittlere Kenntnisse</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta glass-panel bounce">
+            <h2 data-i18n="cta.title">Wollen Sie mehr über meine Projekte erfahren?</h2>
+            <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontaktieren Sie mich</a>
+        </section>
+    </main>
+
+    <!-- Avatar -->
+    <div class="avatar-container float-anim">
+        <div class="avatar-speech glass-panel text-sm" data-i18n="avatar.home">
+            Hallo! Willkommen auf meinem Portfolio! Lass uns das alles durchgehen <i class="fas fa-smile"></i>
+        </div>
+        <div class="avatar">
+            <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
+        </div>
     </div>
 
-    <!-- Call to Action -->
-    <section class="cta glass-panel bounce">
-        <h2 data-i18n="cta.title">Wollen Sie mehr über meine Projekte erfahren?</h2>
-        <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontaktieren Sie mich</a>
-    </section>
-</main>
+    <footer class="glass-panel">
+        <p data-i18n="footer.rights">©2026 Clint B. Nguena | alle Rechte vorbehalten</p>
+        <div class="social-links">
+            <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="kontakt.html"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
 
-<!-- Avatar -->
-<div class="avatar-container float-anim">
-    <div class="avatar-speech glass-panel text-sm" data-i18n="avatar.home">
-        Hallo! Willkommen auf meinem Portfolio! Lass uns das alles durchgehen <i class="fas fa-smile"></i>
-    </div>
-    <div class="avatar">
-        <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
-    </div>
-</div>
-
-<footer class="glass-panel">
-    <p data-i18n="footer.rights">©2026 Clint B. Nguena | alle Rechte vorbehalten</p>
-    <div class="social-links">
-        <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="kontakt.html"><i class="fas fa-envelope"></i></a>
-    </div>
-</footer>
-
-<script src="js/i18n.js"></script>
-<script src="script.js"></script>
-<script>
-    const thisYear = new Date().getFullYear()
-</script>
+    <script src="js/i18n.js"></script>
+    <script src="script.js"></script>
+    <script>
+        const thisYear = new Date().getFullYear()
+    </script>
 </body>
+
 </html>
