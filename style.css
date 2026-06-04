@@ -522,3 +522,71 @@ footer {
     right: 5px;
   }
 }
+
+.pdf-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-modal.show {
+  display: flex;
+}
+
+.pdf-modal-content {
+  width: 95%;
+  height: 95%;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-toolbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.pdf-toolbar button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.close-btn {
+  margin-left: auto;
+}
+
+.pdf-viewer {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#pdfCanvas {
+  max-width: 100%;
+}
+
+.cta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}

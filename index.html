@@ -16,6 +16,7 @@
             document.documentElement.setAttribute('data-theme', 'light');
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 
 <body>
@@ -92,8 +93,38 @@
                         Projekt, das meine technischen Fähigkeiten im Fullstack-Bereich eindrucksvoll unter Beweis
                         stellt.</p>
                     <br>
-                    <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">Alle Projekte
-                        ansehen</a>
+                    <div class="cta-line">
+                        <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">Alle Projekte
+                            ansehen</a>
+                        <a
+                                class="cta-btn btn-primary"
+                                data-i18n="section.featured.pdf"
+                                onclick="openPdfModal('ticket_Support_App.pdf')">
+                            Benutzerhandbuch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-card featured glass-panel slide-up">
+            <h2 data-i18n="section.featured.cv">🌟 Featured CV</h2>
+            <div class="featured-grid">
+                <div class="featured-text">
+                    <p><b class="highlight" data-i18n="section.featured.cv.title">Mein Lebenslauf:</b> <span
+                            data-i18n="section.featured.cv.subtitle">die Zusammenfassung meines Werdegangs</span></p>
+                </div>
+                <div class="featured-text">
+                    <div class="cta-line">
+                        <a
+                                class="cta-btn btn-primary"
+                                data-i18n="section.featured.cv.pdf"
+                                onclick="openPdfModal('Lebenslauf - Clint Bryan Nguena.pdf')">
+                            Lebenslauf ansehen
+                        </a>
+                        <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">Alle Projekte
+                            ansehen</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -181,6 +212,33 @@
         </div>
     </div>
 
+    <!-- PDF Modal -->
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-modal-content">
+
+            <div class="pdf-toolbar">
+                <button onclick="prevPage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <span id="pageInfo">Seite 1 / 1</span>
+
+                <button onclick="nextPage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <button onclick="closePdfModal()" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="pdf-viewer">
+                <canvas id="pdfCanvas"></canvas>
+            </div>
+
+        </div>
+    </div>
+
     <footer class="glass-panel">
         <p data-i18n="footer.rights">©2026 Clint B. Nguena | alle Rechte vorbehalten</p>
         <div class="social-links">
@@ -193,6 +251,7 @@
 
     <script src="js/i18n.js"></script>
     <script src="script.js"></script>
+    <script src="helpers/pdf.js"></script>
     <script>
         const thisYear = new Date().getFullYear()
     </script>
