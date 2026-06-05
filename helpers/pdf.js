@@ -13,9 +13,6 @@ async function openPdfModal(pdfName) {
         .promise;
 
     currentPage = 1;
-    console.log("pdfjsLib Version:", pdfjsLib.version);
-    console.log("pdfjsViewer:", pdfjsViewer);
-    console.log("Viewer Keys:", Object.keys(pdfjsViewer));
 
     renderPage(currentPage);
 }
