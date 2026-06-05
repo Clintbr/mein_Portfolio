@@ -13,6 +13,9 @@ async function openPdfModal(pdfName) {
         .promise;
 
     currentPage = 1;
+    console.log("pdfjsLib Version:", pdfjsLib.version);
+    console.log("pdfjsViewer:", pdfjsViewer);
+    console.log("Viewer Keys:", Object.keys(pdfjsViewer));
 
     renderPage(currentPage);
 }
@@ -41,10 +44,47 @@ async function renderPage(pageNumber) {
     canvas.width = viewport.width;
     canvas.height = viewport.height;
 
+    const annotationLayer = document.getElementById("annotationLayer");
+
+    annotationLayer.innerHTML = "";
+
     await page.render({
         canvasContext: ctx,
         viewport: viewport
     }).promise;
+
+    annotationLayer.style.width = `${viewport.width}px`;
+    annotationLayer.style.height = `${viewport.height}px`;
+
+    const annotations = await page.getAnnotations();
+
+    for (const annotation of annotations) {
+
+        if (!annotation.url) continue;
+
+        const rect = viewport.convertToViewportRectangle(
+            annotation.rect
+        );
+
+        const left = Math.min(rect[0], rect[2]);
+        const top = Math.min(rect[1], rect[3]);
+        const width = Math.abs(rect[0] - rect[2]);
+        const height = Math.abs(rect[1] - rect[3]);
+
+        const link = document.createElement("a");
+
+        link.href = annotation.url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+
+        link.style.position = "absolute";
+        link.style.left = `${left}px`;
+        link.style.top = `${top}px`;
+        link.style.width = `${width}px`;
+        link.style.height = `${height}px`;
+
+        annotationLayer.appendChild(link);
+    }
 
     document.getElementById("pageInfo").textContent =
         `Seite ${pageNumber} / ${pdfDoc.numPages}`;
