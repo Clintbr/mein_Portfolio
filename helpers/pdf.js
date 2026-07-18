@@ -2,14 +2,14 @@ let pdfDoc = null;
 let currentPage = 1;
 
 async function openPdfModal(pdfName) {
-
+    let currentLang = localStorage.getItem('portfolio_lang') || 'de';
     document
         .getElementById("pdfModal")
         .classList
         .add("show");
 
     pdfDoc = await pdfjsLib
-        .getDocument(`pdfs/${pdfName}`)
+        .getDocument(`pdfs/${currentLang}/${pdfName}`)
         .promise;
 
     currentPage = 1;
@@ -83,8 +83,8 @@ async function renderPage(pageNumber) {
         annotationLayer.appendChild(link);
     }
 
-    document.getElementById("pageInfo").textContent =
-        `Seite ${pageNumber} / ${pdfDoc.numPages}`;
+    document.getElementById("pageInfoNumber").textContent =
+        `${pageNumber} / ${pdfDoc.numPages}`;
 }
 
 function nextPage() {

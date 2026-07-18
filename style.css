@@ -580,6 +580,10 @@ footer {
   max-width: 100%;
 }
 
+#pageInfo {
+  color: #0d1117;
+}
+
 .cta-line {
   display: flex;
   flex-wrap: wrap;

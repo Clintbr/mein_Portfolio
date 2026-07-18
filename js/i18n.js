@@ -12,7 +12,7 @@ const translations = {
         "nav.contact": "Kontakt",
         "hero.greeting": "Hallo, ich bin ",
         "hero.name": "Clint Bryan Nguena",
-        "hero.role": "Informatikstudent (5. Semester) – spezialisiert auf Softwareentwicklung",
+        "hero.role": "Informatikstudent (5. Semester) – spezialisiert auf Software- und KI-Entwicklung",
         "hero.school": "Eingeschrieben an der THM (Technische Hochschule Mittelhessen)",
         "hero.tagline": "Ich entwickle moderne Softwarelösungen, die Menschen helfen, ihre Ziele effizienter zu erreichen.",
         "hero.cta": "Zum Profil ⬇",
@@ -26,6 +26,8 @@ const translations = {
         "section.featured.cv.title": "Mein lebenslauf:",
         "section.featured.cv.subtitle": "Die Zusammenfassung meines Werdegangs",
         "section.featured.cv.pdf": "CV ansehen",
+
+        "pdf.page":"Page",
 
         "section.skills.title": "Fachliche Fähigkeiten",
         "section.core.title": "Kern-Kompetenzen",
@@ -107,7 +109,7 @@ const translations = {
         "nav.contact": "Contact",
         "hero.greeting": "Hello, I am ",
         "hero.name": "Clint Bryan Nguena",
-        "hero.role": "Computer Science Student (5th Semester) – specializing in Software Development",
+        "hero.role": "Computer Science Student (5th Semester) – specializing in Software and AI Development",
         "hero.school": "Enrolled at THM (University of Applied Sciences)",
         "hero.tagline": "I develop modern software solutions that help people achieve their goals more efficiently.",
         "hero.cta": "To Profile ⬇",
@@ -121,6 +123,8 @@ const translations = {
         "section.featured.cv.title": "My CV:",
         "section.featured.cv.subtitle": "A summary of my career in IT",
         "section.featured.cv.pdf": "See the CV",
+
+        "pdf.page":"Page",
 
         "section.skills.title": "Technical Skills",
         "section.core.title": "Core Competencies",
@@ -202,7 +206,7 @@ const translations = {
         "nav.contact": "Contact",
         "hero.greeting": "Bonjour, je suis ",
         "hero.name": "Clint Bryan Nguena",
-        "hero.role": "Étudiant en Informatique (5ème semestre) – spécialisé en développement logiciel",
+        "hero.role": "Étudiant en Informatique (5ème semestre) – spécialisé en développement logiciel et intelligence artificielle",
         "hero.school": "Inscrit à la THM (Université des Sciences Appliquées)",
         "hero.tagline": "Je développe des solutions logicielles modernes qui aident les gens à atteindre leurs objectifs plus efficacement.",
         "hero.cta": "Voir Profil ⬇",
@@ -216,6 +220,8 @@ const translations = {
         "section.featured.cv.title": "Mon CV:",
         "section.featured.cv.subtitle": "Le résumé de mon parcours d'informaticien",
         "section.featured.cv.pdf": "Voir le CV",
+
+        "pdf.page":"Page",
 
         "section.skills.title": "Compétences Techniques",
         "section.core.title": "Compétences Clés",
