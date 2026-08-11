@@ -338,7 +338,7 @@ const projectsData = [
             "PostgreSQL",
             "Recharts"
         ],
-        category: "fullstack java",
+        category: "fullstack java ai",
         links: {
             code: "https://github.com/Clintbr/I-Tickets-Management", codeType: "link",
             preview: "https://ticketsyst.netlify.app/", previewType: "link"
@@ -392,6 +392,57 @@ const projectsData = [
         links: {
             code: "https://github.com/Clintbr/CV_Maker", codeType: "link",
             preview: "https://clintbr.github.io/CV_Maker/", previewType: "link"
+        }
+    },
+    {
+        id: 14,
+        date: "04/2026 - 06/2026",
+        title: {
+            de: "Projekt 14: multilinguales RAG",
+            en: "Project 14: multilingual RAG",
+            fr: "Projet 14: RAG multilingue"
+        },
+        image: "bilder/prjkt14.png",
+        description: {
+            de: "Eine lokale, performante und sprachübergreifende KI-Anwendung zur Retrieval Augmented Generation",
+            en: "A local and high-performance AI-Application for Retrieval Augmented Generation.",
+            fr: "Une application IA moderne et performante permettant de gérer la génération augmentée par récupération d’informations."
+        },
+        bullets: [
+            {
+                de: "Entwicklung einer sprachübergreifenden RAG-Pipeline für Anfragen und Dokumente in mehreren Sprachen.",
+                en: "Development of a cross-lingual RAG pipeline for queries and documents in multiple languages.",
+                fr: "Développement d’une pipeline RAG multilingue pour des requêtes et des documents dans plusieurs langues."
+            },
+            {
+                de: "Implementierung und Vergleich verschiedener Strategien wie MonoRAG, MultiRAG und CrossRAG.",
+                en: "Implementation and comparison of different strategies such as MonoRAG, MultiRAG and CrossRAG.",
+                fr: "Implémentation et comparaison de différentes stratégies telles que MonoRAG, MultiRAG et CrossRAG."
+            },
+            {
+                de: "Nutzung lokaler Large Language Models und Embedding-Modelle ohne externe Cloud-APIs.",
+                en: "Use of local Large Language Models and embedding models without external cloud APIs.",
+                fr: "Utilisation de grands modèles de langage et de modèles d’embedding locaux sans recours à des API cloud externes."
+            },
+            {
+                de: "Analyse der Retrieval-Qualität und der Leistungsfähigkeit der verschiedenen crosslingualen Ansätze.",
+                en: "Analysis of retrieval quality and performance across different cross-lingual approaches.",
+                fr: "Analyse de la qualité du retrieval et des performances des différentes approches multilingues."
+            }
+        ],
+        tech: [
+            "Python",
+            "Flask",
+            "Node-Red",
+            "N8N",
+            "JSON",
+            "Qdrant, Mongodb, Sqlite",
+            "OpenWebUI, LibreChat"
+        ],
+        category: "ai",
+        links: {
+            code: "https://github.com/Clintbr/mutlilingual-RAG", codeType: "link",
+            preview: "https://github.com/Clintbr/mutlilingual-RAG", previewType: "link"
         }
     }
 ];
