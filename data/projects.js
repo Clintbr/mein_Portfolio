@@ -402,7 +402,7 @@ const projectsData = [
             en: "Project 14: multilingual RAG",
             fr: "Projet 14: RAG multilingue"
         },
-        image: "bilder/prjkt14.png",
+        image: "bilder/prjkt_14.png",
         description: {
             de: "Eine lokale, performante und sprachübergreifende KI-Anwendung zur Retrieval Augmented Generation",
             en: "A local and high-performance AI-Application for Retrieval Augmented Generation.",
