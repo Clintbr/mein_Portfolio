@@ -404,9 +404,9 @@ const projectsData = [
         },
         image: "bilder/prjkt_14.png",
         description: {
-            de: "Eine lokale, performante und sprachübergreifende KI-Anwendung zur Retrieval Augmented Generation",
-            en: "A local and high-performance AI-Application for Retrieval Augmented Generation.",
-            fr: "Une application IA moderne et performante permettant de gérer la génération augmentée par récupération d’informations."
+            de: "Eine lokale, performante und sprachübergreifende KI-Anwendung zum Testen von multilinguale Strategien für Retrieval Augmented Generation",
+            en: "A local and high-performance AI-Application for testing multilingual strategies for Retrieval Augmented Generation.",
+            fr: "Une application IA moderne et performante permettant de tester localement des stratégies de génération augmentée multilingue par récupération d’informations."
         },
         bullets: [
             {
@@ -432,19 +432,73 @@ const projectsData = [
         ],
         tech: [
             "Python",
-            "Flask",
-            "Node-Red",
-            "N8N",
             "JSON",
-            "Qdrant, Mongodb, Sqlite",
-            "OpenWebUI, LibreChat"
+            "Qdrant",
+            "Mongodb",
+            "ragas",
+            "Numpy, Matplotlib",
+            "pandas, seaborn"
         ],
         category: "ai",
         links: {
-            code: "https://github.com/Clintbr/mutlilingual-RAG", codeType: "link",
-            preview: "https://github.com/Clintbr/mutlilingual-RAG", previewType: "link"
+            code: "https://github.com/Clintbr/Crosslingual-RAG", codeType: "link",
+            preview: "https://github.com/Clintbr/Crosslingual-RAG", previewType: "link"
         }
-    }
+    },
+    {
+        id: 15,
+        date: "08/2026 - 09/2026",
+        title: {
+            de: "Projekt 15: AI Mail Manager",
+            en: "Project 15: AI Mail Manager",
+            fr: "Projet 15 : AI Mail Manager"
+        },
+        image: "bilder/prjkt_15.png",
+        description: {
+            de: "Eine KI-gestützte Full-Stack-Anwendung zur Analyse, Priorisierung und Bearbeitung von E-Mails mit Google Gemini und Gmail.",
+            en: "An AI-powered full-stack application for analyzing, prioritizing and managing emails using Google Gemini and Gmail.",
+            fr: "Une application full-stack alimentée par l’IA pour analyser, prioriser et gérer les e-mails avec Google Gemini et Gmail."
+        },
+        bullets: [
+            {
+                de: "Entwicklung einer Full-Stack-Anwendung mit Java, Spring Boot, React und TypeScript.",
+                en: "Development of a full-stack application using Java, Spring Boot, React and TypeScript.",
+                fr: "Développement d’une application full-stack avec Java, Spring Boot, React et TypeScript."
+            },
+            {
+                de: "Integration der Gmail API zur Verwaltung von E-Mails sowie Google Gemini zur KI-gestützten Analyse und Antwortgenerierung.",
+                en: "Integration of the Gmail API for email management and Google Gemini for AI-powered analysis and reply generation.",
+                fr: "Intégration de l’API Gmail pour la gestion des e-mails et de Google Gemini pour l’analyse et la génération de réponses assistées par IA."
+            },
+            {
+                de: "Automatische Klassifizierung von E-Mails nach Kategorie, Priorität, Stimmung, Kernaussagen und erforderlichen Aktionen.",
+                en: "Automatic classification of emails by category, priority, sentiment, key takeaways and required actions.",
+                fr: "Classification automatique des e-mails selon leur catégorie, priorité, sentiment, points clés et actions requises."
+            },
+            {
+                de: "Implementierung eines Human-in-the-Loop-Workflows, bei dem KI-generierte Antworten vor dem Versand vom Benutzer überprüft und bearbeitet werden.",
+                en: "Implementation of a human-in-the-loop workflow where AI-generated replies are reviewed and edited by the user before being sent.",
+                fr: "Mise en place d’un workflow Human-in-the-Loop permettant à l’utilisateur de vérifier et modifier les réponses générées par l’IA avant leur envoi."
+            }
+        ],
+        tech: [
+            "Java 21",
+            "Spring Boot",
+            "Spring Security",
+            "React",
+            "TypeScript",
+            "Gmail API",
+            "Google Gemini",
+            "OAuth 2.0",
+            "Tailwind CSS",
+            "TanStack Query"
+        ],
+        category: "fullstack java ai",
+        links: {
+            code: "https://github.com/Clintbr/mymailai", codeType: "link",
+            preview: "https://mymailai.onrender.com/", previewType: "link"
+        }
+    },
 ];
 
 function renderProjects() {

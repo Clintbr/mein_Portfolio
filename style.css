@@ -226,6 +226,16 @@ header {
   margin: 2rem auto;
   max-width: 900px;
 }
+
+.hero-img {
+  top: 0;
+  background-image: url("bilder/top_profil.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.92;
+  min-height: 800px;
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
