@@ -154,11 +154,11 @@ const projectsData = [
             { de: "Integration von Übersetzer-Modul", en: "Integration of a translator module", fr: "Intégration d'un module de traduction" },
             { de: "Hosting", en: "Hosting", fr: "Hébergement" }
         ],
-        tech: ["HTML, CSS & JavaScript", "WordPress"],
+        tech: ["HTML, CSS & JavaScript"],
         category: "web",
         links: {
             code: "🖲️Code aus vertraulichen Gründen verborgen🥲", codeType: "alert",
-            preview: "https://www.sisterschola.org/", previewType: "link"
+            preview: "https://sisterschola-test.netlify.app/", previewType: "link"
         }
     },
     {
