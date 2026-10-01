@@ -14,7 +14,7 @@
  * @property {LocalizedString} description - Short bold description
  * @property {LocalizedString[]} bullets - Array of bullet point features
  * @property {string[]} tech - Array of technologies used
- * @property {string} category - Match for filter: 'web', 'java', 'embed', 'vm', 'flutter'
+ * @property {string} category - Match for filter: 'ai', 'fullstack', 'web', 'java', 'embed'
  * @property {Object} links - Links to code and preview
  * @property {string} [links.code] - Github or source link
  * @property {string} [links.preview] - Live demo or video link
@@ -28,477 +28,490 @@
  */
 const projectsData = [
     {
-        id: 0,
-        date: "10/2025 - 01/2026",
-        title: { de: "Projekt 0: Geräte Integration", en: "Project 0: Device Integration", fr: "Projet 0 : Intégration de Périphériques" },
-        image: "bilder/prjkt0.png",
-        description: {
-            de: "Teamarbeit an dem Lehr- und Forschungsprojekt 'MICRO' von der THM. Ein Remote Labor für eingebettete Systeme. Vollständiges System mit Online Schnittstelle zur Fernnutzung physische Module(Microcontroller)",
-            en: "Teamwork on the teaching and research project 'MICRO' at THM. A remote lab for embedded systems. Complete system with online interface for remote use of physical modules (microcontrollers)",
-            fr: "Travail d'équipe sur le projet d'enseignement et de recherche 'MICRO' à la THM. Un laboratoire à distance pour systèmes embarqués. Système complet avec interface en ligne pour l'utilisation à distance de modules physiques (microcontrôleurs)"
-        },
-        bullets: [
-            { de: "ein optimiertes Dateiverwaltungssystem bauen", en: "Build an optimized file management system", fr: "Construire un système de gestion de fichiers optimisé" },
-            { de: "Analytics Modul: Nutzerverhalten tracken", en: "Analytics Module: Track user behavior", fr: "Module d'analyse : Suivi du comportement des utilisateurs" },
-            { de: "HTTP: Kommunikationsprotokoll", en: "HTTP: Communication protocol", fr: "HTTP : Protocole de communication" },
-            { de: "Rest-Api: Architekturstil", en: "REST API: Architectural style", fr: "API REST : Style architectural" },
-            { de: "Scrum: Weekly sprint, sprint tagebuch", en: "Scrum: Weekly sprints, sprint diary", fr: "Scrum : Sprints hebdomadaires, journal de sprint" }
-        ],
-        tech: ["GitLab", "Clickhouse", "vue.js", "vuetify", "kotlin", "Docker", "python"],
-        category: "embed web",
-        links: {
-            code: "https://gitlab.com/ag-czekansky/external/swtp-wise-2025-2026", codeType: "link",
-            preview: "demos/demo0.mp4", previewType: "video"
-        }
-    },
-    {
-        id: 1,
-        date: "03/2025 - 03/2025",
-        title: { de: "Projekt 1: Web-App X-Chef", en: "Project 1: Web-App X-Chef", fr: "Projet 1 : App Web X-Chef" },
-        image: "bilder/prjkt1.png",
-        description: {
-            de: "Webanwendung zur Verwaltung von Nutzern und Rezepten namens X-Chef; Erstellung, Kommentieren und Bewertung von Rezepten ermöglicht",
-            en: "Web application for managing users and recipes called X-Chef; enables creating, commenting, and rating recipes",
-            fr: "Application web pour gérer les utilisateurs et les recettes appelée X-Chef ; permet de créer, commenter et noter des recettes"
-        },
-        bullets: [
-            { de: "Server mit Vertx anlegen", en: "Set up server with Vert.x", fr: "Configurer le serveur avec Vert.x" },
-            { de: "Java JDBC mit Java HTTPClient", en: "Java JDBC with Java HTTPClient", fr: "Java JDBC avec Java HTTPClient" },
-            { de: "Cybersecurity-Prevention mit 'Java session' und 'prepared queries'", en: "Cybersecurity prevention using 'Java session' and 'prepared queries'", fr: "Prévention en cybersécurité via 'session Java' et 'requêtes préparées'" },
-            { de: "Maven template Engine für dynamische Seiten", en: "Maven template engine for dynamic pages", fr: "Moteur de templates Maven pour pages dynamiques" }
-        ],
-        tech: ["GitLab", "MariaDB", "apiDoc", "Vert.X", "HTML, CSS & JavaScript"],
-        category: "web java",
-        links: {
-            code: "https://github.com/Clintbr/X-Chef-Webseite", codeType: "link",
-            preview: "bilder/vorschau1.png", previewType: "link"
-        }
-    },
-    {
-        id: 2,
-        date: "12/2024 - 01/2025",
-        title: { de: "Projekt 2: Lvp-Spiel", en: "Project 2: Lvp-Game", fr: "Projet 2 : Jeu Lvp" },
-        image: "bilder/prjkt2.jpg",
-        description: {
-            de: "Vereinfachtes Minecraft mit LiveViewProgramming, 3D Welt mit Farben, Missionen zu erledigen, Implementierung der Funktionalität -Zeitreise",
-            en: "Simplified Minecraft with LiveViewProgramming, 3D world with colors, missions to complete, implementation of time-travel functionality",
-            fr: "Minecraft simplifié avec LiveViewProgramming, monde 3D en couleurs, missions à accomplir, implémentation de la fonctionnalité de voyage dans le temps"
-        },
-        bullets: [
-            { de: "Clerk.java als Backend-Tool mit allen Servereinrichtungen", en: "Clerk.java as backend tool managing server setups", fr: "Clerk.java comme outil backend pour la configuration du serveur" },
-            { de: "Konzeption eines Frontend-Moduls mit Canva Api und JavaScript", en: "Design of a frontend module with Canvas API and JavaScript", fr: "Conception d'un module frontend avec l'API Canvas et JavaScript" },
-            { de: "Modernes Java mit Stream Programming und Schnittstellen", en: "Modern Java with Stream Programming and Interfaces", fr: "Java moderne avec Programmation par flux et Interfaces" }
-        ],
-        tech: ["Java", "HTML, CSS & JavaScript", "Canva API", "Clerk"],
-        category: "web java",
-        links: {
-            code: "https://github.com/Clintbr/LVP-Vereinfachtes-Minecraft", codeType: "link",
-            preview: "bilder/vorschau2.png", previewType: "link"
-        }
-    },
-    {
-        id: 3,
-        date: "11/2024 - 12/2024",
-        title: { de: "Projekt 3: Eingebettetes System", en: "Project 3: Embedded System", fr: "Projet 3 : Système Embarqué" },
-        image: "bilder/prjkt3.jpg",
-        description: {
-            de: "Umsetzung von Kreuzung Ampeln mithilfe von 'Arduino'. Die Ganze entwicklung simuliert im 'wokwi' eine Kreuzung Ampeln, die aktiviert werden kann",
-            en: "Implementation of intersection traffic lights using 'Arduino'. The entire development simulates activated intersection traffic lights in 'Wokwi'",
-            fr: "Implémentation de feux de carrefour utilisant 'Arduino'. Tout le développement simule dans 'Wokwi' des feux de signalisation activés"
-        },
-        bullets: [
-            { de: "Hardwareorientiert", en: "Hardware-oriented", fr: "Orienté matériel" },
-            { de: "Konzeption und Implementierung eines Leitungsmoduls", en: "Concept and implementation of a line module", fr: "Conception et implémentation d'un module de ligne" }
-        ],
-        tech: ["C", "Arduino (C++)", "NodeMCU ESP32", "PlatformIO", "Http", "Json"],
-        category: "embed",
-        links: {
-            code: "https://github.com/Clintbr/-Kreuzung-Ampeln", codeType: "link",
-            preview: "demos/demo3.mp4", previewType: "video"
-        }
-    },
-    {
-        id: 4,
-        date: "05/2025 - 08/2025",
-        title: { de: "Projekt 4: Virtual Machine", en: "Project 4: Virtual Machine", fr: "Projet 4 : Machine Virtuelle" },
-        image: "bilder/prjkt4.jpg",
-        description: {
-            de: "Entwicklung einer NINJA Virtual Machine (Stack Verarbeitung: LIFO) samt Implementierung eines 'Garbage Collectors'",
-            en: "Development of a NINJA Virtual Machine (LIFO stack processing) including the implementation of a Garbage Collector",
-            fr: "Développement d'une Machine Virtuelle NINJA (traitement de pile LIFO) incluant l'implémentation d'un Garbage Collector"
-        },
-        bullets: [
-            { de: "Speicherverwaltung mit Garbage Collection", en: "Memory management with Garbage Collection", fr: "Gestion de la mémoire avec Garbage Collection" },
-            { de: "Konzeption und Implementierung eines Debuggers", en: "Design and implementation of a Debugger", fr: "Conception et implémentation d'un Débogueur" },
-            { de: "Rechenobjekte auf dem Heap", en: "Computational objects on the heap", fr: "Objets de calcul sur le tas" }
-        ],
-        tech: ["C", "Oracle Virtual Box"],
-        category: "vm",
-        links: {
-            code: "https://github.com/Clintbr/Virtual-Machine", codeType: "link",
-            preview: "🖲️Keine Vorschau, nur im Terminal ausführbar", previewType: "alert"
-        }
-    },
-    {
-        id: 5,
-        date: "05/2025 - 09/2025",
-        title: { de: "Projekt 5: Online Homepage einer Klinik", en: "Project 5: Online Homepage of a Clinic", fr: "Projet 5 : Page d'accueil en ligne d'une clinique" },
-        image: "bilder/prjkt5.png",
-        description: {
-            de: "Entwicklung einer ganzen Webseite, als Online-Schnittstelle einer Klinik, die alle Angebote und Bereiche klar und visuell attraktiv darstellt",
-            en: "Development of an entire website as an online interface for a clinic, presenting all offers and areas clearly and visually attractively",
-            fr: "Développement d'un site web complet comme interface en ligne pour une clinique, présentant clairement et de manière attrayante toutes les offres et tous les domaines"
-        },
-        bullets: [
-            { de: "Emailing-System", en: "Emailing system", fr: "Système de messagerie" },
-            { de: "Integration von Übersetzer-Modul", en: "Integration of a translator module", fr: "Intégration d'un module de traduction" },
-            { de: "Hosting", en: "Hosting", fr: "Hébergement" }
-        ],
-        tech: ["HTML, CSS & JavaScript"],
-        category: "web",
-        links: {
-            code: "🖲️Code aus vertraulichen Gründen verborgen🥲", codeType: "alert",
-            preview: "https://sisterschola-test.netlify.app/", previewType: "link"
-        }
-    },
-    {
-        id: 6,
-        date: "10/2025 - heute",
-        title: { de: "Projekt 6: Mein Portfolio", en: "Project 6: My Portfolio", fr: "Projet 6 : Mon Portfolio" },
-        image: "bilder/prjkt6.png",
-        description: {
-            de: "Entwicklung von einem professionellen minimalistischen Portfolio, als Online-Präsentation meines Werdegangs",
-            en: "Development of a professional minimalist portfolio as an online presentation of my career path",
-            fr: "Développement d'un portfolio professionnel minimaliste comme présentation en ligne de mon parcours professionnel"
-        },
-        bullets: [
-            { de: "Emailing-System", en: "Emailing system", fr: "Système de messagerie" },
-            { de: "GitHub als CLoud und Hosting Tool", en: "GitHub as cloud and hosting tool", fr: "GitHub comme outil cloud et d'hébergement" },
-            { de: "Git für Version control", en: "Git for version control", fr: "Git pour le contrôle de version" }
-        ],
-        tech: ["HTML, CSS & JavaScript", "Fontawesome", "GitHub"],
-        category: "web",
-        links: {
-            code: "https://github.com/Clintbr/mein_Portfolio", codeType: "link",
-            preview: "https://clintbr.github.io/mein_Portfolio/", previewType: "link"
-        }
-    },
-    {
-        id: 7, // Adjusting ID to match original order
-        date: "09/2025 - 09/2025",
-        title: { de: "Projekt 7: 3D-Snake Game", en: "Project 7: 3D Snake Game", fr: "Projet 7 : Jeu Snake 3D" },
-        image: "bilder/prjkt7.png",
-        description: {
-            de: "Ein modernes 3D-Snake-Spiel, entwickelt mit Three.js, das ein immersives Spielerlebnis in einer dreidimensionalen Welt mit realistischen Bäumen und Hindernissen bietet.",
-            en: "A modern 3D Snake game developed with Three.js, offering an immersive gaming experience in a three-dimensional world with realistic trees and obstacles.",
-            fr: "Un jeu Snake 3D moderne développé avec Three.js, offrant une expérience immersive dans un monde tridimensionnel avec des arbres et obstacles réalistes."
-        },
-        bullets: [
-            { de: "3D-Spielumgebung: Erlebe Snake in einer vollständig dreidimensionalen Welt", en: "3D Game Environment: Experience Snake in a fully three-dimensional world", fr: "Environnement 3D : Expérimentez Snake dans un monde totalement 3D" },
-            { de: "Realistische Grafik: Detailreiche Bäume und natürliche Umgebung", en: "Realistic Graphics: Detailed trees and natural surroundings", fr: "Graphismes réalistes : Arbres détaillés et environnement naturel" },
-            { de: "Hintergrundmusik: Anpassbar", en: "Background music: Customizable", fr: "Musique de fond : Personnalisable" }
-        ],
-        tech: ["HTML, CSS & JavaScript", "Three.js", "GitHub"],
-        category: "web",
-        links: {
-            code: "https://github.com/Clintbr/Snake-Game", codeType: "link",
-            preview: "https://clintbr.github.io/Snake-Game/", previewType: "link"
-        }
-    },
-    {
-        id: 8,
-        date: "07/2025 - 09/2025",
-        title: { de: "Projekt 8: ClintChat", en: "Project 8: ClintChat", fr: "Projet 8 : ClintChat" },
-        image: "bilder/prjkt8.png",
-        description: {
-            de: "Eine moderne, WhatsApp-inspirierte Chat-Anwendung, die mit HTML, CSS und JavaScript implementiert wurde.",
-            en: "A modern, WhatsApp-inspired chat application implemented with HTML, CSS, and JavaScript.",
-            fr: "Une application de chat moderne inspirée de WhatsApp, implémentée avec HTML, CSS et JavaScript."
-        },
-        bullets: [
-            { de: "Moderne Benutzeroberfläche: An WhatsApp angelehntes Design mit dunklem Modus", en: "Modern UI: WhatsApp-inspired design with dark mode", fr: "Interface moderne : Design inspiré de WhatsApp avec mode sombre" },
-            { de: "Responsive Design: Optimiert für Desktop und mobile Geräte", en: "Responsive Design: Optimized for desktop and mobile devices", fr: "Design réactif : Optimisé pour les ordinateurs et les appareils mobiles" },
-            { de: "Echtzeit-Messaging: Nachrichten werden sofort angezeigt", en: "Real-time messaging: Messages appear instantly", fr: "Messagerie en temps réel : Les messages s'affichent instantanément" }
-        ],
-        tech: ["HTML, CSS & JavaScript", "Storage Funktion", "GitHub"],
-        category: "web",
-        links: {
-            code: "https://github.com/Clintbr/ClintChat", codeType: "link",
-            preview: "https://clintbr.github.io/ClintChat/", previewType: "link"
-        }
-    },
-    {
-        id: 9,
-        date: "09/2025 - 09/2025",
-        title: { de: "Projekt 9: WG TaskManager", en: "Project 9: Flatshare TaskManager", fr: "Projet 9 : Gestionnaire de Tâches pour Colocation" },
-        image: "bilder/prjkt9.png",
-        description: {
-            de: "Eine moderne, benutzerfreundliche Webanwendung zur Verwaltung von Aufgaben in Wohngemeinschaften.",
-            en: "A modern, user-friendly web application for managing tasks in shared apartments/flatshares.",
-            fr: "Une application web moderne et conviviale pour la gestion des tâches en colocation."
-        },
-        bullets: [
-            { de: "Intelligente Filter: Filtern Sie Aufgaben nach Status, Mitbewohner oder Kategorie", en: "Smart filters: Filter tasks by status, flatmate, or category", fr: "Filtres intelligents : Filtrez les tâches par statut, colocataire ou catégorie" },
-            { de: "Dashboard: Übersichtliche Statistiken und anstehende Aufgaben", en: "Dashboard: Clear statistics and upcoming tasks", fr: "Tableau de bord : Statistiques claires et tâches à venir" },
-            { de: "Benachrichtigungen: Erinnerungen für überfällige und bald fällige Aufgaben", en: "Notifications: Reminders for overdue and upcoming tasks", fr: "Notifications : Rappels pour les tâches en retard et à venir" }
-        ],
-        tech: ["HTML, CSS & JavaScript", "Storage Funktion", "GitHub"],
-        category: "web",
-        links: {
-            code: "https://github.com/Clintbr/WG-Taskmanager", codeType: "link",
-            preview: "https://clintbr.github.io/WG-Taskmanager/", previewType: "link"
-        }
-    },
-    {
-        id: 10,
-        date: "11/2025 - 01/2026",
-        title: { de: "Projekt 10: Secures Notes", en: "Project 10: Secure Notes", fr: "Projet 10 : Notes Sécurisées" },
-        image: "bilder/prjkt10.png",
-        description: {
-            de: "Moderne, webbasierte Plattform zur sicheren Verwaltung persönlicher und geteilter Notizen. Fokus auf Cybersecurity, Containerisierung und Clean Code",
-            en: "Modern web-based platform for secure management of personal and shared notes. Focus on cybersecurity, containerization, and clean code",
-            fr: "Plateforme web moderne pour la gestion sécurisée de notes personnelles et partagées. Axé sur la cybersécurité, la conteneurisation et un code propre"
-        },
-        bullets: [
-            { de: "Containerisierung und Deployment mit Docker", en: "Containerization and deployment with Docker", fr: "Conteneurisation et déploiement avec Docker" },
-            { de: "Implementierung von Sicherheitsmechanismen: 2FA via E-Mail, JWT Tokens, RLS Policies, DOMPurify & Regex-Validierung", en: "Security implementation: 2FA via Email, JWT Tokens, RLS Policies, DOMPurify & Regex validation", fr: "Implémentation de sécurité : 2FA par E-mail, Jetons JWT, Politiques RLS, DOMPurify & Validation Regex" },
-            { de: "Markdown Parsing durch Marked.js für flexible Inhaltsdarstellung", en: "Markdown Parsing with Marked.js for flexible content display", fr: "Analyse Markdown avec Marked.js pour un affichage de contenu flexible" }
-        ],
-        tech: ["Vue.js 3", "Spring Boot, Maven & Java", "Supabase (PostgreSQL)", "Docker", "Marked.js"],
-        category: "java",
-        links: {
-            code: "https://github.com/SSE-Projekt/SSE_Repo/tree/main?tab=readme-ov-file", codeType: "link",
-            preview: "bilder/prjkt10.png", previewType: "link"
-        }
-    },
-    {
-        id: 11,
-        date: "11/2025 - 02/2026",
-        title: { de: "Projekt 11: MC-Trainer", en: "Project 11: MC-Trainer", fr: "Projet 11 : MC-Trainer" },
-        image: "bilder/prjkt11.png",
-        description: {
-            de: "Plattformübergreifende mobile App mit Flutter: Fokus auf sauberes State-Management, Authentifizierung, Storage für 'Multi Choice Training'",
-            en: "Cross-platform mobile app using Flutter: Focus on clean state management, authentication, and storage for 'Multiple Choice Training'",
-            fr: "Application mobile multiplateforme avec Flutter : Accent sur la gestion d'état propre, l'authentification et le stockage pour 'Multi Choice Training'"
-        },
-        bullets: [
-            { de: "abgeschlossene Module können geteilt werden(durch whatsapp oder Gmail zum Beispiel)", en: "Completed modules can be shared (e.g., via WhatsApp or Gmail)", fr: "Les modules terminés peuvent être partagés (ex: via WhatsApp ou Gmail)" },
-            { de: "Lernmodus: Karte mit Text und 4–6 Antworten, mind. eine richtig", en: "Learning mode: Card with text and 4-6 answers, at least one correct", fr: "Mode d'apprentissage : Carte avec texte et 4 à 6 réponses, dont au moins une correcte" },
-            { de: "Weitere Module von einem Server importierbar", en: "Additional modules can be imported from a server", fr: "Possibilité d'importer d'autres modules depuis un serveur" }
-        ],
-        tech: ["Dart & Flutter SDK", "supabase_flutter", "Provider & go_router", "image_picker"],
-        category: "flutter",
-        links: {
-            code: "https://git.thm.de/xd-praktikum/ws-25/mc-trainer-kami", codeType: "link",
-            preview: "bilder/prjkt11.png", previewType: "link"
-        }
-    },
-    {
-        id: 12,
-        date: "02/2026 - 03/2026",
+        id: 15,
+        date: "08/2026 – 09/2026",
         title: {
-            de: "Projekt 12: Enterprise Ticket Management System",
-            en: "Project 12: Enterprise Ticket Management System",
-            fr: "Projet 12 : Système de Gestion de Tickets Enterprise"
+            de: "AI Mail Manager – Intelligente E-Mail-Analyse",
+            en: "AI Mail Manager – Intelligent Email Assistant",
+            fr: "AI Mail Manager – Assistant E-mail Intelligent"
         },
-        image: "bilder/prjkt12.png",
+        image: "bilder/prjkt_15.png",
         description: {
-            de: "Ein leistungsfähiges Full-Stack-Ticket-Management-System zur Verwaltung von Supportanfragen und zur Optimierung von Support-Workflows.",
-            en: "A high-performance full-stack ticket management system designed to manage support requests and optimize support workflows.",
-            fr: "Un système complet de gestion de tickets conçu pour gérer les demandes de support et optimiser les flux de travail du support."
+            de: "KI-gestützte Full-Stack-Software zur automatischen E-Mail-Klassifizierung, Priorisierung und Antwortgenerierung mit Google Gemini und Gmail API.",
+            en: "AI-powered full-stack application for automated email classification, prioritization, and draft generation using Google Gemini and Gmail API.",
+            fr: "Application full-stack alimentée par l'IA pour la classification automatique, la priorisation et la rédaction assistée d'e-mails via Google Gemini et l'API Gmail."
         },
         bullets: [
             {
-                de: "Support-Dashboard: Verwaltung des gesamten Ticket-Lebenszyklus mit rollenbasierter Sicht für USER, SUPPORT und ADMIN",
-                en: "Support dashboard: Manage the entire ticket lifecycle with role-based views for USER, SUPPORT and ADMIN",
-                fr: "Tableau de bord de support : Gestion complète du cycle de vie des tickets avec vues basées sur les rôles USER, SUPPORT et ADMIN"
+                de: "Human-in-the-Loop-Workflow: Generierte Antworten werden vor dem Versand vom Nutzer transparent geprüft und editiert.",
+                en: "Human-in-the-Loop Workflow: AI-generated replies are reviewed and edited before dispatching.",
+                fr: "Workflow Human-in-the-Loop : Contrôle et édition par l'utilisateur des réponses générées par l'IA."
             },
             {
-                de: "Automatische Priorisierung: Backend-Logik analysiert Ticketinhalt, Schlüsselwörter und Zeitfaktoren zur Prioritätsbewertung",
-                en: "Automatic prioritization: Backend logic analyzes ticket content, keywords, and time factors to suggest priorities",
-                fr: "Priorisation automatique : Logique backend analysant le contenu des tickets, mots-clés et facteurs temporels"
+                de: "Sichere OAuth 2.0 Authentifizierung und direkte Gmail API Anbindung für Mail-Synchronisation.",
+                en: "Secure OAuth 2.0 authentication and direct Gmail API integration for mailbox sync.",
+                fr: "Authentification OAuth 2.0 sécurisée et intégration directe de l'API Gmail."
             },
             {
-                de: "Admin-Management: Benutzer- und Rollenverwaltung mit Drag-and-Drop sowie JWT-basierter Zugriffskontrolle",
-                en: "Admin management: User and role management with drag-and-drop and JWT-based access control",
-                fr: "Gestion administrateur : Gestion des utilisateurs et des rôles avec glisser-déposer et contrôle d'accès JWT"
+                de: "Automatische Sentiment-, Kernaussagen- und Dringlichkeitsbewertung durch Google Gemini.",
+                en: "Automated sentiment, key takeaways, and urgency evaluation via Google Gemini.",
+                fr: "Évaluation automatique du sentiment, des points clés et de l'urgence par Google Gemini."
             },
             {
-                de: "Business Analytics: Visualisierung von Ticket-Trends und Systemmetriken über ein interaktives Dashboard",
-                en: "Business analytics: Visualization of ticket trends and system metrics through an interactive dashboard",
-                fr: "Analyse métier : Visualisation des tendances des tickets et des métriques système via un tableau de bord interactif"
+                de: "Moderne REST-Architektur mit Java 21, Spring Boot 3 und reaktivem React / TypeScript Frontend.",
+                en: "Modern REST architecture with Java 21, Spring Boot 3, and responsive React / TypeScript frontend.",
+                fr: "Architecture REST moderne avec Java 21, Spring Boot 3 et interface réactive React / TypeScript."
             }
         ],
-        tech: [
-            "Java 21",
-            "Spring Boot 3",
-            "Spring Security (JWT & OAuth2)",
-            "React 18",
-            "Tailwind CSS",
-            "PostgreSQL",
-            "Recharts"
-        ],
-        category: "fullstack java ai",
+        tech: ["Java 21", "Spring Boot 3", "Spring Security", "Google Gemini", "Gmail API", "OAuth 2.0", "React", "TypeScript", "Tailwind CSS"],
+        category: "ai fullstack java web",
         links: {
-            code: "https://github.com/Clintbr/I-Tickets-Management", codeType: "link",
-            preview: "https://ticketsyst.netlify.app/", previewType: "link"
-        }
-    },
-    {
-        id: 13,
-        date: "02/2026 - 02/2026",
-        title: {
-            de: "Projekt 13: CV Builder",
-            en: "Project 13: CV Builder",
-            fr: "Projet 13 : Générateur de CV"
-        },
-        image: "bilder/prjkt13.png",
-        description: {
-            de: "Eine moderne, performante Webanwendung zur Erstellung professioneller Lebensläufe mit Echtzeit-Vorschau und PDF-Export.",
-            en: "A modern and high-performance web application for creating professional resumes with real-time preview and PDF export.",
-            fr: "Une application web moderne et performante permettant de créer des CV professionnels avec aperçu en temps réel et export PDF."
-        },
-        bullets: [
-            {
-                de: "Echtzeit-Editor: Bearbeitung von persönlichen Daten, Erfahrung, Ausbildung und Fähigkeiten mit sofortiger Vorschau",
-                en: "Real-time editor: Edit personal information, experience, education, and skills with instant preview",
-                fr: "Éditeur en temps réel : modification des informations personnelles, expériences, formations et compétences avec aperçu instantané"
-            },
-            {
-                de: "Modernes Design: Futuristisches Dark-Theme mit Animationen, Glow-Effekten und professionellem Layout",
-                en: "Modern design: Futuristic dark theme with animations, glow effects, and a clean professional layout",
-                fr: "Design moderne : thème sombre futuriste avec animations et mise en page professionnelle"
-            },
-            {
-                de: "PDF-Export: Präziser Export von Lebensläufen im A4-Format mit optimiertem Layout",
-                en: "PDF export: High-quality resume export in A4 format with optimized layout",
-                fr: "Export PDF : export précis des CV au format A4 avec mise en page optimisée"
-            },
-            {
-                de: "Anpassbare Oberfläche: Dynamische Farbthemen und resizable Editor-Sidebar",
-                en: "Custom interface: Dynamic color themes and resizable editor sidebar",
-                fr: "Interface personnalisable : thèmes de couleurs dynamiques et panneau d'édition redimensionnable"
-            }
-        ],
-        tech: [
-            "React",
-            "Vite",
-            "Tailwind CSS",
-            "react-to-print",
-            "JavaScript",
-            "GitHub Pages"
-        ],
-        category: "web",
-        links: {
-            code: "https://github.com/Clintbr/CV_Maker", codeType: "link",
-            preview: "https://clintbr.github.io/CV_Maker/", previewType: "link"
+            code: "https://github.com/Clintbr/mymailai",
+            codeType: "link",
+            preview: "https://mymailai.onrender.com/",
+            previewType: "link"
         }
     },
     {
         id: 14,
-        date: "04/2026 - 06/2026",
+        date: "04/2026 – 06/2026",
         title: {
-            de: "Projekt 14: multilinguales RAG",
-            en: "Project 14: multilingual RAG",
-            fr: "Projet 14: RAG multilingue"
+            de: "Crosslingual RAG Research – Lokale KI-Pipeline",
+            en: "Crosslingual RAG Research – Local AI Pipeline",
+            fr: "Crosslingual RAG Research – Pipeline IA Locale"
         },
         image: "bilder/prjkt_14.png",
         description: {
-            de: "Eine lokale, performante und sprachübergreifende KI-Anwendung zum Testen von multilinguale Strategien für Retrieval Augmented Generation",
-            en: "A local and high-performance AI-Application for testing multilingual strategies for Retrieval Augmented Generation.",
-            fr: "Une application IA moderne et performante permettant de tester localement des stratégies de génération augmentée multilingue par récupération d’informations."
+            de: "Forschungsprojekt zur Implementierung und empirischen Evaluation mehrsprachiger Retrieval-Augmented Generation (RAG) auf lokalen LLMs ohne Cloud-Abhängigkeit.",
+            en: "Research project implementing and benchmarking multilingual Retrieval-Augmented Generation (RAG) using local LLMs without external cloud APIs.",
+            fr: "Projet de recherche implémentant et évaluant des stratégies RAG multilingues sur des LLMs locaux sans dépendance aux API cloud."
         },
         bullets: [
             {
-                de: "Entwicklung einer sprachübergreifenden RAG-Pipeline für Anfragen und Dokumente in mehreren Sprachen.",
-                en: "Development of a cross-lingual RAG pipeline for queries and documents in multiple languages.",
-                fr: "Développement d’une pipeline RAG multilingue pour des requêtes et des documents dans plusieurs langues."
+                de: "Crosslinguale Suche: Anfragen und Dokumente in Deutsch, Englisch und Französisch präzise abgleichen.",
+                en: "Cross-lingual search: Seamlessly match queries and documents across German, English, and French.",
+                fr: "Recherche multilingue : Alignement précis des requêtes et documents en allemand, anglais et français."
             },
             {
-                de: "Implementierung und Vergleich verschiedener Strategien wie MonoRAG, MultiRAG und CrossRAG.",
-                en: "Implementation and comparison of different strategies such as MonoRAG, MultiRAG and CrossRAG.",
-                fr: "Implémentation et comparaison de différentes stratégies telles que MonoRAG, MultiRAG et CrossRAG."
+                de: "Strategievergleich: Systematische Analyse von MonoRAG, MultiRAG und CrossRAG Architekturen.",
+                en: "Strategy comparison: Systematic evaluation of MonoRAG, MultiRAG, and CrossRAG architectures.",
+                fr: "Comparaison des stratégies : Analyse systématique des architectures MonoRAG, MultiRAG et CrossRAG."
             },
             {
-                de: "Nutzung lokaler Large Language Models und Embedding-Modelle ohne externe Cloud-APIs.",
-                en: "Use of local Large Language Models and embedding models without external cloud APIs.",
-                fr: "Utilisation de grands modèles de langage et de modèles d’embedding locaux sans recours à des API cloud externes."
+                de: "Vektordatenbank Qdrant und state-of-the-art Embedding-Modelle (BGE-M3) lokal betrieben.",
+                en: "Qdrant vector database and state-of-the-art embeddings (BGE-M3) operated locally.",
+                fr: "Base de données vectorielle Qdrant et modèles d'embedding (BGE-M3) exécutés localement."
             },
             {
-                de: "Analyse der Retrieval-Qualität und der Leistungsfähigkeit der verschiedenen crosslingualen Ansätze.",
-                en: "Analysis of retrieval quality and performance across different cross-lingual approaches.",
-                fr: "Analyse de la qualité du retrieval et des performances des différentes approches multilingues."
+                de: "Qualitäts-Benchmarking mit DeepEval, NumPy, Pandas und Visualisierung mit Matplotlib.",
+                en: "Quality benchmarking using DeepEval, NumPy, Pandas, and visualization with Matplotlib.",
+                fr: "Benchmarking de qualité avec DeepEval, NumPy, Pandas et visualisations Matplotlib."
             }
         ],
-        tech: [
-            "Python",
-            "JSON",
-            "Qdrant",
-            "Mongodb",
-            "ragas",
-            "Numpy, Matplotlib",
-            "pandas, seaborn"
-        ],
+        tech: ["Python", "Ollama", "Qdrant", "BGE-M3", "RAG", "LLMs", "DeepEval", "NumPy", "Pandas", "Matplotlib"],
         category: "ai",
         links: {
-            code: "https://github.com/Clintbr/Crosslingual-RAG", codeType: "link",
-            preview: "https://github.com/Clintbr/Crosslingual-RAG", previewType: "link"
+            code: "https://github.com/Clintbr/Crosslingual-RAG",
+            codeType: "link",
+            preview: "https://github.com/Clintbr/Crosslingual-RAG",
+            previewType: "link"
         }
     },
     {
-        id: 15,
-        date: "08/2026 - 09/2026",
+        id: 12,
+        date: "03/2026 – heute",
         title: {
-            de: "Projekt 15: AI Mail Manager",
-            en: "Project 15: AI Mail Manager",
-            fr: "Projet 15 : AI Mail Manager"
+            de: "Enterprise Ticket Management System",
+            en: "Enterprise Ticket Management System",
+            fr: "Système de Gestion de Tickets Enterprise"
         },
-        image: "bilder/prjkt_15.png",
+        image: "bilder/prjkt12.png",
         description: {
-            de: "Eine KI-gestützte Full-Stack-Anwendung zur Analyse, Priorisierung und Bearbeitung von E-Mails mit Google Gemini und Gmail.",
-            en: "An AI-powered full-stack application for analyzing, prioritizing and managing emails using Google Gemini and Gmail.",
-            fr: "Une application full-stack alimentée par l’IA pour analyser, prioriser et gérer les e-mails avec Google Gemini et Gmail."
+            de: "Hochperformantes Full-Stack Support- und Ticket-System mit rollenbasierter Authentifizierung (RBAC), Analytics und KI-Chatbot.",
+            en: "High-performance full-stack ticket and support management system with role-based access control (RBAC), analytics, and an AI chatbot.",
+            fr: "Système de gestion de tickets d'assistance complet avec contrôle d'accès basé sur les rôles (RBAC), tableau de bord analytique et chatbot IA."
         },
         bullets: [
             {
-                de: "Entwicklung einer Full-Stack-Anwendung mit Java, Spring Boot, React und TypeScript.",
-                en: "Development of a full-stack application using Java, Spring Boot, React and TypeScript.",
-                fr: "Développement d’une application full-stack avec Java, Spring Boot, React et TypeScript."
+                de: "Rollenbasierte Rechteverwaltung: Separate Workflows und Dashboards für USER, SUPPORT und ADMIN.",
+                en: "Role-based access control: Dedicated workflows and views for USER, SUPPORT, and ADMIN.",
+                fr: "Gestion des droits par rôles : Vues et tableaux de bord dédiés pour USER, SUPPORT et ADMIN."
             },
             {
-                de: "Integration der Gmail API zur Verwaltung von E-Mails sowie Google Gemini zur KI-gestützten Analyse und Antwortgenerierung.",
-                en: "Integration of the Gmail API for email management and Google Gemini for AI-powered analysis and reply generation.",
-                fr: "Intégration de l’API Gmail pour la gestion des e-mails et de Google Gemini pour l’analyse et la génération de réponses assistées par IA."
+                de: "KI-gestützter Chatbot zur automatisierten Ersthilfe und Ticket-Kategorisierung.",
+                en: "AI-powered chatbot for automated first-level support and issue categorization.",
+                fr: "Chatbot alimenté par l'IA pour l'assistance de premier niveau et le tri des tickets."
             },
             {
-                de: "Automatische Klassifizierung von E-Mails nach Kategorie, Priorität, Stimmung, Kernaussagen und erforderlichen Aktionen.",
-                en: "Automatic classification of emails by category, priority, sentiment, key takeaways and required actions.",
-                fr: "Classification automatique des e-mails selon leur catégorie, priorité, sentiment, points clés et actions requises."
+                de: "Sichere JWT-Authentifizierung, PostgreSQL Persistenz und Spring Security Absicherung.",
+                en: "Secure JWT authentication, PostgreSQL persistence, and Spring Security defense.",
+                fr: "Authentification JWT sécurisée, persistance PostgreSQL et sécurité Spring Security."
             },
             {
-                de: "Implementierung eines Human-in-the-Loop-Workflows, bei dem KI-generierte Antworten vor dem Versand vom Benutzer überprüft und bearbeitet werden.",
-                en: "Implementation of a human-in-the-loop workflow where AI-generated replies are reviewed and edited by the user before being sent.",
-                fr: "Mise en place d’un workflow Human-in-the-Loop permettant à l’utilisateur de vérifier et modifier les réponses générées par l’IA avant leur envoi."
+                de: "Business Analytics Dashboard mit Recharts zur Visualisierung von Support-Metriken.",
+                en: "Business analytics dashboard with Recharts to visualize support performance metrics.",
+                fr: "Tableau de bord d'analyse avec Recharts pour visualiser les métriques de support."
             }
         ],
-        tech: [
-            "Java 21",
-            "Spring Boot",
-            "Spring Security",
-            "React",
-            "TypeScript",
-            "Gmail API",
-            "Google Gemini",
-            "OAuth 2.0",
-            "Tailwind CSS",
-            "TanStack Query"
-        ],
-        category: "fullstack java ai",
+        tech: ["Java 21", "Spring Boot 3", "Spring Security", "React 18", "Tailwind CSS", "PostgreSQL", "LLM", "Recharts"],
+        category: "fullstack java ai web",
         links: {
-            code: "https://github.com/Clintbr/mymailai", codeType: "link",
-            preview: "https://mymailai.onrender.com/", previewType: "link"
+            code: "https://github.com/Clintbr/I-Tickets-Management",
+            codeType: "link",
+            preview: "https://ticketsyst.netlify.app/",
+            previewType: "link"
         }
     },
+    {
+        id: 13,
+        date: "02/2026 – 02/2026",
+        title: {
+            de: "CV Builder – Interaktiver Lebenslauf-Editor",
+            en: "CV Builder – Interactive Resume Maker",
+            fr: "CV Builder – Créateur de CV Interactif"
+        },
+        image: "bilder/prjkt13.png",
+        description: {
+            de: "Moderne, responsive Webanwendung zur dynamischen Erstellung professioneller Lebensläufe mit Sofort-Vorschau und pixelgenauem PDF-Export.",
+            en: "Modern and responsive web application for creating professional resumes with real-time preview and pixel-perfect PDF export.",
+            fr: "Application web moderne et réactive pour concevoir des CV professionnels avec prévisualisation instantanée et export PDF haute précision."
+        },
+        bullets: [
+            {
+                de: "Echtzeit-Editor für persönliche Angaben, Berufserfahrung, Ausbildung und Skills.",
+                en: "Real-time editor for personal info, experience, education, and technical skills.",
+                fr: "Éditeur en temps réel des informations personnelles, expériences, diplômes et compétences."
+            },
+            {
+                de: "Futuristisches Dark-Theme mit Glow-Effekten, Farbpaletten-Auswahl und flexibler Seitenleiste.",
+                en: "Futuristic dark theme with glow accents, dynamic color presets, and customizable sidebar.",
+                fr: "Thème sombre moderne avec effets de lueur, palettes dynamiques et barre latérale ajustable."
+            },
+            {
+                de: "Druckfertiger A4-Export mit sauberem CSS-Page-Break Handling via react-to-print.",
+                en: "Print-ready A4 PDF export with optimized CSS page-break rules via react-to-print.",
+                fr: "Export PDF A4 haute définition optimisé pour l'impression."
+            }
+        ],
+        tech: ["React", "Vite", "Tailwind CSS", "react-to-print", "JavaScript"],
+        category: "web",
+        links: {
+            code: "https://github.com/Clintbr/CV_Maker",
+            codeType: "link",
+            preview: "https://clintbr.github.io/CV_Maker/",
+            previewType: "link"
+        }
+    },
+    {
+        id: 10,
+        date: "11/2025 – 01/2026",
+        title: {
+            de: "Secure Notes – Sichere Cloud-Notizen",
+            en: "Secure Notes – Cloud Note Management",
+            fr: "Secure Notes – Plateforme de Notes Sécurisée"
+        },
+        image: "bilder/prjkt10.png",
+        description: {
+            de: "Webbasierte Plattform zur verschlüsselten Speicherung und Verwaltung von Notizen mit 2-Faktor-Authentifizierung (2FA) und Docker-Deployment.",
+            en: "Web application for encrypted note storage and sharing featuring 2-factor authentication (2FA) and Dockerized deployment.",
+            fr: "Plateforme web sécurisée pour la gestion de notes chiffrées avec authentification à deux facteurs (2FA) et conteneurisation Docker."
+        },
+        bullets: [
+            {
+                de: "Cybersecurity First: 2FA via E-Mail, JWT Tokens, RLS Policies und XSS-Schutz via DOMPurify.",
+                en: "Cybersecurity first: 2FA via email, JWT tokens, Supabase RLS policies, and DOMPurify sanitization.",
+                fr: "Sécurité renforcée : 2FA par e-mail, jetons JWT, politiques RLS et protection XSS."
+            },
+            {
+                de: "Containerisierung mit Docker für reproduzierbares Deployment.",
+                en: "Full containerization using Docker for reproducible deployment.",
+                fr: "Conteneurisation complète avec Docker pour un déploiement fiable."
+            },
+            {
+                de: "Rich-Text Markdown-Editor mit Marked.js für strukturierte Notizen.",
+                en: "Rich-text Markdown editor with Marked.js for structured note taking.",
+                fr: "Éditeur Markdown riche avec Marked.js pour un rendu flexible."
+            }
+        ],
+        tech: ["Vue.js 3", "Spring Boot", "Java", "Supabase (PostgreSQL)", "Docker", "Marked.js"],
+        category: "fullstack java web",
+        links: {
+            code: "https://github.com/SSE-Projekt/SSE_Repo/tree/main?tab=readme-ov-file",
+            codeType: "link",
+            preview: "bilder/prjkt10.png",
+            previewType: "link"
+        }
+    },
+    {
+        id: 11,
+        date: "11/2025 – 02/2026",
+        title: {
+            de: "MC-Trainer – Mobile Lernplattform",
+            en: "MC-Trainer – Mobile Learning App",
+            fr: "MC-Trainer – Application Mobile d'Apprentissage"
+        },
+        image: "bilder/prjkt11.png",
+        description: {
+            de: "Plattformübergreifende mobile App für interaktives Multiple-Choice-Lernen mit Modul-Sharing und Cloud-Synchronisation.",
+            en: "Cross-platform mobile app for interactive multiple-choice training with module sharing and cloud sync.",
+            fr: "Application mobile multiplateforme pour l'apprentissage par QCM avec partage de modules et synchronisation cloud."
+        },
+        bullets: [
+            {
+                de: "Lernmodus mit dynamischen Multiple-Choice-Fragen und Fortschritts-Tracking.",
+                en: "Learning mode featuring dynamic question cards and performance tracking.",
+                fr: "Mode d'apprentissage avec cartes de questions dynamiques et suivi des scores."
+            },
+            {
+                de: "Modul-Export & Sharing über Messenger-Dienste (WhatsApp, E-Mail).",
+                en: "Module export & direct sharing via messaging channels (WhatsApp, Email).",
+                fr: "Export et partage direct des modules via applications de messagerie."
+            },
+            {
+                de: "Saubere Flutter-Architektur mit Provider State-Management und Supabase Backend.",
+                en: "Clean Flutter architecture with Provider state management and Supabase backend.",
+                fr: "Architecture Flutter soignée avec Provider et backend Supabase."
+            }
+        ],
+        tech: ["Dart & Flutter SDK", "Supabase", "Provider", "go_router"],
+        category: "fullstack web",
+        links: {
+            code: "https://git.thm.de/xd-praktikum/ws-25/mc-trainer-kami",
+            codeType: "link",
+            preview: "bilder/prjkt11.png",
+            previewType: "link"
+        }
+    },
+    {
+        id: 0,
+        date: "10/2025 – 01/2026",
+        title: {
+            de: "Projekt MICRO – THM Remote Labor",
+            en: "Project MICRO – THM Remote Lab",
+            fr: "Projet MICRO – Laboratoire Distant THM"
+        },
+        image: "bilder/prjkt0.png",
+        description: {
+            de: "Mitarbeit am universitären Lehr- und Forschungsprojekt 'MICRO' der THM für den Fernzugriff auf eingebettete Mikrocontroller-Systeme.",
+            en: "Collaboration on the THM university research project 'MICRO' enabling remote access to embedded microcontroller testbeds.",
+            fr: "Participation au projet de recherche universitaire 'MICRO' de la THM pour le contrôle à distance de microcontrôleurs."
+        },
+        bullets: [
+            {
+                de: "Optimiertes Dateiverwaltungs- und Upload-System für Hex-Binaries.",
+                en: "Optimized file management and upload pipeline for firmware binaries.",
+                fr: "Système optimisé de gestion et téléversement de fichiers binaires."
+            },
+            {
+                de: "Analytics Modul zur Erfassung und Auswertung von Nutzeraktivitäten.",
+                en: "Analytics module for tracking and evaluating real-time user behavior.",
+                fr: "Module analytique pour le suivi de l'activité des utilisateurs."
+            },
+            {
+                de: "Agile Entwicklung im Scrum-Team mit wöchentlichen Sprints.",
+                en: "Agile engineering within a Scrum team with weekly sprints.",
+                fr: "Développement agile en équipe Scrum avec sprints hebdomadaires."
+            }
+        ],
+        tech: ["Vue.js", "Vuetify", "Kotlin", "Docker", "Python", "ClickHouse", "GitLab"],
+        category: "embed web fullstack",
+        links: {
+            code: "https://gitlab.com/ag-czekansky/external/swtp-wise-2025-2026",
+            codeType: "link",
+            preview: "demos/demo0.mp4",
+            previewType: "video"
+        }
+    },
+    {
+        id: 5,
+        date: "02/2025 – 03/2026",
+        title: {
+            de: "SisterSchola Klinik – Webportal",
+            en: "SisterSchola Clinic – Web Portal",
+            fr: "SisterSchola Clinique – Portail Web"
+        },
+        image: "bilder/prjkt5.png",
+        description: {
+            de: "Offizieller Webauftritt für die Klinik SisterSchola in Darmstadt mit mehrsprachiger Navigation und integriertem Patienten-Kontakt-System.",
+            en: "Official web portal for SisterSchola Clinic in Darmstadt featuring multilingual navigation and integrated inquiry services.",
+            fr: "Portail web officiel de la clinique SisterSchola à Darmstadt avec support multilingue et système de contact pour patients."
+        },
+        bullets: [
+            {
+                de: "Zuverlässiger SMTP-Mailservice für Terminanfragen und Patientenkontakt.",
+                en: "Reliable SMTP email service for appointments and direct patient inquiries.",
+                fr: "Service e-mail SMTP sécurisé pour la prise de rendez-vous et messages."
+            },
+            {
+                de: "Mehrsprachiges Lokalisierungsmodul und optimierte mobile Responsivität.",
+                en: "Multilingual localization engine and highly optimized mobile responsiveness.",
+                fr: "Module de localisation multilingue et design entièrement responsive."
+            }
+        ],
+        tech: ["JavaScript", "HTML5", "CSS3", "SQL", "Supabase", "Git"],
+        category: "web",
+        links: {
+            code: "Code aus vertraulichen Gründen geschützt",
+            codeType: "alert",
+            preview: "https://sisterschola-test.netlify.app/",
+            previewType: "link"
+        }
+    },
+    {
+        id: 7,
+        date: "09/2025 – 09/2025",
+        title: {
+            de: "3D Snake Game – Three.js Spielwelt",
+            en: "3D Snake Game – Three.js Virtual World",
+            fr: "3D Snake Game – Monde Virtuel Three.js"
+        },
+        image: "bilder/prjkt7.png",
+        description: {
+            de: "Immersives 3D-Browserspiel auf Basis von Three.js mit dreidimensionaler Spielumgebung, Hindernissen und Soundeffekten.",
+            en: "Immersive 3D browser game powered by Three.js with realistic 3D obstacles, natural surroundings, and customizable audio.",
+            fr: "Jeu 3D immersif développé avec Three.js proposant un univers tridimensionnel avec obstacles et effets sonores."
+        },
+        bullets: [
+            {
+                de: "3D-Kameraführung, Kollisionserkennung und dynamische Beleuchtung.",
+                en: "3D camera mechanics, custom collision detection, and dynamic lighting.",
+                fr: "Contrôle de caméra 3D, détection de collisions et éclairage dynamique."
+            }
+        ],
+        tech: ["JavaScript", "Three.js", "HTML5", "CSS3"],
+        category: "web",
+        links: {
+            code: "https://github.com/Clintbr/Snake-Game",
+            codeType: "link",
+            preview: "https://clintbr.github.io/Snake-Game/",
+            previewType: "link"
+        }
+    },
+    {
+        id: 8,
+        date: "07/2025 – 09/2025",
+        title: {
+            de: "ClintChat – Web Messenger",
+            en: "ClintChat – Web Messenger",
+            fr: "ClintChat – Messagerie Web"
+        },
+        image: "bilder/prjkt8.png",
+        description: {
+            de: "Echtzeit-inspirierte Web-Chat-Anwendung im modernen Dark Mode Design mit lokaler Nachrichtenspeicherung.",
+            en: "Modern instant messenger web application with dark-mode aesthetic and local storage persistence.",
+            fr: "Application de messagerie instantanée avec thème sombre élégant et persistance locale des messages."
+        },
+        bullets: [
+            {
+                de: "Moderne Chat-Oberfläche im Messenger-Stil.",
+                en: "Modern messaging UI with instant feedback.",
+                fr: "Interface moderne inspirée des messageries actuelles."
+            }
+        ],
+        tech: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
+        category: "web",
+        links: {
+            code: "https://github.com/Clintbr/ClintChat",
+            codeType: "link",
+            preview: "https://clintbr.github.io/ClintChat/",
+            previewType: "link"
+        }
+    },
+    {
+        id: 1,
+        date: "03/2025 – 03/2025",
+        title: {
+            de: "X-Chef – Community Rezeptplattform",
+            en: "X-Chef – Recipe Community Platform",
+            fr: "X-Chef – Plateforme de Recettes"
+        },
+        image: "bilder/prjkt1.png",
+        description: {
+            de: "Webanwendung mit Java Vert.x Backend zur Verwaltung, Bewertung und Kommentierung von Kochrezepten.",
+            en: "Web application featuring a Java Vert.x backend for recipe creation, ratings, and user comments.",
+            fr: "Application web avec backend Java Vert.x pour la gestion, la notation et le partage de recettes."
+        },
+        bullets: [
+            {
+                de: "Vert.x Server mit asynchroner Event-Architektur und MariaDB Anbindung.",
+                en: "Vert.x server with asynchronous event architecture and MariaDB connection.",
+                fr: "Serveur Vert.x avec architecture événementielle asynchrone et MariaDB."
+            },
+            {
+                de: "Sicherheitskonzepte mit Prepared Queries und Session-Management.",
+                en: "Security precautions with prepared SQL queries and session protection.",
+                fr: "Sécurité assurée par requêtes préparées et gestion des sessions."
+            }
+        ],
+        tech: ["Java", "Vert.x", "MariaDB", "HTML5", "CSS3", "JavaScript"],
+        category: "java web",
+        links: {
+            code: "https://github.com/Clintbr/X-Chef-Webseite",
+            codeType: "link",
+            preview: "bilder/vorschau1.png",
+            previewType: "link"
+        }
+    },
+    {
+        id: 3,
+        date: "11/2024 – 12/2024",
+        title: {
+            de: "Ampelsteuerung – Eingebettetes System",
+            en: "Traffic Light Controller – Embedded System",
+            fr: "Contrôle de Feux – Système Embarqué"
+        },
+        image: "bilder/prjkt3.jpg",
+        description: {
+            de: "Hardwarenahe Ampelsteuerungssimulation auf Basis von ESP32 Microcontrollern, C++ und Wokwi-Simulation.",
+            en: "Hardware-level intersection traffic light controller simulated on ESP32 microcontrollers via C++ and Wokwi.",
+            fr: "Contrôleur de carrefour simulant des feux de circulation sur microcontrôleur ESP32 avec C++ et Wokwi."
+        },
+        bullets: [
+            {
+                de: "Echtzeit-Zustandsautomaten für sichere Verkehrsphasen.",
+                en: "Real-time state machines managing intersection safety cycles.",
+                fr: "Automates à états en temps réel pour la sécurité des intersections."
+            }
+        ],
+        tech: ["C", "C++", "NodeMCU ESP32", "PlatformIO", "HTTP", "JSON"],
+        category: "embed",
+        links: {
+            code: "https://github.com/Clintbr/-Kreuzung-Ampeln",
+            codeType: "link",
+            preview: "demos/demo3.mp4",
+            previewType: "video"
+        }
+    },
+    {
+        id: 4,
+        date: "05/2025 – 08/2025",
+        title: {
+            de: "NINJA Virtual Machine – Bytecode Interpreter",
+            en: "NINJA Virtual Machine – Bytecode Interpreter",
+            fr: "Machine Virtuelle NINJA – Interpréteur Bytecode"
+        },
+        image: "bilder/prjkt4.jpg",
+        description: {
+            de: "Entwicklung einer Stack-basierten virtuellen Maschine in C inklusive eigenem Garbage Collector und Debugger.",
+            en: "Development of a stack-based virtual machine in pure C including custom Garbage Collection and an interactive debugger.",
+            fr: "Développement d'une machine virtuelle basée sur la pile en langage C avec ramasse-miettes et débogueur intégré."
+        },
+        bullets: [
+            {
+                de: "Speicherverwaltung mit Stop-and-Copy Garbage Collector und Heap-Verwaltung.",
+                en: "Low-level memory management with heap allocation and garbage collection.",
+                fr: "Gestion bas niveau de la mémoire avec ramasse-miettes et gestion du tas."
+            }
+        ],
+        tech: ["C", "Linux", "GDB", "Memory Management"],
+        category: "embed",
+        links: {
+            code: "https://github.com/Clintbr/Virtual-Machine",
+            codeType: "link",
+            preview: "Ausführung direkt im Terminal / CLI",
+            previewType: "alert"
+        }
+    }
 ];
 
 function renderProjects() {
@@ -519,13 +532,13 @@ function renderProjects() {
         article.className = 'project-card glass-panel fade-in';
         article.setAttribute('data-category', project.category);
 
-        const title = project.title[currentLang] || project.title.de;
-        const description = project.description[currentLang] || project.description.de;
+        const title = (project.title && project.title[currentLang]) || project.title.de;
+        const description = (project.description && project.description[currentLang]) || project.description.de;
 
         let bulletsHTML = '';
         project.bullets.forEach(b => {
             const text = b[currentLang] || b.de;
-            bulletsHTML += `<li><i class="fas fa-hand-point-right"></i> ${text}</li>`;
+            bulletsHTML += `<li><span class="material-symbols-outlined text-highlight bullet-icon">check_circle</span> <span>${text}</span></li>`;
         });
 
         let techHTML = '';
@@ -541,30 +554,33 @@ function renderProjects() {
 
         let rightLink = '';
         if (project.links.codeType === 'link' && project.links.code) {
-            rightLink = `<a class="btn-primary right" href="${project.links.code}" target="_blank"><i class="fab fa-github"></i> ${strings.code}</a>`;
+            rightLink = `<a class="btn-primary right" href="${project.links.code}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> ${strings.code}</a>`;
         } else if (project.links.codeType === 'alert') {
-            rightLink = `<a class="btn-primary right" href="#" onclick="alert('${project.links.code}')"><i class="fas fa-code"></i> ${strings.code}</a>`;
+            rightLink = `<a class="btn-primary right" href="#" onclick="alert('${project.links.code}'); return false;"><span class="material-symbols-outlined">lock</span> ${strings.code}</a>`;
         }
 
         let leftLink = '';
         if (project.links.previewType === 'link' && project.links.preview) {
-            leftLink = `<a class="btn-secondary left" href="${project.links.preview}" target="_blank"><i class="fas fa-external-link-alt"></i> ${project.category.includes('web') && !project.image.includes('1') && !project.image.includes('2') && !project.image.includes('10') ? strings.website : strings.preview}</a>`;
+            const isWebsite = project.category.includes('web') && !project.image.includes('vorschau') && !project.image.includes('prjkt10') && !project.image.includes('prjkt11');
+            const label = isWebsite ? strings.website : strings.preview;
+            const icon = isWebsite ? 'open_in_new' : 'visibility';
+            leftLink = `<a class="btn-secondary left" href="${project.links.preview}" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">${icon}</span> ${label}</a>`;
         } else if (project.links.previewType === 'video') {
-            leftLink = `<a class="btn-secondary left" data-video="${project.links.preview}" href="#"><i class="fas fa-play"></i> ${strings.preview}</a>`;
+            leftLink = `<a class="btn-secondary left" data-video="${project.links.preview}" href="#"><span class="material-symbols-outlined">play_arrow</span> ${strings.preview}</a>`;
         } else if (project.links.previewType === 'alert') {
-            leftLink = `<a class="btn-secondary left" href="#" onclick="alert('${project.links.preview}')"><i class="fas fa-desktop"></i> ${strings.preview}</a>`;
+            leftLink = `<a class="btn-secondary left" href="#" onclick="alert('${project.links.preview}'); return false;"><span class="material-symbols-outlined">terminal</span> ${strings.preview}</a>`;
         }
 
         article.innerHTML = `
             <div class="project-image-wrapper">
-                <img src="${project.image}" alt="${title}">
+                <img src="${project.image}" alt="${title}" loading="lazy">
                 <div class="project-overlay"></div>
             </div>
             <div class="project-content">
                 <h3>${title}</h3>
-                <p class="project-date"><i class="far fa-calendar-alt"></i> ${project.date}</p>
+                <p class="project-date"><span class="material-symbols-outlined">calendar_today</span> ${project.date}</p>
                 <div class="detail-project">
-                    <p><b>${description}</b></p>
+                    <p class="project-summary">${description}</p>
                     <ul class="infos">${bulletsHTML}</ul>
                 </div>
                 <div class="tech">

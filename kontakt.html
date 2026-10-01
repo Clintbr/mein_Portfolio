@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt – Mein Portfolio</title>
+    <title>Kontakt – Clint Bryan Nguena</title>
+    <meta name="description" content="Kontaktieren Sie Clint Bryan Nguena – Web-, Software- und KI-Entwickler aus Gießen.">
     <link rel="shortcut icon" href="bilder/logo.jpg" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
@@ -40,7 +42,7 @@
 
 <header>
     <nav class="navbar glass-panel">
-        <h1>Clint.</h1>
+        <a href="index.html" class="logo-link"><h1>Clint<span class="text-highlight">.</span></h1></a>
         <button class="menu-toggle" aria-label="Menü öffnen">
             <i class="fas fa-bars"></i>
         </button>
@@ -61,58 +63,61 @@
     </nav>
 </header>
 
-
 <main class="container kontakt-main">
 
     <div class="grid-2-cols">
         <!-- Kontakt Infos -->
         <section class="content-card glass-panel slide-up">
-            <h2 data-i18n="contact.title.reach">So erreichen Sie mich</h2>
+            <div class="status-badge pulse mb-3">
+                <span class="status-dot"></span>
+                <span data-i18n="hero.badge">🚀 Verfügbarkeit: Ab sofort</span>
+            </div>
+            <h2 data-i18n="contact.title.reach"><i class="fas fa-address-card text-highlight"></i> Direkter Kontakt</h2>
             <ul class="contact-list">
-                <li><i class="fas fa-map-marker-alt text-highlight"></i> Iheringstraße 9, 35392 Gießen</li>
-                <li><i class="fas fa-phone text-highlight"></i> +49 1782103854</li>
+                <li><i class="fas fa-map-marker-alt text-highlight"></i> Gießen, Hessen, Deutschland</li>
+                <li><i class="fas fa-phone text-highlight"></i> <a href="tel:+491782103854">+49 178 2103854</a></li>
                 <li><i class="fas fa-envelope text-highlight"></i> <a href="mailto:nguenaclintbryan@gmail.com">nguenaclintbryan@gmail.com</a></li>
-                <li><i class="fab fa-github text-highlight"></i> <a href="https://github.com/Clintbr" target="_blank" data-i18n="contact.github">Mein GitHub</a></li>
-                <li><i class="fab fa-gitlab text-highlight"></i> <a href="https://gitlab.com/nguenaclintbryan" target="_blank" data-i18n="contact.gitlab">Mein GitLab</a></li>
-                <li><i class="fab fa-linkedin text-highlight"></i> <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank" data-i18n="contact.linkedin">Mein LinkedIn</a></li>
+                <li><i class="fab fa-github text-highlight"></i> <a href="https://github.com/Clintbr" target="_blank" rel="noopener noreferrer" data-i18n="contact.github">GitHub Profil</a></li>
+                <li><i class="fab fa-linkedin text-highlight"></i> <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank" rel="noopener noreferrer" data-i18n="contact.linkedin">LinkedIn Profil</a></li>
             </ul>
         </section>
 
         <!-- Kontaktformular -->
         <section class="content-card glass-panel slide-up">
-            <h2 data-i18n="contact.title.form"><i class="fas fa-message"></i> Kontaktformular</h2>
+            <h2 data-i18n="contact.title.form"><i class="fas fa-paper-plane text-highlight"></i> Nachricht senden</h2>
             <form id="contactForm" class="modern-form">
                 <div class="form-group">
-                    <label for="name" data-i18n="contact.form.name">Name</label>
-                    <input type="text" id="name" required class="input-glass">
+                    <label for="name" data-i18n="contact.form.name">Ihr Name</label>
+                    <input type="text" id="name" required class="input-glass" placeholder="z. B. Max Mustermann">
                 </div>
                 <div class="form-group">
-                    <label for="email" data-i18n="contact.form.email">E-Mail</label>
-                    <input type="email" id="email" required class="input-glass">
+                    <label for="email" data-i18n="contact.form.email">Ihre E-Mail-Adresse</label>
+                    <input type="email" id="email" required class="input-glass" placeholder="name@beispiel.de">
                 </div>
                 <div class="form-group">
-                    <label for="message" data-i18n="contact.form.message">Nachricht</label>
-                    <textarea id="message" rows="5" required class="input-glass"></textarea>
+                    <label for="message" data-i18n="contact.form.message">Ihre Nachricht</label>
+                    <textarea id="message" rows="5" required class="input-glass" placeholder="Wie kann ich Ihnen helfen?"></textarea>
                 </div>
-                <button type="submit" class="cta-btn btn-primary" data-i18n="contact.form.submit">Senden</button>
+                <button type="submit" class="cta-btn btn-primary" data-i18n="contact.form.submit">Nachricht absenden</button>
             </form>
         </section>
     </div>
 
     <!-- Google Map -->
-    <section class="content-card glass-panel slide-up w-full">
-        <h2 data-i18n="contact.title.map"><i class="fas fa-map-marker-alt"></i> Standort</h2>
+    <section class="content-card glass-panel slide-up w-full mt-4">
+        <h2 data-i18n="contact.title.map"><i class="fas fa-map-marker-alt text-highlight"></i> Standort (Gießen, Hessen)</h2>
         <div class="map-container glass-panel">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.8013509930737!2d8.685!3d50.587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd71e123456789%3A0x123456789abcdef!2sIheringstraße%209%2C%2035392%20Gießen!5e0!3m2!1sde!2sde!4v1678901234567"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                title="Google Maps Standort Gießen"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81944.57790342547!2d8.609214742663955!3d50.58498877526732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc48039c381f21%3A0x422435029b0c600!2zR2llw59lbg!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde"
+                width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
     <!-- Avatar -->
     <div class="avatar-container float-anim">
         <div class="avatar-speech glass-panel text-sm" data-i18n="avatar.contact">
-            Kontaktieren Sie mich gerne für einen Gesprächstermin <i class="fas fa-smile"></i>
+            Ich freue mich über Ihre Kontaktaufnahme für neue Herausforderungen 😊
         </div>
         <div class="avatar">
             <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
@@ -122,11 +127,11 @@
 <div id="snackbar"></div>
 
 <footer class="glass-panel">
-    <p data-i18n="footer.rights">© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
+    <p data-i18n="footer.rights">© <span id="thisYear"></span> Clint Bryan Nguena | Alle Rechte vorbehalten</p>
     <div class="social-links">
-        <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:nguenaclintbryan@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Clintbr" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:nguenaclintbryan@gmail.com" aria-label="E-Mail"><i class="fas fa-envelope"></i></a>
     </div>
 </footer>
 

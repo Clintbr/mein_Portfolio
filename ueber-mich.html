@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Über mich – Mein Portfolio</title>
+  <title>Über mich – Clint Bryan Nguena</title>
+  <meta name="description" content="Erfahren Sie mehr über Clint Bryan Nguena – Werdegang, Ausbildung an der THM, Berufserfahrung in KI- und Webentwicklung sowie Zertifikate.">
   <link rel="shortcut icon" href="bilder/logo.jpg" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script>
     if (localStorage.getItem('portfolio_theme') === 'light') {
@@ -36,9 +38,9 @@
 
   <header>
     <nav class="navbar glass-panel">
-      <h1>Clint.</h1>
+      <a href="index.html" class="logo-link"><h1>Clint<span class="text-highlight">.</span></h1></a>
       <button class="menu-toggle" aria-label="Menü öffnen">
-        <i class="fas fa-bars"></i>
+        <span class="material-symbols-outlined">menu</span>
       </button>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Start</a></li>
@@ -52,67 +54,90 @@
         <button class="lang-btn" data-lang="fr">FR</button>
       </div>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
-        <i class="fas fa-sun"></i>
+        <span class="material-symbols-outlined theme-icon">light_mode</span>
       </button>
     </nav>
   </header>
 
-
   <main class="container">
 
-    <!-- Leidenschaft -->
+    <!-- Mission & Vision -->
     <section class="hero passion-hero glass-panel fade-in">
       <div class="hero-content">
-        <h2 data-i18n="about.title"><i class="fas fa-fire"></i> Meine Leidenschaft</h2>
-        <p data-i18n="about.p1">Ich habe eine große Begeisterung für <b>Softwareentwicklung</b> und liebe es, kreative
-          Lösungen zu entwickeln.</p>
-        <p data-i18n="about.p2">Mein Fokus liegt darauf, Anwendungen zu programmieren, die das Leben einfacher und
-          effizienter machen: sei es in <i>Webprojekten</i>, <i>Backend-Systemen</i> oder <i>eingebetteten
-            Anwendungen</i>.</p>
-        <a href="#main" class="cta-btn btn-primary" data-i18n="about.btn">Mehr wissen ⬇</a>
+        <div class="status-badge pulse">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.badge"><span class="material-symbols-outlined">rocket_launch</span> Verfügbarkeit: Ab sofort</span>
+        </div>
+        <h2 data-i18n="about.title"><span class="material-symbols-outlined text-highlight">code</span> Über mich & Meine Mission</h2>
+        <p data-i18n="about.p1">Als <b>Web-, Software- und KI-Entwickler</b> verbinde ich fundierte Informatik-Grundlagen mit modernen Technologien rund um <b>Large Language Models (LLMs)</b>, <b>Retrieval-Augmented Generation (RAG)</b> und <b>skalierbare Full-Stack-Architekturen</b>.</p>
+        <p data-i18n="about.p2">Mein Studium an der THM habe ich durch hohe Zielstrebigkeit beschleunigt (<i>erste 5 Semesterleistungen in 4 Semestern abgeschlossen</i>). Mein Antrieb ist es, komplexe Problemstellungen in produktionsreife, performante und benutzerfreundliche Softwaresysteme zu transformieren.</p>
+        <a href="#main-details" class="cta-btn btn-primary" data-i18n="about.btn">Mehr erfahren</a>
       </div>
     </section>
-    <br id="main">
+
+    <!-- Aktuelle Forschung Callout -->
+    <section id="main-details" class="research-banner glass-panel slide-up my-4">
+      <div class="research-header">
+        <span class="research-pill" data-i18n="research.badge"><span class="material-symbols-outlined">science</span> Aktuelle Forschung</span>
+      </div>
+      <h3 data-i18n="research.title">Crosslinguale Retrieval-Augmented Generation (RAG)</h3>
+      <p data-i18n="research.desc">Implementierung, Analyse und empirischer Vergleich crosslingualer RAG-Strategien im Kontext lokal ausgeführter Large Language Models (LLMs) & Vektordatenbanken.</p>
+    </section>
 
     <div class="grid-2-cols">
       <!-- Berufserfahrung -->
       <section class="content-card glass-panel slide-up">
-        <h2 data-i18n="exp.title"><i class="fas fa-briefcase"></i> Professionelle Erfahrung</h2>
+        <h2 data-i18n="exp.title"><span class="material-symbols-outlined text-highlight">work</span> Berufserfahrung & Praxis</h2>
         <ul class="timeline-simple">
           <li>
-            <div class="timeline-date" data-i18n="exp.1.date"><i class="fas fa-calendar text-highlight"></i> Juni 2025 -
-              August 2025</div>
-            <h4 data-i18n="exp.1.role">Kurzfristige Beschäftigung Softwareentwicklung</h4>
-            <p data-i18n="exp.1.desc">Konzeption und Erstellung der Webseite einer Klinik (Java, html, css und JS,
-              MySQL). Ein Vertrag mit der Klinik SisterSchola in Darmstadt.</p>
+            <div class="timeline-date" data-i18n="exp.1.date"><span class="material-symbols-outlined">calendar_today</span> 03/2026 – 06/2026</div>
+            <h4 data-i18n="exp.1.role">KI-Analyse | Praktikum II-THM, Gießen</h4>
+            <p data-i18n="exp.1.desc">Analyse lokal gehosteter LLMs und SLMs sowie Konzeption und Integration von RAG-Ansätzen. Aufbau strukturierter Datenpipelines mit Qdrant Vektordatenbank, MongoDB, Ollama und Node-RED.</p>
+            <div class="tech-pill-list mt-2">
+              <span>Python</span>
+              <span>Ollama</span>
+              <span>Node-RED</span>
+              <span>MongoDB</span>
+              <span>Qdrant</span>
+              <span>JSON</span>
+            </div>
           </li>
           <li>
-            <div class="timeline-date" data-i18n="exp.2.date"><i class="fas fa-calendar text-highlight"></i> November
-              2024 - Dezember 2024</div>
-            <h4 data-i18n="exp.2.role">Projektarbeit an der THM</h4>
-            <p data-i18n="exp.2.desc">Entwicklung eines eingebetteten Systems (Ampelsteuerung mit ESP32).</p>
+            <div class="timeline-date" data-i18n="exp.2.date"><span class="material-symbols-outlined">calendar_today</span> 02/2025 – 03/2026</div>
+            <h4 data-i18n="exp.2.role">Webentwickler | SisterSchola Klinik, Darmstadt</h4>
+            <p data-i18n="exp.2.desc">Entwicklung und Betreuung webbasierter Anwendungen, Einrichtung von SMTP-Mailservices, Datenbankanbindung mit Supabase/SQL sowie umfassendes Software-Testing und Debugging.</p>
+            <div class="tech-pill-list mt-2">
+              <span>JavaScript</span>
+              <span>HTML5 / CSS3</span>
+              <span>SQL</span>
+              <span>Supabase</span>
+              <span>Git</span>
+            </div>
           </li>
         </ul>
       </section>
 
       <!-- Bildung -->
       <section class="content-card glass-panel slide-up">
-        <h2 data-i18n="edu.title"><i class="fas fa-graduation-cap"></i> Bildung</h2>
+        <h2 data-i18n="edu.title"><span class="material-symbols-outlined text-highlight">school</span> Ausbildung</h2>
         <ul class="timeline-simple">
           <li>
-            <div class="timeline-date" data-i18n="edu.1.date">2023 – heute</div>
-            <h4 data-i18n="edu.1.title">Technische Hochschule Mittelhessen (THM)</h4>
-            <p data-i18n="edu.1.desc">Informatik (B.Sc.), 4. Semester</p>
+            <div class="timeline-date" data-i18n="edu.1.date"><span class="material-symbols-outlined">calendar_today</span> 04/2024 – heute</div>
+            <h4 data-i18n="edu.1.title">Bachelor of Science Informatik</h4>
+            <p class="text-sm highlight" data-i18n="edu.1.sub">Technische Hochschule Mittelhessen (THM), Gießen</p>
+            <p data-i18n="edu.1.desc">Schwerpunkte: Softwareentwicklung, IT-Systeme, Webtechnologien & KI. Aktuell im 5. Fachsemester (erste fünf Semesterleistungen in vier Semestern erfolgreich abgeschlossen).</p>
           </li>
           <li>
-            <div class="timeline-date" data-i18n="edu.2.date">2022 – 2023</div>
-            <h4 data-i18n="edu.2.title">Sprachzentrum</h4>
-            <p data-i18n="edu.2.desc">B1/B2 (Goethe-Institut), C1 (Diwan Marburg)</p>
+            <div class="timeline-date" data-i18n="edu.2.date"><span class="material-symbols-outlined">calendar_today</span> 10/2022 – 11/2023</div>
+            <h4 data-i18n="edu.2.title">Deutschkurse & Sprachzertifikate</h4>
+            <p class="text-sm highlight" data-i18n="edu.2.sub">Goethe-Institut & Diwan Marburg</p>
+            <p data-i18n="edu.2.desc">Erfolgreich abgeschlossen mit B2-Zertifikat und C1 telc Hochschule.</p>
           </li>
           <li>
-            <div class="timeline-date" data-i18n="edu.3.date">2019 – 2022</div>
-            <h4 data-i18n="edu.3.title">Gymnasium</h4>
-            <p data-i18n="edu.3.desc">Abitur mit Schwerpunkt Mathematik & Informatik</p>
+            <div class="timeline-date" data-i18n="edu.3.date"><span class="material-symbols-outlined">calendar_today</span> 09/2019 – 06/2022</div>
+            <h4 data-i18n="edu.3.title">Wissenschaftliches Abitur</h4>
+            <p class="text-sm highlight" data-i18n="edu.3.sub">Gymnasium</p>
+            <p data-i18n="edu.3.desc">Abitur mit vertieftem Schwerpunkt in Mathematik und Informatik.</p>
           </li>
         </ul>
       </section>
@@ -120,17 +145,18 @@
 
     <!-- Zertifikate -->
     <section class="content-card glass-panel slide-up w-full">
-      <h2 data-i18n="cert.title"><i class="fas fa-file-contract"></i> Zertifikate</h2>
+      <h2 data-i18n="cert.title"><span class="material-symbols-outlined text-highlight">verified</span> Zertifikate & Weiterbildung</h2>
       <div class="certificates-grid">
 
         <div class="certificate-card">
           <div class="card-inner">
             <div class="card-front">
-              <h3>Computing und MQTT Grundlagen</h3>
-              <p>Linkedin, 2025</p>
+              <h3>Generative KI in Python</h3>
+              <p>LinkedIn Learning, 2025</p>
+              <span class="card-hint"><span class="material-symbols-outlined">flip</span> Hover / Klick</span>
             </div>
             <div class="card-back">
-              <img src="bilder/zertifikat3.png" alt="Zertifikat">
+              <img src="bilder/zertifikat2.png" alt="Zertifikat Generative KI in Python">
             </div>
           </div>
         </div>
@@ -139,27 +165,24 @@
           <div class="card-inner">
             <div class="card-front">
               <h3>Java für Fortgeschrittene</h3>
-              <p>Linkedin, 2025</p>
+              <p>LinkedIn Learning, 2025</p>
+              <span class="card-hint"><span class="material-symbols-outlined">flip</span> Hover / Klick</span>
             </div>
             <div class="card-back">
-              <img src="bilder/zertifikat4.png" alt="Zertifikat">
+              <img src="bilder/zertifikat4.png" alt="Zertifikat Java für Fortgeschrittene">
             </div>
           </div>
         </div>
-
-      </div>
-      <br>
-      <br>
-      <div class="certificates-grid">
 
         <div class="certificate-card">
           <div class="card-inner">
             <div class="card-front">
               <h3>CPython Grundkurs</h3>
-              <p>Linkedin, 2025</p>
+              <p>LinkedIn Learning, 2025</p>
+              <span class="card-hint"><span class="material-symbols-outlined">flip</span> Hover / Klick</span>
             </div>
             <div class="card-back">
-              <img src="bilder/zertifikat1.png" alt="Zertifikat">
+              <img src="bilder/zertifikat1.png" alt="Zertifikat CPython">
             </div>
           </div>
         </div>
@@ -167,11 +190,12 @@
         <div class="certificate-card">
           <div class="card-inner">
             <div class="card-front">
-              <h3>Generative KI in Python</h3>
-              <p>Linkedin, 2025</p>
+              <h3>Computing & MQTT Grundlagen</h3>
+              <p>LinkedIn Learning, 2025</p>
+              <span class="card-hint"><span class="material-symbols-outlined">flip</span> Hover / Klick</span>
             </div>
             <div class="card-back">
-              <img src="bilder/zertifikat2.png" alt="Zertifikat">
+              <img src="bilder/zertifikat3.png" alt="Zertifikat MQTT Grundlagen">
             </div>
           </div>
         </div>
@@ -179,17 +203,17 @@
       </div>
     </section>
 
-
     <!-- Call to Action -->
     <section class="cta glass-panel bounce">
-      <h2 data-i18n="cta.title">Wollen Sie mehr über meine Projekte erfahren?</h2>
-      <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontaktieren Sie mich</a>
+      <h2 data-i18n="cta.title">Haben Sie ein spannendes Projekt oder eine Stelle zu besetzen?</h2>
+      <p class="text-muted mb-4" data-i18n="cta.desc">Lassen Sie uns unverbindlich über mögliche Kooperationen, Werkstudententätigkeiten oder Einstiegsmöglichkeiten sprechen.</p>
+      <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontakt aufnehmen</a>
     </section>
 
-    <!-- Avatar -->
+    <!-- Avatar Floating helper -->
     <div class="avatar-container float-anim">
       <div class="avatar-speech glass-panel text-sm" data-i18n="avatar.about">
-        „Softwareentwicklung ist nicht nur mein Studium, es ist meine Leidenschaft.“ <i class="fas fa-computer"></i>
+        „Software- und KI-Entwicklung verbinden logische Struktur mit grenzenloser Kreativität.“
       </div>
       <div class="avatar">
         <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
@@ -198,14 +222,14 @@
   </main>
 
   <footer class="glass-panel">
-    <p data-i18n="footer.rights">© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
+    <p data-i18n="footer.rights">© <span id="thisYear"></span> Clint Bryan Nguena | Alle Rechte vorbehalten</p>
     <div class="social-links">
-      <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"><i
-          class="fab fa-linkedin"></i></a>
-      <a href="mailto:nguenaclintbryan@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/Clintbr" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="kontakt.html" aria-label="Kontakt"><span class="material-symbols-outlined">mail</span></a>
     </div>
   </footer>
+
   <script src="js/i18n.js"></script>
   <script src="script.js"></script>
 </body>

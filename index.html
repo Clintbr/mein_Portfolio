@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mein Portfolio</title>
+    <title>Clint Bryan Nguena – Web, Software & AI Engineer</title>
+    <meta name="description"
+        content="Portfolio von Clint Bryan Nguena – Informatikstudent, Web-, Software- und KI-Entwickler spezialisiert auf LLMs, RAG, Agentic AI, Java Spring Boot & React.">
     <link rel="shortcut icon" href="bilder/logo.jpg" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
         if (localStorage.getItem('portfolio_theme') === 'light') {
@@ -21,179 +26,343 @@
 </head>
 
 <body>
-<section class="hero-img">
-    <!-- Hintergrundformen -->
-    <div class="bg-shapes">
-        <div class="shape circle"></div>
-        <div class="shape circle small"></div>
-        <div class="shape square"></div>
-        <div class="shape square small"></div>
-        <div class="shape triangle"></div>
-        <div class="shape triangle small"></div>
-        <div class="shape diamond"></div>
-        <div class="shape diamond small"></div>
-        <div class="shape hexagon"></div>
-        <div class="shape hexagon small"></div>
-    </div>
+    <section class="hero-img">
+        <!-- Hintergrundformen -->
+        <div class="bg-shapes">
+            <div class="shape circle"></div>
+            <div class="shape circle small"></div>
+            <div class="shape square"></div>
+            <div class="shape square small"></div>
+            <div class="shape triangle"></div>
+            <div class="shape triangle small"></div>
+            <div class="shape diamond"></div>
+            <div class="shape diamond small"></div>
+            <div class="shape hexagon"></div>
+            <div class="shape hexagon small"></div>
+        </div>
 
-    <header>
-        <nav class="navbar glass-panel">
-            <h1>Clint.</h1>
-            <button class="menu-toggle" aria-label="Menü öffnen">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active" data-i18n="nav.home">Start</a></li>
-                <li><a href="ueber-mich.html" data-i18n="nav.about">Über mich</a></li>
-                <li><a href="projekte.html" data-i18n="nav.projects">Projekte</a></li>
-                <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
-            </ul>
-            <div class="lang-switcher">
-                <button class="lang-btn active" data-lang="de">DE</button>
-                <button class="lang-btn" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="fr">FR</button>
-            </div>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
-                <i class="fas fa-sun"></i>
-            </button>
-        </nav>
-    </header>
-
-    <!-- Hero mit Portrait -->
+        <header>
+            <nav class="navbar glass-panel">
+                <a href="index.html" class="logo-link">
+                    <h1>Clint<span class="text-highlight">.</span></h1>
+                </a>
+                <button class="menu-toggle" aria-label="Menü öffnen">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" data-i18n="nav.home">Start</a></li>
+                    <li><a href="ueber-mich.html" data-i18n="nav.about">Über mich</a></li>
+                    <li><a href="projekte.html" data-i18n="nav.projects">Projekte</a></li>
+                    <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="de">DE</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="fr">FR</button>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <span class="material-symbols-outlined theme-icon">light_mode</span>
+                </button>
+            </nav>
+        </header>
 
         <div class="hero fade-in">
+            <div class="hero-content">
+                <div class="status-badge pulse">
+                    <span class="status-dot"></span>
+                    <span data-i18n="hero.badge"><span class="material-symbols-outlined">rocket_launch</span>
+                        Verfügbarkeit: Ab sofort</span>
+                </div>
+                <img src="bilder/portrait.jpeg" alt="Porträtfoto von Clint Bryan Nguena" class="portrait glass-panel">
+                <h2><span data-i18n="hero.greeting">Hallo, ich bin </span><span class="highlight"
+                        data-i18n="hero.name">Clint Bryan Nguena</span></h2>
+                <p class="hero-role" data-i18n="hero.role">Web-, Software- und KI-Entwickler (LLMs & Agentic AI)</p>
+                <p class="hero-sub" data-i18n="hero.school">Informatikstudent an der THM (Erste 5 Semesterleistungen in
+                    4 Semestern absolviert)</p>
+                <p class="tagline" data-i18n="hero.tagline">Ich entwickle intelligente KI-Anwendungen, agentische
+                    Systeme und skalierbare Full-Stack-Softwarelösungen für messbaren Mehrwert.</p>
+                <div class="hero-actions">
+                    <a class="cta-btn btn-primary" href="#featured-ai" data-i18n="hero.cta"><span
+                            class="material-symbols-outlined">smart_toy</span> Featured AI Projekt</a>
+                    <a class="cta-btn btn-secondary" href="javascript:void(0)"
+                        onclick="openPdfModal('Lebenslauf - Clint Bryan Nguena.pdf')" data-i18n="hero.cta.cv"><span
+                            class="material-symbols-outlined">description</span> Lebenslauf ansehen</a>
+                </div>
+            </div>
         </div>
     </section>
-<div class="hero fade-in">
-    <div class="hero-content">
-        <img src="bilder/portrait.jpeg" alt="Porträtfoto von Clint" class="portrait glass-panel">
-        <h2><span data-i18n="hero.greeting">Hallo, ich bin </span><span class="highlight"
-                                                                        data-i18n="hero.name">Clint Bryan Nguena</span></h2>
-        <p data-i18n="hero.role">Informatikstudent (5. Semester), <span class="highlight">spezialisiert auf
-                        Software- und KI-Entwicklung</span></p>
-        <p data-i18n="hero.school">eingeschrieben an der THM (Technische Hochschule Mittelhessen)</p>
-        <p class="tagline" data-i18n="hero.tagline">Ich entwickle moderne Softwarelösungen, die Menschen helfen,
-            ihre Ziele effizienter zu erreichen.</p>
-        <a class="cta-btn btn-primary" href="#main" data-i18n="hero.cta">Zum Profil ⬇</a>
-    </div>
-</div>
 
     <main id="main" class="container">
 
-        <!-- Featured Work -->
-        <section class="content-card featured glass-panel slide-up">
-            <h2 data-i18n="section.featured.title">🌟 Featured Work</h2>
-            <div class="featured-grid">
-                <img src="bilder/prjkt12.png" alt="Screenshot Enterprise Ticket Management System"
-                    class="img-responsive">
+        <!-- Aktuelle Forschung Callout -->
+        <section class="research-banner glass-panel slide-up">
+            <div class="research-header">
+                <span class="research-pill" data-i18n="research.badge"><span
+                        class="material-symbols-outlined">science</span> Aktuelle Forschung</span>
+            </div>
+            <h3 data-i18n="research.title">Crosslinguale Retrieval-Augmented Generation (RAG)</h3>
+            <p data-i18n="research.desc">Implementierung, Analyse und empirischer Vergleich crosslingualer
+                RAG-Strategien im Kontext lokal ausgeführter Large Language Models (LLMs) & Vektordatenbanken.</p>
+        </section>
+
+        <!-- FEATURED AI PROJECT SHOWCASE -->
+        <section id="featured-ai" class="content-card featured-ai-card glass-panel slide-up">
+            <div class="featured-header-row">
+                <h2 data-i18n="section.featured.ai.title"><span
+                        class="material-symbols-outlined text-highlight">auto_awesome</span> Featured AI Project</h2>
+                <span class="featured-tag ai-gradient-tag" data-i18n="section.featured.ai.badge">KI & Full-Stack
+                    Flaggschiff</span>
+            </div>
+            <div class="featured-grid ai-featured-grid">
+                <div class="featured-image-container">
+                    <img src="bilder/prjkt_15.png" alt="AI Mail Manager Preview" class="img-responsive featured-img">
+                    <div class="ai-overlay-badge">
+                        <span class="material-symbols-outlined text-highlight">psychology</span> Powered by Google
+                        Gemini & Gmail API
+                    </div>
+                </div>
                 <div class="featured-text">
-                    <p><b class="highlight">Enterprise Ticket System:</b> <span
-                            data-i18n="section.featured.subtitle">Ein leistungsfähiges
-                            Full-Stack-Ticket-Management-System.</span></p>
+                    <h3><b class="highlight" data-i18n="section.featured.ai.name">AI Mail Manager</b></h3>
+                    <p class="featured-subtitle" data-i18n="section.featured.ai.subtitle">Intelligente E-Mail-Analyse &
+                        Human-in-the-Loop Workflow mit Google Gemini</p>
                     <hr>
-                    <p data-i18n="section.featured.desc">Mein Ansatz als Informatikstudent ist es, komplexe Probleme in
-                        handhabbare Teilschritte zu zerlegen. Diese strukturierte und lösungsorientierte Denkweise ist
-                        für mich der Schlüssel zu erfolgreicher Softwareentwicklung. Hier sehen Sie, wie ich diese
-                        Philosophie bei der Entwicklung des Enterprise Ticket Management Systems angewendet habe, einem
-                        Projekt, das meine technischen Fähigkeiten im Fullstack-Bereich eindrucksvoll unter Beweis
-                        stellt.</p>
-                    <br>
-                    <div class="cta-line">
-                        <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">Alle Projekte
-                            ansehen</a>
-                        <a
-                                class="cta-btn btn-primary"
-                                data-i18n="section.featured.pdf"
-                                onclick="openPdfModal('ticket_Support_App.pdf')">
-                            Benutzerhandbuch
+                    <p data-i18n="section.featured.ai.desc">Eine hochmoderne Full-Stack KI-Anwendung zur automatischen
+                        Analyse, Sentiment-Erkennung, Priorisierung und Entwurfserstellung von E-Mails. Ausgestattet mit
+                        der Gmail API, OAuth 2.0 Authentifizierung, Google Gemini Integration und einem durchdachten
+                        Human-in-the-Loop Mechanismus zur Prüfung generierter Antworten vor dem Versand.</p>
+
+                    <ul class="feature-bullets">
+                        <li><span class="material-symbols-outlined text-highlight">bolt</span> <span
+                                data-i18n="section.featured.ai.feature1">KI-gestützte Sentiment- & Prioritätsanalyse in
+                                Echtzeit</span></li>
+                        <li><span class="material-symbols-outlined text-highlight">shield</span> <span
+                                data-i18n="section.featured.ai.feature2">Human-in-the-Loop: Transparente Kontrolle
+                                generierter Antworten</span></li>
+                        <li><span class="material-symbols-outlined text-highlight">layers</span> <span
+                                data-i18n="section.featured.ai.feature3">Java 21, Spring Boot 3 REST API & React /
+                                TypeScript UI</span></li>
+                    </ul>
+
+                    <div class="tech-pill-list">
+                        <span>Java 21</span>
+                        <span>Spring Boot 3</span>
+                        <span>Spring Security</span>
+                        <span>Google Gemini</span>
+                        <span>Gmail API</span>
+                        <span>OAuth 2.0</span>
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+
+                    <div class="cta-line mt-4">
+                        <a href="https://mymailai.onrender.com/" target="_blank" rel="noopener noreferrer"
+                            class="cta-btn btn-primary" data-i18n="section.featured.ai.live">
+                            <span class="material-symbols-outlined">play_circle</span> Live Demo testen
+                        </a>
+                        <a href="https://github.com/Clintbr/mymailai" target="_blank" rel="noopener noreferrer"
+                            class="cta-btn btn-secondary" data-i18n="section.featured.ai.code">
+                            <i class="fab fa-github"></i> GitHub Repository
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECONDARY FEATURED CARDS: RAG Research & Enterprise System -->
+        <div class="grid-2-cols">
+            <!-- Crosslingual RAG -->
+            <section class="content-card glass-panel slide-up">
+                <div class="card-top-tag">
+                    <span class="badge-mini"><span class="material-symbols-outlined">memory</span> AI Research</span>
+                </div>
+                <h3 class="highlight mb-2" data-i18n="section.featured.rag.name">Crosslingual RAG Research</h3>
+                <p class="text-sm text-muted mb-3" data-i18n="section.featured.rag.subtitle">Lokale RAG-Pipeline für
+                    mehrsprachige Wissenssuche</p>
+                <div class="preview-mini-box mb-3">
+                    <img src="bilder/prjkt_14.png" alt="Crosslingual RAG Pipeline" class="img-responsive rounded">
+                </div>
+                <p class="text-sm mb-3" data-i18n="section.featured.rag.desc">Entwicklung und Evaluation einer
+                    sprachübergreifenden Retrieval-Augmented-Generation-Pipeline ohne Cloud-APIs mit lokal ausgeführten
+                    LLMs via Ollama, Qdrant Vektordatenbank, BGE-M3 Embeddings und DeepEval Qualitätsmetriken.</p>
+                <div class="tech-pill-list mb-3">
+                    <span>Python</span>
+                    <span>Ollama</span>
+                    <span>Qdrant</span>
+                    <span>BGE-M3</span>
+                    <span>DeepEval</span>
+                    <span>NumPy / Pandas</span>
+                </div>
+                <a href="https://github.com/Clintbr/Crosslingual-RAG" target="_blank" rel="noopener noreferrer"
+                    class="cta-btn btn-secondary w-full text-center">
+                    <i class="fab fa-github"></i> Code & Research ansehen
+                </a>
+            </section>
+
+            <!-- Enterprise Ticket System -->
+            <section class="content-card glass-panel slide-up">
+                <div class="card-top-tag">
+                    <span class="badge-mini"><span class="material-symbols-outlined">dns</span> Full-Stack System</span>
+                </div>
+                <h3 class="highlight mb-2">Enterprise Ticket System</h3>
+                <p class="text-sm text-muted mb-3" data-i18n="section.featured.subtitle">Enterprise Ticket Management
+                    System mit RBAC & PostgreSQL</p>
+                <div class="preview-mini-box mb-3">
+                    <img src="bilder/prjkt12.png" alt="Enterprise Ticket System" class="img-responsive rounded">
+                </div>
+                <p class="text-sm mb-3" data-i18n="section.featured.desc">Vollständiges webbasiertes
+                    Ticket-Management-System mit rollenbasierter Benutzerverwaltung (USER, SUPPORT, ADMIN), REST-API,
+                    JWT-Sicherheit und integriertem KI-Chatbot für Supportautomatisierung.</p>
+                <div class="tech-pill-list mb-3">
+                    <span>Java 21</span>
+                    <span>Spring Boot 3</span>
+                    <span>React 18</span>
+                    <span>PostgreSQL</span>
+                    <span>Spring Security</span>
+                    <span>LLM Chatbot</span>
+                </div>
+                <div class="cta-line">
+                    <a href="https://ticketsyst.netlify.app/" target="_blank" rel="noopener noreferrer"
+                        class="cta-btn btn-primary" data-i18n="projects.preview">
+                        <span class="material-symbols-outlined">visibility</span> Live Demo
+                    </a>
+                    <a href="javascript:void(0)" onclick="openPdfModal('ticket_Support_App.pdf')"
+                        class="cta-btn btn-secondary" data-i18n="section.featured.pdf">
+                        <span class="material-symbols-outlined">menu_book</span> Benutzerhandbuch
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Featured CV Card -->
         <section class="content-card featured glass-panel slide-up">
-            <h2 data-i18n="section.featured.cv">🌟 Featured CV</h2>
+            <h2 data-i18n="section.featured.cv"><span
+                    class="material-symbols-outlined text-highlight">auto_awesome</span> Featured CV</h2>
             <div class="featured-grid">
                 <div class="featured-text">
                     <p><b class="highlight" data-i18n="section.featured.cv.title">Mein Lebenslauf:</b> <span
-                            data-i18n="section.featured.cv.subtitle">die Zusammenfassung meines Werdegangs</span></p>
+                            data-i18n="section.featured.cv.subtitle">Der vollständige Überblick über Ausbildung, Skills
+                            & Erfahrung</span></p>
                 </div>
                 <div class="featured-text">
                     <div class="cta-line">
-                        <a
-                                class="cta-btn btn-primary"
-                                data-i18n="section.featured.cv.pdf"
-                                onclick="openPdfModal('Lebenslauf - Clint Bryan Nguena.pdf')">
-                            Lebenslauf ansehen
+                        <a href="javascript:void(0)" class="cta-btn btn-primary" data-i18n="section.featured.cv.pdf"
+                            onclick="openPdfModal('Lebenslauf - Clint Bryan Nguena.pdf')">
+                            <span class="material-symbols-outlined">description</span> Lebenslauf ansehen (PDF)
                         </a>
-                        <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">Alle Projekte
-                            ansehen</a>
+                        <a href="projekte.html" class="cta-btn btn-secondary" data-i18n="section.featured.cta">
+                            <span class="material-symbols-outlined">dataset</span> Alle Projekte ansehen
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Technical Expertise & Competencies -->
         <div class="grid-2-cols">
             <section class="content-card glass-panel slide-up">
-                <h2 data-i18n="section.skills.title"><i class="fas fa-book"></i> Fachliche Fähigkeiten</h2>
-                <ul class="skills-badges">
-                    <li>Java</li>
-                    <li>Maven, Vertx, Springboot</li>
-                    <li>C#</li>
-                    <li>MQTT, REST, HTTP, SMTP</li>
-                    <li>HTML, CSS, JS</li>
-                    <li>MySQL, PostgreSQL, Mariadb, Supabase</li>
-                    <li>Git & GitHub</li>
-                </ul>
+                <h2 data-i18n="section.skills.title"><span
+                        class="material-symbols-outlined text-highlight">terminal</span> Technische Expertise</h2>
+
+                <div class="skills-category-block">
+                    <h4 class="skill-category-title"><span
+                            class="material-symbols-outlined text-highlight">smart_toy</span> <span
+                            data-i18n="skills.cat.ai">KI & LLMs</span></h4>
+                    <ul class="skills-badges">
+                        <li>LLMs</li>
+                        <li>RAG</li>
+                        <li>Agentic AI</li>
+                        <li>Ollama</li>
+                        <li>Qdrant (Vector DB)</li>
+                        <li>BGE-M3</li>
+                        <li>DeepEval</li>
+                        <li>Google Gemini</li>
+                        <li>NumPy & Pandas</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category-block mt-3">
+                    <h4 class="skill-category-title"><span class="material-symbols-outlined text-highlight">dns</span>
+                        <span data-i18n="skills.cat.backend">Software & Backend</span></h4>
+                    <ul class="skills-badges">
+                        <li>Java 21</li>
+                        <li>Spring Boot 3</li>
+                        <li>Spring Security</li>
+                        <li>Python</li>
+                        <li>C / C++</li>
+                        <li>REST-APIs</li>
+                        <li>JSON / XML</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category-block mt-3">
+                    <h4 class="skill-category-title"><span
+                            class="material-symbols-outlined text-highlight">language</span> <span
+                            data-i18n="skills.cat.frontend">Web & Frontend</span></h4>
+                    <ul class="skills-badges">
+                        <li>React 18</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Vue.js</li>
+                        <li>HTML5 / CSS3</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category-block mt-3">
+                    <h4 class="skill-category-title"><span
+                            class="material-symbols-outlined text-highlight">database</span> <span
+                            data-i18n="skills.cat.tools">Datenbanken & DevOps</span></h4>
+                    <ul class="skills-badges">
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Supabase</li>
+                        <li>MySQL / MariaDB</li>
+                        <li>Docker</li>
+                        <li>Git / GitHub / GitLab</li>
+                        <li>Linux / Windows</li>
+                    </ul>
+                </div>
             </section>
 
             <section class="content-card glass-panel slide-up">
-                <h2 data-i18n="section.core.title"><i class="fas fa-tools"></i> Kern-Kompetenzen</h2>
+                <h2 data-i18n="section.core.title"><span
+                        class="material-symbols-outlined text-highlight">psychology</span> Kern-Kompetenzen</h2>
                 <ul class="skills-list">
-                    <li><i class="fas fa-check text-highlight"></i> <span data-i18n="section.core.1">Kreatives
-                            Problemlösen</span></li>
-                    <li><i class="fas fa-check text-highlight"></i> <span
-                            data-i18n="section.core.2">Organisationstalent</span></li>
-                    <li><i class="fas fa-check text-highlight"></i> <span data-i18n="section.core.3">Didaktische
-                            Fähigkeit</span></li>
+                    <li><span class="material-symbols-outlined text-highlight bullet-icon">check_circle</span> <span
+                            data-i18n="section.core.1">Analytisches Denken & Systemarchitektur</span></li>
+                    <li><span class="material-symbols-outlined text-highlight bullet-icon">check_circle</span> <span
+                            data-i18n="section.core.2">Hohe Auffassungsgabe & Eigeninitiative</span></li>
+                    <li><span class="material-symbols-outlined text-highlight bullet-icon">check_circle</span> <span
+                            data-i18n="section.core.3">Strukturierte & lösungsorientierte Arbeitsweise</span></li>
+                    <li><span class="material-symbols-outlined text-highlight bullet-icon">check_circle</span> <span
+                            data-i18n="section.core.4">Agile Teamarbeit (Scrum, Git-Workflows)</span></li>
                 </ul>
-            </section>
 
-            <section class="content-card glass-panel slide-up">
-                <h2 data-i18n="section.hobbies.title"><i class="fas fa-gamepad"></i> Interessen </h2>
-                <ul class="skills-list">
-                    <li><i class="fas fa-futbol text-highlight"></i> <span data-i18n="section.hobbies.1">Fußball
-                            spielen</span></li>
-                    <li><i class="fas fa-book-open text-highlight"></i> <span data-i18n="section.hobbies.2">Bücher
-                            lesen</span></li>
-                    <li><i class="fas fa-laptop-code text-highlight"></i> <span data-i18n="section.hobbies.3">Webseiten
-                            entwickeln</span></li>
-                </ul>
-            </section>
+                <hr class="my-4">
 
-            <section class="content-card glass-panel slide-up">
-                <h2 data-i18n="section.langs.title"><i class="fas fa-message"></i> Sprachen</h2>
+                <h2 data-i18n="section.langs.title"><span
+                        class="material-symbols-outlined text-highlight">translate</span> Sprachen</h2>
                 <div class="languages-container">
                     <div class="language">
                         <div class="language-name" data-i18n="lang.fr">Französisch</div>
                         <div class="language-level">
                             <div class="level-fill" style="width: 100%"></div>
-                            <div class="level-text" data-i18n="lang.level.native">Muttersprache</div>
+                            <div class="level-text" data-i18n="lang.level.native">Muttersprache (C2)</div>
                         </div>
                     </div>
                     <div class="language">
                         <div class="language-name" data-i18n="lang.de">Deutsch</div>
                         <div class="language-level">
-                            <div class="level-fill" style="width: 75%"></div>
-                            <div class="level-text" data-i18n="lang.level.advanced">Fortgeschrittene Kenntnisse</div>
+                            <div class="level-fill" style="width: 90%"></div>
+                            <div class="level-text" data-i18n="lang.level.c1">Fließend (telc C1 Hochschule)</div>
                         </div>
                     </div>
                     <div class="language">
                         <div class="language-name" data-i18n="lang.en">Englisch</div>
                         <div class="language-level">
-                            <div class="level-fill" style="width: 55%"></div>
-                            <div class="level-text" data-i18n="lang.level.intermediate">Mittlere Kenntnisse</div>
+                            <div class="level-fill" style="width: 75%"></div>
+                            <div class="level-text" data-i18n="lang.level.b2">Verhandlungssicher (B2)</div>
                         </div>
                     </div>
                 </div>
@@ -202,15 +371,17 @@
 
         <!-- Call to Action -->
         <section class="cta glass-panel bounce">
-            <h2 data-i18n="cta.title">Wollen Sie mehr über meine Projekte erfahren?</h2>
-            <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontaktieren Sie mich</a>
+            <h2 data-i18n="cta.title">Haben Sie ein spannendes Projekt oder eine Stelle zu besetzen?</h2>
+            <p class="text-muted mb-4" data-i18n="cta.desc">Lassen Sie uns unverbindlich über mögliche Kooperationen,
+                Werkstudententätigkeiten oder Einstiegsmöglichkeiten sprechen.</p>
+            <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontakt aufnehmen</a>
         </section>
     </main>
 
-    <!-- Avatar -->
+    <!-- Avatar Floating helper -->
     <div class="avatar-container float-anim">
         <div class="avatar-speech glass-panel text-sm" data-i18n="avatar.home">
-            Hallo! Willkommen auf meinem Portfolio! Lass uns das alles durchgehen <i class="fas fa-smile"></i>
+            Hallo! Willkommen auf meinem Portfolio! Entdecken Sie meine KI- und Softwareprojekte.
         </div>
         <div class="avatar">
             <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
@@ -220,42 +391,35 @@
     <!-- PDF Modal -->
     <div id="pdfModal" class="pdf-modal">
         <div class="pdf-modal-content">
-
             <div class="pdf-toolbar">
-                <button onclick="prevPage()">
-                    <i class="fas fa-chevron-left"></i>
+                <button onclick="prevPage()" aria-label="Vorherige Seite">
+                    <span class="material-symbols-outlined">chevron_left</span>
                 </button>
-
-                <span id="pageInfo" > <b data-i18n="pdf.page">Seite</b> <b id="pageInfoNumber">1 / 1</b></span>
-
-                <button onclick="nextPage()">
-                    <i class="fas fa-chevron-right"></i>
+                <span id="pageInfo"><b data-i18n="pdf.page">Seite</b> <b id="pageInfoNumber">1 / 1</b></span>
+                <button onclick="nextPage()" aria-label="Nächste Seite">
+                    <span class="material-symbols-outlined">chevron_right</span>
                 </button>
-
-                <button onclick="closePdfModal()" class="close-btn">
-                    <i class="fas fa-times"></i>
+                <button onclick="closePdfModal()" class="close-btn" aria-label="Schließen">
+                    <span class="material-symbols-outlined">close</span>
                 </button>
             </div>
-
             <div class="pdf-viewer">
                 <div class="pdf-page-container">
-
                     <canvas id="pdfCanvas"></canvas>
-
                     <div id="annotationLayer" class="annotationLayer"></div>
-
                 </div>
             </div>
         </div>
     </div>
 
     <footer class="glass-panel">
-        <p data-i18n="footer.rights">©<span id="thisYear"></span> Clint B. Nguena | alle Rechte vorbehalten</p>
+        <p data-i18n="footer.rights">© <span id="thisYear"></span> Clint Bryan Nguena | Alle Rechte vorbehalten</p>
         <div class="social-links">
-            <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="kontakt.html"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Clintbr" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"
+                rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="kontakt.html" aria-label="Kontakt"><span class="material-symbols-outlined">mail</span></a>
         </div>
     </footer>
 

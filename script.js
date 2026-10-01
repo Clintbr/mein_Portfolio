@@ -49,7 +49,7 @@ filterBtns.forEach(btn => {
 const themeBtn = document.getElementById('theme-toggle');
 if (themeBtn) {
     const themeIcon = themeBtn.querySelector('i');
-    
+
     // Ensure icon matches current theme from HTML root
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
     if (currentTheme === 'light') {
@@ -61,7 +61,7 @@ if (themeBtn) {
         let newTheme = theme === 'light' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('portfolio_theme', newTheme);
-        
+
         if (newTheme === 'light') {
             themeIcon.classList.replace('fa-sun', 'fa-moon');
         } else {
@@ -74,7 +74,7 @@ if (themeBtn) {
         if (e.key === 'portfolio_theme') {
             const newTheme = e.newValue || 'dark';
             document.documentElement.setAttribute('data-theme', newTheme);
-            
+
             if (newTheme === 'light') {
                 themeIcon.classList.replace('fa-sun', 'fa-moon');
             } else {
@@ -84,8 +84,13 @@ if (themeBtn) {
     });
 }
 
-// Language Bars Animation
+// Year & Language Bars Animation
 document.addEventListener('DOMContentLoaded', () => {
+    const yearEl = document.getElementById('thisYear');
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+
     const levelFills = document.querySelectorAll('.level-fill');
     levelFills.forEach(fill => {
         const targetWidth = fill.style.width;

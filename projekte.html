@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekte – Mein Portfolio</title>
+  <title>Projekte – Clint Bryan Nguena</title>
+  <meta name="description" content="Projekt-Portfolio von Clint Bryan Nguena: KI-Systeme (LLMs, RAG, Ollama), Full-Stack Webanwendungen (Java Spring Boot, React, TypeScript) und Embedded Systems.">
   <link rel="shortcut icon" href="bilder/logo.jpg" />
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script>
     if (localStorage.getItem('portfolio_theme') === 'light') {
@@ -22,10 +24,10 @@
   <!-- Video Modal -->
   <div id="videoModal" class="modal glass-panel">
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close" aria-label="Schließen">&times;</span>
       <video id="modalVideo" controls>
         <source src="" type="video/mp4">
-        Dein Browser unterstützt dieses Video nicht.
+        Ihr Browser unterstützt dieses Video nicht.
       </video>
     </div>
   </div>
@@ -46,7 +48,7 @@
 
   <header>
     <nav class="navbar glass-panel">
-      <h1>Clint.</h1>
+      <a href="index.html" class="logo-link"><h1>Clint<span class="text-highlight">.</span></h1></a>
       <button class="menu-toggle" aria-label="Menü öffnen">
         <i class="fas fa-bars"></i>
       </button>
@@ -71,60 +73,65 @@
     <!-- Hero Section -->
     <section class="hero projects-hero glass-panel fade-in">
       <div class="hero-content">
-        <h2 data-i18n="projects.title">Meine Arbeiten</h2>
-        <p data-i18n="projects.desc">Eine Auswahl meiner wichtigsten Projekte aus Studium und Praxis, mit Fokus auf
-          <b>Softwareentwicklung</b>, <b>Web</b> und <b>Embedded Systems</b>.
-        </p>
-        <a class="cta-btn btn-primary" href="#main" data-i18n="projects.btn">Zu Projekten ⬇</a>
+        <div class="status-badge pulse">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.badge">🚀 Verfügbarkeit: Ab sofort</span>
+        </div>
+        <h2 data-i18n="projects.title">Ausgewählte Projekte</h2>
+        <p data-i18n="projects.desc">Eine kuratierte Übersicht meiner wichtigsten Projekte in den Bereichen Künstliche Intelligenz, Full-Stack-Softwareentwicklung, Webanwendungen und Embedded Systems.</p>
+        <a class="cta-btn btn-primary" href="#main-filter" data-i18n="projects.btn">Zu Projekten ⬇</a>
       </div>
     </section>
 
-    <!-- Filter -->
-    <br id="main">
+    <!-- Filter Buttons -->
+    <br id="main-filter">
     <section class="filter-section glass-panel slide-up">
       <div class="filter-group">
         <button class="filter-btn active" data-filter="all" data-i18n="projects.filter.all">Alle</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="ai">AI</button>
-        <button class="filter-btn" data-filter="java">Java</button>
-        <button class="filter-btn" data-filter="embed">Embed</button>
-        <button class="filter-btn" data-filter="vm">VM</button>
-        <button class="filter-btn" data-filter="flutter">Flutter</button>
-        <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+        <button class="filter-btn" data-filter="ai" data-i18n="projects.filter.ai">KI & LLMs</button>
+        <button class="filter-btn" data-filter="fullstack" data-i18n="projects.filter.fullstack">Full-Stack</button>
+        <button class="filter-btn" data-filter="web" data-i18n="projects.filter.web">Web</button>
+        <button class="filter-btn" data-filter="java" data-i18n="projects.filter.java">Java / Spring</button>
+        <button class="filter-btn" data-filter="embed" data-i18n="projects.filter.embed">Embedded / VM</button>
       </div>
     </section>
 
-    <!-- Dynamic Projekte Container -->
+    <!-- Dynamic Projects Container -->
     <section class="projects" id="projects-container">
-      <!-- Projects will be rendered dynamically here via data/projects.js -->
+      <!-- Rendered dynamically by data/projects.js -->
     </section>
 
     <!-- Stats Section -->
     <section class="stats glass-panel slide-up">
       <div class="stat-card">
-        <h3>10+</h3>
-        <p data-i18n="stats.projects">Abgeschlossene Projekte</p>
+        <h3>15+</h3>
+        <p data-i18n="stats.projects">Entwickelte Projekte</p>
       </div>
       <div class="stat-card">
-        <h3>3+</h3>
-        <p data-i18n="stats.langs">Programmiersprachen im Einsatz</p>
+        <h3>5+</h3>
+        <p data-i18n="stats.langs">Programmiersprachen (Java, Python, TS, JS, C)</p>
       </div>
       <div class="stat-card">
-        <h3>1+</h3>
-        <p data-i18n="stats.exp">Jahr theoretische und praktische Erfahrung</p>
+        <h3>5 in 4</h3>
+        <p data-i18n="stats.fast">Semester in 4 absolviert</p>
+      </div>
+      <div class="stat-card">
+        <h3>100%</h3>
+        <p data-i18n="stats.focus">KI, RAG & Full-Stack Fokus</p>
       </div>
     </section>
 
     <!-- Call to Action -->
     <section class="cta glass-panel bounce">
-      <h2 data-i18n="cta.title">Wollen Sie mehr über meine Projekte erfahren?</h2>
-      <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontaktieren Sie mich</a>
+      <h2 data-i18n="cta.title">Haben Sie ein spannendes Projekt oder eine Stelle zu besetzen?</h2>
+      <p class="text-muted mb-4" data-i18n="cta.desc">Lassen Sie uns unverbindlich über mögliche Kooperationen, Werkstudententätigkeiten oder Einstiegsmöglichkeiten sprechen.</p>
+      <a href="kontakt.html" class="cta-btn btn-primary" data-i18n="cta.btn">Kontakt aufnehmen</a>
     </section>
 
     <!-- Avatar -->
     <div class="avatar-container float-anim">
       <div class="avatar-speech glass-panel text-sm" data-i18n="avatar.projects">
-        Diese Projekte zeigen meinen Werdegang in der Softwareentwicklung <i class="fas fa-rocket"></i>
+        Jedes Projekt zeigt meine Leidenschaft für sauberen Code und innovative KI 🚀
       </div>
       <div class="avatar">
         <img class="Me" src="bilder/avatar.png" alt="Avatar von Clint">
@@ -133,12 +140,11 @@
   </main>
 
   <footer class="glass-panel">
-    <p data-i18n="footer.rights">© 2025 Clint B. Nguena | alle Rechte vorbehalten</p>
+    <p data-i18n="footer.rights">© <span id="thisYear"></span> Clint Bryan Nguena | Alle Rechte vorbehalten</p>
     <div class="social-links">
-      <a href="https://github.com/Clintbr" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank"><i
-          class="fab fa-linkedin"></i></a>
-      <a href="mailto:nguenaclintbryan@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/Clintbr" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/clint-bryan-nguena-9a19172a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="kontakt.html" aria-label="Kontakt"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
 
