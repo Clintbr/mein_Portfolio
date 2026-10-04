@@ -17,6 +17,9 @@
   --text-muted: #94a3b8;
   --white: #ffffff;
   --black: #000000;
+  --status-badge-bg: rgba(22, 16, 185, 0.15);
+  --status-badge-border: 1px solid rgba(16, 64, 185, 0.35);
+  --status-badge: #3b82f6;
 
   /* Additional vars for uniform light mode switching */
   --btn-text: #ffffff;
@@ -44,6 +47,11 @@
   --text-muted: #475569;
   --white: #0f172a;
   --black: #ffffff;
+
+  --status-badge-bg: rgba(16, 185, 39, 0.15);
+  --status-badge-border: 1px solid rgba(16, 185, 24, 0.35);
+  --status-badge: rgba(3, 37, 7, 0.64);
+
   --btn-text: #ffffff;
   --input-bg: rgba(0, 0, 0, 0.03);
 }
@@ -133,9 +141,9 @@ a { text-decoration: none; color: inherit; transition: all 0.3s cubic-bezier(0.4
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  color: #064730;
+  background: var(--status-badge-bg);
+  border: var(--status-badge-border);
+  color: var(--status-badge);
   padding: 6px 16px;
   border-radius: 9999px;
   font-size: 0.88rem;
