@@ -27,6 +27,112 @@
  * @type {Project[]}
  */
 const projectsData = [
+
+    {
+        id: 17,
+        date: "10/2026 – 11/2026",
+        title: {
+            de: "ProKlar360 – Webportal & Digitaler Kundenservice",
+            en: "ProKlar360 – Webportal & Digital Customer Service",
+            fr: "ProKlar360 – Webportal & Service Client Numérique"
+        },
+        image: "bilder/prjkt17.png",
+        description: {
+            de: "Entwicklung und Bereitstellung einer modernen, responsiven Unternehmenswebsite für einen Gebäudeservice.",
+            en: "Development and deployment of a modern, responsive business website for a building services company.",
+            fr: "Développement et déploiement d'un site web professionnel et responsive pour une entreprise de services aux bâtiments."
+        },
+        bullets: [
+            {
+                de: "Responsives Webdesign und strukturierte Präsentation von fünf Dienstleistungskategorien.",
+                en: "Responsive web design and structured presentation of five service categories.",
+                fr: "Design responsive et présentation structurée de cinq catégories de services."
+            },
+            {
+                de: "Digitales Anfrageformular mit E-Mail- und WhatsApp-Kontaktanbindung.",
+                en: "Digital inquiry form with email and WhatsApp integration.",
+                fr: "Formulaire de demande numérique avec intégration de l'e-mail et de WhatsApp."
+            },
+            {
+                de: "Interaktive regionale Einsatzgebietsprüfung mit standortbezogener Fahrzeitlogik.",
+                en: "Interactive local service-area checker with location-based travel-time logic.",
+                fr: "Vérification interactive de la zone d'intervention avec calcul des temps de trajet selon la localisation."
+            },
+            {
+                de: "SEO-Optimierung, Google Search Console und XML-Sitemap zur Verbesserung der Suchmaschinenindexierung.",
+                en: "SEO optimization, Google Search Console, and XML sitemap for improved search engine indexing.",
+                fr: "Optimisation SEO, Google Search Console et sitemap XML pour améliorer l'indexation."
+            }
+        ],
+        tech: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Netlify",
+            "Git",
+            "Google Search Console",
+            "SEO",
+            "EmailJS"
+        ],
+        category: "web frontend business seo automation",
+        links: {
+            preview: "https://proklar360.de/",
+            previewType: "link"
+        }
+    },
+    {
+        id: 16,
+        date: "11/2026 – aktuell",
+        title: {
+            de: "Clint Skills Library – Plattform für spezialisierte AI Skills",
+            en: "Clint Skills Library – Specialized AI Skills Platform",
+            fr: "Clint Skills Library – Plateforme de compétences IA spécialisées"
+        },
+        image: "bilder/prjkt16.png",
+        description: {
+            de: "Webbasierte Plattform zur Bereitstellung und Dokumentation spezialisierter AI Skills für Claude Code mit Fokus auf wiederverwendbares Expertenwissen und KI-gestützte Entwicklungsworkflows.",
+            en: "Web-based platform for publishing and documenting specialized AI Skills for Claude Code, focused on reusable expert knowledge and AI-assisted development workflows.",
+            fr: "Plateforme web dédiée à la publication et à la documentation de compétences IA spécialisées pour Claude Code, axée sur la réutilisation des connaissances expertes."
+        },
+        bullets: [
+            {
+                de: "Modulare Skill-Bibliothek für Backend-Architektur, IT-Sicherheit, RAG Engineering und Softwaretests.",
+                en: "Modular skill library for backend architecture, IT security, RAG engineering, and software testing.",
+                fr: "Bibliothèque modulaire de compétences en architecture backend, cybersécurité, ingénierie RAG et tests logiciels."
+            },
+            {
+                de: "Strukturierte Skill-Dokumentation mit Anwendungsfällen, Workflows und technischen Anleitungen.",
+                en: "Structured skill documentation with use cases, workflows, and technical instructions.",
+                fr: "Documentation structurée avec cas d'utilisation, workflows et instructions techniques."
+            },
+            {
+                de: "Skalierbare Plattformarchitektur zur Integration zusätzlicher Skills und KI-Agenten.",
+                en: "Scalable platform architecture for integrating additional skills and AI agents.",
+                fr: "Architecture évolutive permettant l'intégration de compétences et d'agents IA supplémentaires."
+            },
+            {
+                de: "Konzeption einer MCP-Schnittstelle zur direkten Skill-Nutzung durch kompatible KI-Agenten.",
+                en: "Design of an MCP interface for direct skill access by compatible AI agents.",
+                fr: "Conception d'une interface MCP pour l'accès direct aux compétences par des agents IA compatibles."
+            }
+        ],
+        tech: [
+            "Claude Code",
+            "Agent Skills",
+            "MCP (Konzept)",
+            "Netlify",
+            "Git",
+            "React",
+            "Typescript"
+        ],
+        category: "ai agents skills mcp web",
+        links: {
+            code: "https://github.com/Clintbr/Clint-Skills",
+            codeType: "link",
+            preview: "https://clint-skills-ai.netlify.app/",
+            previewType: "link"
+        }
+    },
     {
         id: 15,
         date: "08/2026 – 09/2026",
